@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 // import { useSpring, animated } from 'react-spring'
+import { Spring } from 'react-spring'
 
 import Header from './header'
 import Archive from './archive'
@@ -46,7 +47,7 @@ const Layout = ({ children, location }) => (
         file(relativePath: { regex: "/bg/" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid_tracedSVG
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -58,22 +59,21 @@ const Layout = ({ children, location }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         {/* styles gets passed in as the style for the child render prop */}
         {/* <Spring from={{ height: 100 }} to={{ height: 200 }}> */}
-
-        {/* <animated.div
+        <Spring
           from={{ height: location.pathname === '/' ? 100 : 200 }}
           to={{ height: location.pathname === '/' ? 200 : 100 }}
-        > */}
-        {/* <animated.div style={useSpring({ opacity: 1, from: { opacity: 0 } })}> */}
-        {/* this is a children render prop */}
-        {/* {styles => ( */}
-        {/* <div style={{ overflow: 'hidden', ...styles }}>
-            <Img fluid={data.file.childImageSharp.fluid} />
-          </div> */}
-        <div>
-          <Img fluid={data.file.childImageSharp.fluid} />
-        </div>
-        {/* )} */}
-        {/* </animated.div> */}
+        >
+          {/* <Spring style={useSpring({ opacity: 1, from: { opacity: 0 } })}> */}
+          {/* this is a children render prop */}
+          {styles => (
+            <div style={{ ...styles, overflow: 'hidden' }}>
+              <Img fluid={data.file.childImageSharp.fluid} />
+            </div>
+            // <div>
+            //   <Img fluid={data.file.childImageSharp.fluid} />
+            // </div>
+          )}
+        </Spring>
 
         {/* {location.pathname === '/' && (
           <Img fluid={data.file.childImageSharp.fluid} />
