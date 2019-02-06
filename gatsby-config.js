@@ -31,18 +31,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Ronan Connolly`,
+        short_name: `RC`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#524763`,
+        theme_color: `#524763`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    'gatsby-plugin-offline',
+    'gatsby-plugin-offline', // this should be after the manifest file.
     {
       resolve: `gatsby-source-filesystem`,
       options: {
