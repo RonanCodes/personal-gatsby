@@ -1,0 +1,17 @@
+backend:
+  name: github
+  branch: master # Branch to update (optional; defaults to master)
+  repo: RonanC/pro-gatsby-2
+
+media_folder: 'static/img' # Media files will be stored in the repo under images/uploads
+public_folder: '/img'
+
+collections:
+  - name: 'team'
+    label: 'Team'
+    folder: 'src/team'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Team Member', name: 'title', widget: 'string' }
+      - { label: 'Bio', name: 'bio', widget: 'markdown' }
