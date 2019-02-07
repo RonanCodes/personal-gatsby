@@ -34,6 +34,7 @@ const POST_ARCHIVE_QUERY = graphql`
           frontmatter {
             title
             slug
+            category
           }
         }
       }
@@ -55,7 +56,11 @@ const Archive = () => (
                 {/* <a href={edge.node.frontmatter.slug}>
                   {edge.node.frontmatter.title}
                 </a> */}
-                <Link to={`/posts${edge.node.frontmatter.slug}`}>
+                <Link
+                  to={`/${edge.node.frontmatter.category}/${
+                    edge.node.frontmatter.slug
+                  }`}
+                >
                   {edge.node.frontmatter.title}
                 </Link>
               </li>

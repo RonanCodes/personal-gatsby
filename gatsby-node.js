@@ -1,4 +1,33 @@
 const path = require('path')
+// const helpers = require('./src/helpers')
+
+const { createFilePath } = require(`gatsby-source-filesystem`)
+
+exports.onCreateNode = ({ node, getNode }) => {
+  if (node.internal.type === `MarkdownRemark`) {
+    ensureSlugExists(node, getNode)
+  }
+}
+
+function ensureSlugExists(node, getNode) {
+  if (!node.frontmatter.slug) {
+    let fileSlug = createFilePath({
+      node,
+      getNode,
+      basePath: `content`,
+      trailingSlash: false,
+    })
+    node.frontmatter.slug = fileSlug.slice(1)
+  }
+}
+
+// const { createNodeField } = actions
+
+// createNodeField({
+//   node,
+//   name: `fileSlug`,
+//   value: fileSlug,
+// })
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -12,6 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
             node {
               frontmatter {
                 slug
+                category
               }
             }
           }
@@ -19,13 +49,37 @@ exports.createPages = ({ graphql, actions }) => {
       }
     `).then(results => {
       results.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        // let slug
+
+        // if (node.frontmatter.slug.length > 0) {
+        //   slug = node.frontmatter.slug
+        // } else {
+        //   const filePath = node.fileAbsolutePath
+        //   slug = filePath.substr(
+        //     filePath.lastIndexOf('/') + 1,
+        //     filePath.lastIndexOf('.') - filePath.lastIndexOf('/') - 1
+        //   )
+
+        //   // TODO: Via graphQL do a mutation to set the frontmatter.slug to the newly created slug.
+        // }
+
+        // const slug =
+        //   node.frontmatter.slug.length > 0
+        //     ? node.frontmatter.slug
+        //     : node.fields.fileSlug
+
+        console.log(node.frontmatter.slug)
+
+        // Blog
         createPage({
-          path: `/posts${node.frontmatter.slug}`,
-          component: path.resolve('./src/components/postLayout.js'),
+          path: `/${node.frontmatter.category}/${node.frontmatter.slug}`,
+          component: path.resolve('./src/templates/blogTemplate.js'),
           context: {
             slug: node.frontmatter.slug,
           },
         })
+
+        // Portfolio
       })
 
       // finalise the promise

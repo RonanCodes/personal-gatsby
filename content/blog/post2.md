@@ -1,10 +1,11 @@
 ---
-slug: '/third-post'
-date: '2019-02-18'
-title: 'Our Third Post'
+slug: 'second-post'
+date: '2019-02-17'
+title: 'Our Second Post'
+category: 'blog'
 ---
 
-# SUP LADS!
+# Yo!
 
 ## Woke
 

@@ -1,52 +1,94 @@
 # config options: https://www.netlifycms.org/docs/configuration-options/
 
+# Demo here for all you need:
+# https://github.com/netlify/netlify-cms/blob/master/dev-test/config.yml
+# https://cms-demo.netlify.com/#/collections/posts
+
 backend:
   name: github
   branch: master # Branch to update (optional; defaults to master)
-  repo: RonanC/pro-gatsby-2
+  repo: RonanC/personal-gatsby
 
-media_folder: 'static/assets' # Media files will be stored in the repo under images/uploads
-public_folder: '/assets'
+media_folder: 'static/images' # Media files will be stored in the repo under images/uploads
+public_folder: '/images'
+# publish_mode: editorial_workflow
 
-collections:
-  - name: blog
-    label: Blog
-    folder: blog
+slug:
+  encoding: 'ascii'
+  clean_accents: true
+  sanitize_replacement: '-'
+
+collections: # A list of collections the CMS should be able to edit
+  - name: blog # Used in routes, ie.: /admin/collections/:slug/edit
+    label: 'Blog Posts' # Used in the UI
+    label_singular: 'Blog Post' # Used in the UI, ie: "New Blog Post"
+    description: >
+      Create your blog post here.
+    folder: content/blog
+    slug: '{{slug}}' # The end of the url
     create: true
-    fields:
-      - { name: path, lavel: Path }
-      - { name: date, lavel: Date, widget: date }
-      - { name: title, lavel: Title }
-      - { name: body, lavel: Body, widget: markdown }
+    fields: # The fields each document in this collection have
+      - { name: title, label: Title, widget: string, tagname: h1 }
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'date',
+          dateFormat: 'YYYY-MM-DD',
+          format: 'YYYY-MM-DD',
+        }
+      - {
+          name: slug,
+          label: Slug,
+          widget: string,
+          default: '',
+          hint: 'Leave blank for auto slug',
+          required: false,
+        }
+      - {
+          name: cover-image,
+          label: Cover Image,
+          widget: image,
+          required: false,
+        }
+      - { name: category, label: Category, widget: hidden, default: blog }
+      - {
+          name: body,
+          label: Body,
+          widget: markdown,
+          hint: 'Main content goes here.',
+        }
+    meta:
+      - { label: 'SEO Description', name: 'description', widget: 'text' }
+    editor:
+      preview: true
+#   - name: portfolio
+#     label: Portfolio
+#     folder: portfolio
+#     create: true
+#     slug: '{{slug}}'
+#     fields:
+#       - { name: date, label: Date, widget: date, default:  }
+#       - { name: title, label: Title, widget: string }
+#       - { name: category, label: Category, widget: hidden, default: blog }
+#       - { name: body, label: Body, widget: markdown }
 
-collections:
-  - name: portfolio
-    label: Portfolio
-    folder: portfolio
-    create: true
-    slug: '{{slug}}'
-    fields:
-      - { name: path, lavel: Path }
-      - { name: date, lavel: Date, widget: date }
-      - { name: title, lavel: Title, widget: string }
-      - { name: body, lavel: Body, widget: markdown }
+# collections:
+#   - name: 'team'
+#     label: 'Team'
+#     folder: 'src/team'
+#     create: true
+#     slug: '{{slug}}'
+#     fields:
+#       - { label: 'Team Member', name: 'title', widget: 'string' }
+#       - { label: 'Bio', name: 'bio', widget: 'markdown' }
+#       - { name: category, label: Category, widget: hidden, default: team }
 
-collections:
-  - name: 'team'
-    label: 'Team'
-    folder: 'src/team'
-    create: true
-    slug: '{{slug}}'
-    fields:
-      - { label: 'Team Member', name: 'title', widget: 'string' }
-      - { label: 'Bio', name: 'bio', widget: 'markdown' }
-
-  # - name: 'posts'
-  #   label: 'Posts'
-  #   folder: 'src/posts'
-  #   create: true
-  #   slug: '{{slug}}'
-  #   fields:
-  #     - { label: 'Team Member', name: 'title', widget: 'string' }
-  #     - { label: 'Bio', name: 'bio', widget: 'markdown' }
-  #     -
+# - name: 'posts'
+#   label: 'Posts'
+#   folder: 'src/posts'
+#   create: true
+#   slug: '{{slug}}'
+#   fields:
+#     - { label: 'Team Member', name: 'title', widget: 'string' }
+#     - { label: 'Bio', name: 'bio', widget: 'markdown' }
+#     -

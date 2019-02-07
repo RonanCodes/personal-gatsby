@@ -19,6 +19,7 @@ const LISTING_QUERY = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             slug
+            category
           }
         }
       }
@@ -65,13 +66,13 @@ const Listing = () => (
       allMarkdownRemark.edges.map(({ node }) => (
         <Post key={node.frontmatter.slug}>
           <header>
-            <Link to={`/posts${node.frontmatter.slug}`}>
+            <Link to={`/${node.frontmatter.category}/${node.frontmatter.slug}`}>
               <h2>{node.frontmatter.title}</h2>
             </Link>
             <h5>{node.frontmatter.date}</h5>
           </header>
           <p>{node.excerpt}</p>
-          <Link className="read-more" to={`/posts${node.frontmatter.slug}`}>
+          <Link className="read-more" to={`/blog/${node.frontmatter.slug}`}>
             Read More
           </Link>
         </Post>

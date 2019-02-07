@@ -1,7 +1,8 @@
 ---
-slug: '/first-post'
+slug: 'first-post'
 date: '2019-02-01'
 title: 'Our First Post'
+category: 'blog'
 ---
 
 # Hello

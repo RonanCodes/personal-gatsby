@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Ronan Connolly Blog`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `@_RonanC`,
     test: 'this is a test',
     siteUrl: `https://silly-agnesi-43a1cd.netlify.com/`,
   },
@@ -22,12 +22,17 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `posts`,
-        path: `${__dirname}/src/posts`,
+        name: `blog`,
+        path: `${__dirname}/content/blog`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `portfolio`,
+        path: `${__dirname}/content/portfolio`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -44,13 +49,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     'gatsby-plugin-offline', // this should be after the manifest file.
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/src/posts`,
-      },
-    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

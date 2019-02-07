@@ -71,3 +71,10 @@ _Note: At this point you may want to test that it's all working._
 
 - Make registration invite only:
   https://app.netlify.com/sites/silly-agnesi-43a1cd/settings/identity#registration-preferences
+
+**Notes:**
+
+- The gatsby-plugin-netlify-cms takes care of the hooking up on our side so you can ignore that in the doc above.
+- Everything in the created static folder will get compoed into the output.
+- More info on Netlify CMS with Gatsby here: https://www.gatsbyjs.org/docs/sourcing-from-netlify-cms/
+- Adding markdown pages: https://www.gatsbyjs.org/docs/adding-markdown-pages/
