@@ -1,10 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8280c50c-658d-4ec9-929d-d24edfb48cc1/deploy-status)](https://app.netlify.com/sites/silly-agnesi-43a1cd/deploys)
 
-<p align="center">
-  🙆‍♀🙆‍♂️
-</p>
 <h1 align="center">
-  Personal Gatsby
+  🙆‍♀Personal Gatsby🙆‍ ‍♂️
 </h1>
 
 **This project contains the basics needed to set up a personal website:**
@@ -25,7 +22,7 @@
 **Example:**
 https://silly-agnesi-43a1cd.netlify.com/
 
-## 🚀 How to run dev
+## 💻 How to run dev
 
 ```sh
 npm i
@@ -59,6 +56,18 @@ The site is now running at: `http://localhost:9000`
 npx netlify deploy
 ```
 
-## 💻 Netlify setup
+## ✏️ Netlify CMS setup
 
-- Turn on XYZ
+- Set up Github OAuth for Netlify CMS (not sure if this is mandatory):
+  https://app.netlify.com/sites/silly-agnesi-43a1cd/settings/access#oauth
+
+- Turn on Identity here:
+  https://app.netlify.com/sites/silly-agnesi-43a1cd/identity
+
+- Add external providers for Github & Google here:
+  https://app.netlify.com/sites/silly-agnesi-43a1cd/settings/identity#external-providers
+
+_Note: At this point you may want to test that it's all working._
+
+- Make registration invite only:
+  https://app.netlify.com/sites/silly-agnesi-43a1cd/settings/identity#registration-preferences
