@@ -4,6 +4,16 @@
   🙆‍♀Personal Gatsby🙆‍ ‍♂️
 </h1>
 
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<p align="center">
+  <a href="https://silly-agnesi-43a1cd.netlify.com/">
+    <img alt="Personal Gatsby" src="https://github.com/RonanC/personal-gatsby/blob/master/src/images/personal-gatsby-logo.png" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Personal Gatsby
+</h1>
+
 **This project contains the basics needed to set up a personal website:**
 
 - Landing page
