@@ -22,6 +22,9 @@
 - Optimized image loading
 - Optimized pre-loading of pages (on link hover)
 
+**Example:**
+https://silly-agnesi-43a1cd.netlify.com/
+
 ## 🚀 How to run dev
 
 ```sh
