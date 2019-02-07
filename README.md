@@ -3,7 +3,7 @@
 # Personal Gatsby
 
 <p align="center">
-  🙆‍♀🙆‍♂
+  🙆‍♀🙆‍♂️
 </p>
 <h1 align="center">
   Personal Gatsby
@@ -40,7 +40,7 @@ GraphiQL is available at: `http://localhost:8000/___graphql`
 
 _Note: This allows you to query your GraphQL api_
 
-## 🚀 How to run production
+## 🎩 How to run production
 
 ```sh
 gatsby build
@@ -58,6 +58,6 @@ The site is now running at: `http://localhost:9000`
 npx netlify deploy
 ```
 
-## 🚀 Netlify setup
+## 💻 Netlify setup
 
 - Turn on XYZ
