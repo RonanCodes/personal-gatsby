@@ -44,7 +44,7 @@ const Layout = ({ children, location }) => (
             title
           }
         }
-        file(relativePath: { regex: "/bg/" }) {
+        file(relativePath: { regex: "/cover/" }) {
           childImageSharp {
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid

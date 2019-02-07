@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 
-import logo from '../images/logo.svg'
+import logo from '../images/personal-gatsby-logo.png'
 
 const HeaderWrapper = styled.div`
-  background: #524763;
+  background: #0370f1;
   /* margin-bottom: 1.45rem; */
 
   img {

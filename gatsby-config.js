@@ -38,10 +38,10 @@ module.exports = {
         name: `Ronan Connolly`,
         short_name: `RC`,
         start_url: `/`,
-        background_color: `#524763`,
-        theme_color: `#524763`,
+        background_color: `#0370F1`,
+        theme_color: `#0370F1`,
         display: `minimal-ui`,
-        icon: `src/images/ms-icon-310x310.png`, // This path is relative to the root of the site.
+        icon: `src/images/personal-gatsby-logo-no-text.png`, // This path is relative to the root of the site.
         include_favicon: true, // Include favicon
       },
     },
