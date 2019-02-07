@@ -5,8 +5,31 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
   repo: RonanC/pro-gatsby-2
 
-media_folder: 'static/img' # Media files will be stored in the repo under images/uploads
-public_folder: '/img'
+media_folder: 'static/assets' # Media files will be stored in the repo under images/uploads
+public_folder: '/assets'
+
+collections:
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
+      - { name: path, lavel: Path }
+      - { name: date, lavel: Date, widget: date }
+      - { name: title, lavel: Title }
+      - { name: body, lavel: Body, widget: markdown }
+
+collections:
+  - name: portfolio
+    label: Portfolio
+    folder: portfolio
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { name: path, lavel: Path }
+      - { name: date, lavel: Date, widget: date }
+      - { name: title, lavel: Title, widget: string }
+      - { name: body, lavel: Body, widget: markdown }
 
 collections:
   - name: 'team'
@@ -17,6 +40,7 @@ collections:
     fields:
       - { label: 'Team Member', name: 'title', widget: 'string' }
       - { label: 'Bio', name: 'bio', widget: 'markdown' }
+
   # - name: 'posts'
   #   label: 'Posts'
   #   folder: 'src/posts'
