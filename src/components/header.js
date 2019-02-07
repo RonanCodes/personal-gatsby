@@ -33,7 +33,7 @@ const Header = ({ siteTitle }) => (
         >
           <img
             src={logo}
-            alt="Level Up Tutorials Logo"
+            alt="Personal Gatsby Logo"
             style={{
               width: '100px',
             }}
