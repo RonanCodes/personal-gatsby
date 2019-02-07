@@ -3,22 +3,20 @@
 # Personal Gatsby
 
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
+  🙆‍♀🙆‍♂
 </p>
 <h1 align="center">
   Personal Gatsby
 </h1>
 
-This project contains the basics needed to set up a personal website:
+**This project contains the basics needed to set up a personal website:**
 
 - Landing page
 - Contact form
 - Portfolio page
 - Blog page
 
-With included extras:
+**With included extras:**
 
 - Backend CMS for writers to update the portfolio & blog
 - PWA (progressive web app) so that customers get a good offline experience (and can save your website as a local app)
@@ -39,6 +37,7 @@ gatsby develop
 The site is now running at: `http://localhost:8000`
 
 GraphiQL is available at: `http://localhost:8000/___graphql`
+
 _Note: This allows you to query your GraphQL api_
 
 ## 🚀 How to run production
