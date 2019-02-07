@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Ronan Connolly Blog`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@_RonanC`,
-    test: 'this is a test',
+    title: `Personal Gatsby`,
+    description: `Get your personal website kick-started with this Personal Gatsby Starter Project`,
+    author: `Ronan Connolly <hi@ronanconnolly.ie>`,
     siteUrl: `https://silly-agnesi-43a1cd.netlify.com/`,
   },
   plugins: [

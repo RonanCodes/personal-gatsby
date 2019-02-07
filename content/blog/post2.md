@@ -1,6 +1,6 @@
 ---
-slug: 'second-post'
-date: '2019-02-17'
+slug: ''
+date: '2019-02-20'
 title: 'Our Second Post'
 category: 'blog'
 ---

@@ -1,6 +1,6 @@
 ---
 title: test
-date: '2019-02-07 16:48'
+date: '2019-02-07'
 slug: 'slug'
 category: blog
 ---

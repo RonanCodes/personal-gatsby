@@ -1,7 +1,7 @@
 {
   "name": "personal-gatsby",
   "private": true,
-  "description": "Get your personal website kickstarted with this Personal Gatsby Starter Project",
+  "description": "Get your personal website kick-started with this Personal Gatsby Starter Project",
   "version": "0.1.0",
   "author": "Ronan Connolly <hi@ronanconnolly.ie>",
   "dependencies": {
