@@ -1,32 +1,54 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React, { Component } from 'react'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+// import { graphql } from 'gatsby'
 
-/*
- * This component is built using `gatsby-image` to automatically serve optimized
- * images with lazy loading and reduced file sizes. The image is loaded using a
- * `StaticQuery`, which allows us to load the image from directly within this
- * component, rather than having to pass the image data down from pages.
- *
- * For more information, see the docs:
- * - `gatsby-image`: https://gatsby.app/gatsby-image
- * - `StaticQuery`: https://gatsby.app/staticquery
- */
+export default class Image extends Component {
+  render() {
+    const fluid = this.props.data.file.childImageSharp.fluid
 
-const Image = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+    // const { frontmatter, html } = this.props.data.markdownRemark
+    // const { location } = this.props
+
+    return (
+      // Img
+      // <h1>IMAGE</h1>
+      <Img
+        fluid={fluid}
+        style={{
+          width: '500px',
+          margin: 'auto',
+        }}
+      />
+      // <Layout location={location}>
+      //   <h1>{frontmatter.title}</h1>
+      //   {/* <h5>{frontmatter.date}</h5> */}
+      //   <div dangerouslySetInnerHTML={{ __html: html }} />
+      // </Layout>
+    )
+  }
+}
+
+// this gets ran on load, and the data object added to this pages props object
+export const query = graphql`
+  query imageQuery($imageName: String!) {
+    file(relativePath: { eq: $imageName }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
-    `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
-  />
-)
-export default Image
+    }
+  }
+`
+
+// query imageQuery($imageName: String!) {
+//   markdownRemark(frontmatter: { slug: { eq: $imageName } }) {
+//     html
+//     frontmatter {
+//       title
+//       date
+//       slug
+//     }
+//   }
+// }
