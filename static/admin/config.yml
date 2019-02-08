@@ -1,9 +1,3 @@
-# config options: https://www.netlifycms.org/docs/configuration-options/
-
-# Demo here for all you need:
-# https://github.com/netlify/netlify-cms/blob/master/dev-test/config.yml
-# https://cms-demo.netlify.com/#/collections/posts
-
 backend:
   # name: github
   name: git-gateway

@@ -93,6 +93,15 @@ backend:
 - More info on Netlify CMS with Gatsby here: https://www.gatsbyjs.org/docs/sourcing-from-netlify-cms/
 - Adding markdown pages: https://www.gatsbyjs.org/docs/adding-markdown-pages/
 
+### Netlify CMS Additional Information
+
+- config options: https://www.netlifycms.org/docs/configuration-options/
+
+**Demo here for all you needs:**
+
+- https://github.com/netlify/netlify-cms/blob/master/dev-test/config.yml
+- https://cms-demo.netlify.com/#/collections/posts
+
 # General Notes
 
 - Mock content brought to you by Hipster Ipsum: https://hipsum.co/
