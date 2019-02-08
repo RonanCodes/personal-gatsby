@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import logo from '../images/personal-gatsby-logo.png'
 
 const HeaderWrapper = styled.div`
-  background: #0370f1;
+  background: #aeafe8;
   /* margin-bottom: 1.45rem; */
 
   img {
@@ -16,8 +16,9 @@ const HeaderWrapper = styled.div`
 
 const HeaderContainer = styled.div`
   margin: 0 auto;
-  max-width: 960px;
+  /* max-width: 960px; */
   padding: 0.3rem;
+  margin-left: 20px;
 `
 
 const Header = ({ siteTitle }) => (

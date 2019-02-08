@@ -11,12 +11,67 @@ import Archive from './archive'
 
 import './layout.css'
 
+const Site = styled.div`
+  /* .site { */
+  /* display: flex;
+  min-height: 100vh;
+  flex-direction: column; */
+  /* html {
+    height: 100%;
+    background: brown;
+  } */
+
+  /* .site { */
+  /* min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background: blue; */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: coral;
+  /* } */
+
+  /* min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto; */
+  /* height: 100%;
+  display: flex;
+  flex-direction: column; */
+
+  /* display: flex;
+  flex-direction: column; */
+  /* } */
+
+  .site-content {
+    flex-grow: 1;
+    /* flex: 1 0 auto; */
+    /* margin-top: auto; */
+    background: yellow;
+    /* flex: 1 0 auto; */
+  }
+
+  footer {
+    background: pink;
+    /* flex-shrink: 0; */
+
+    /* grid-row-start: 6; */
+    /* grid-row-end: 7; */
+    flex-shrink: 0;
+  }
+`
+
+const Footer = styled.footer`
+  text-align: center;
+  /* border: 1px solid black; */
+`
+
 const MainLayout = styled.main`
   max-width: 90%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 40px;
+  /* display: grid; */
+  /* grid-template-columns: 3fr 1fr; */
+  /* gap: 40px; */
   margin: 1rem auto;
 `
 
@@ -55,40 +110,43 @@ const Layout = ({ children, location }) => (
     `}
     render={data => (
       <>
-        {/* {useSpring({ opacity: 1, color: 'red' })} */}
-        <Header siteTitle={data.site.siteMetadata.title} />
-        {/* styles gets passed in as the style for the child render prop */}
-        {/* <Spring from={{ height: 100 }} to={{ height: 200 }}> */}
-        <Spring
-          from={{ height: location.pathname === '/' ? 100 : 200 }}
-          to={{ height: location.pathname === '/' ? 200 : 100 }}
-        >
-          {/* <Spring style={useSpring({ opacity: 1, from: { opacity: 0 } })}> */}
-          {/* this is a children render prop */}
-          {styles => (
-            <div style={{ ...styles, overflow: 'hidden' }}>
-              <Img fluid={data.file.childImageSharp.fluid} />
-            </div>
-            // <div>
-            //   <Img fluid={data.file.childImageSharp.fluid} />
-            // </div>
-          )}
-        </Spring>
+        <Site className="site">
+          {/* {useSpring({ opacity: 1, color: 'red' })} */}
+          <Header siteTitle={data.site.siteMetadata.title} />
+          {/* styles gets passed in as the style for the child render prop */}
+          {/* <Spring from={{ height: 100 }} to={{ height: 200 }}> */}
+          <Spring
+            from={{ height: location.pathname === '/' ? 100 : 200 }}
+            to={{ height: location.pathname === '/' ? 200 : 100 }}
+          >
+            {/* <Spring style={useSpring({ opacity: 1, from: { opacity: 0 } })}> */}
+            {/* this is a children render prop */}
+            {styles => (
+              <div style={{ ...styles, overflow: 'hidden' }}>
+                <Img fluid={data.file.childImageSharp.fluid} />
+              </div>
+              // <div>
+              //   <Img fluid={data.file.childImageSharp.fluid} />
+              // </div>
+            )}
+          </Spring>
 
-        {/* {location.pathname === '/' && (
+          {/* {location.pathname === '/' && (
           <Img fluid={data.file.childImageSharp.fluid} />
         )} */}
+          <MainLayout className="site-content">
+            <div>{children}</div>
+            {/* <Archive /> */}
+          </MainLayout>
 
-        <MainLayout>
-          <div>{children}</div>
-          <Archive />
-        </MainLayout>
-
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+          <Footer>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://github.com/RonanC/personal-gatsby">
+              Personal Gatsby
+            </a>
+          </Footer>
+        </Site>
       </>
     )}
   />

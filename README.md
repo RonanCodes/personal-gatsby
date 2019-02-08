@@ -105,3 +105,14 @@ backend:
 # General Notes
 
 - Mock content brought to you by Hipster Ipsum: https://hipsum.co/
+
+# Color Palette
+
+- This project is using this color palette/scheme: https://dribbble.com/shots/4797890--Chat-Property-dashboard
+
+- primary: #AEAFE8
+- secondary: #4C2FC9
+- accent: #9056D4
+- light-pink: #DD6589
+- dark-pink: #8A4966
+- gray: #B3B2C0

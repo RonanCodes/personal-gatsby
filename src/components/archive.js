@@ -17,7 +17,7 @@ const ArchiveList = styled.ul`
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     /* font-size: 0.8rem; */
     text-decoration: none;
-    color: #0370f1;
+    color: #4c2fc9;
   }
 `
 
