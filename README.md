@@ -84,3 +84,7 @@ _Note: At this point you may want to test that it's all working._
 - Everything in the created static folder will get compoed into the output.
 - More info on Netlify CMS with Gatsby here: https://www.gatsbyjs.org/docs/sourcing-from-netlify-cms/
 - Adding markdown pages: https://www.gatsbyjs.org/docs/adding-markdown-pages/
+
+# General Notes
+
+- Mock content brought to you by Hipster Ipsum: https://hipsum.co/

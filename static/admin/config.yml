@@ -5,9 +5,10 @@
 # https://cms-demo.netlify.com/#/collections/posts
 
 backend:
-  name: github
+  # name: github
+  name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-  repo: RonanC/personal-gatsby
+  # repo: RonanC/personal-gatsby
 
 media_folder: 'static/images' # Media files will be stored in the repo under images/uploads
 public_folder: '/images'
