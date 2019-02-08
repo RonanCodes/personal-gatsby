@@ -39,6 +39,7 @@ const ContactPage = ({ location }) => (
           </p>
 
           <ContactForm />
+          {/* PUT FORM DIRECTLY IN HERE< NOT AS A COMMPONENT */}
         </div>
       </Layout>
     )}

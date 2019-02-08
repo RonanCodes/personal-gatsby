@@ -4,7 +4,13 @@ import PortfolioListing from '../components/portfolioListing'
 
 const PortfolioPage = ({ location }) => (
   <Layout location={location}>
-    <PortfolioListing />
+    <div
+      style={{
+        paddingTop: '30px',
+      }}
+    >
+      <PortfolioListing />
+    </div>
   </Layout>
 )
 
