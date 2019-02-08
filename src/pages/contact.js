@@ -38,11 +38,13 @@ const ContactPage = ({ location }) => (
             kogi ea salvia DIY lorem.
           </p>
 
+          {/* // TODO: TRY this next: https://github.com/imorente/gatsby-netlify-form-example/blob/master/src/pages/contact.js */}
+
           {/* <ContactForm /> */}
           {/* PUT FORM DIRECTLY IN HERE< NOT AS A COMMPONENT */}
           <form
             name="contact"
-            method="POST"
+            method="post"
             data-netlify="true"
             actoin="/pages/success"
           >

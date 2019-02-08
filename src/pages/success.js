@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 const SuccessPage = ({ location }) => (
   <StaticQuery
     query={graphql`
-      query AboutImageQuery {
+      query SuccessImageQuery {
         file(relativePath: { regex: "/undraw_message_sent/" }) {
           childImageSharp {
             fluid(maxWidth: 2000) {
