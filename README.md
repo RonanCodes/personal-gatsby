@@ -64,19 +64,27 @@ npx netlify deploy
 
 ## ✏️ Netlify CMS setup
 
-- Set up Github OAuth for Netlify CMS (not sure if this is mandatory):
-  https://app.netlify.com/sites/silly-agnesi-43a1cd/settings/access#oauth
-
 - Turn on Identity here:
   https://app.netlify.com/sites/silly-agnesi-43a1cd/identity
 
-- Add external providers for Github & Google here:
-  https://app.netlify.com/sites/silly-agnesi-43a1cd/settings/identity#external-providers
-
-_Note: At this point you may want to test that it's all working._
-
 - Make registration invite only:
   https://app.netlify.com/sites/silly-agnesi-43a1cd/settings/identity#registration-preferences
+
+- Invite yourself, create an account, and login via your site `/admin/`
+
+**If you get an error when you land on the admin page it may be because you edited your project settings:**
+To fix this reset the project link and the git-gateway in the below two places.
+
+1. https://app.netlify.com/sites/silly-agnesi-43a1cd/settings/deploys#build-settings
+2. https://app.netlify.com/sites/silly-agnesi-43a1cd/settings/identity#services
+
+Make sure that you you're using `git-gateway` in your `config.yml` file:
+
+```yml
+backend:
+  name: git-gateway
+  branch: master
+```
 
 **Notes:**
 
