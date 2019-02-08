@@ -116,3 +116,16 @@ backend:
 - light-pink: #DD6589
 - dark-pink: #8A4966
 - gray: #B3B2C0
+
+# Inspiration
+
+- Sites and colour palettes/schemes: https://dribbble.com/
+- Imagery: https://undraw.co/
+- Main website used to template this one (sorry for ripping you off 🙃): https://emmawedekind.com/
+- Tutorials:
+  - Wes Bos' React for Beginners course: https://reactforbeginners.com/
+  - Scot Tolinski's Pro Gatsby 2 course: https://www.leveluptutorials.com/tutorials/pro-gatsby-2
+  - Emma Wedekind's portolfio website tutorial: https://dev.to/emmawedekind/how-to-build-a-great-technical-portfolio-53bb
+- The great people on:
+  - Gitter: https://gitter.im/netlify/NetlifyCMS
+  - Spectrum: https://spectrum.chat/gatsby-js/
