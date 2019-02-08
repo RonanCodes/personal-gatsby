@@ -1,12 +1,12 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8280c50c-658d-4ec9-929d-d24edfb48cc1/deploy-status)](https://app.netlify.com/sites/silly-agnesi-43a1cd/deploys)
 
 <h1 align="center">
-  Personal Gatsby
+    <img alt="Personal Gatsby Cursive" src="https://github.com/RonanC/personal-gatsby/blob/master/src/images/personal-gatsby-cursive.png" width="300" />
 </h1>
 
 <p align="center">
   <a href="https://silly-agnesi-43a1cd.netlify.com/">
-    <img alt="Personal Gatsby" src="https://github.com/RonanC/personal-gatsby/blob/master/src/images/personal-gatsby-logo.png" width="150" />
+    <img alt="Personal Gatsby Logo" src="https://github.com/RonanC/personal-gatsby/blob/master/src/images/personal-gatsby-logo.png" width="150" />
   </a>
 </p>
 
