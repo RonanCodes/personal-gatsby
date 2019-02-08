@@ -56,7 +56,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'SEO Description', name: 'description', widget: 'text' }
     editor:
       preview: true
- - name: portfolio
+  - name: portfolio
     label: 'Portfolio Items'
     label_singular: 'Portfolio Item'
     description: >
@@ -98,12 +98,6 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'SEO Description', name: 'description', widget: 'text' }
     editor:
       preview: true
-
-
-
-
-
-
 #   - name: portfolio
 #     label: Portfolio
 #     folder: portfolio
