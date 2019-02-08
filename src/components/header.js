@@ -92,7 +92,11 @@ const Header = ({ siteTitle, location }) => (
       <ul className="nav">
         <li>
           <Link
-            className={location.pathname === '/about' ? 'active' : 'inactive'}
+            className={
+              location.pathname === '/about' || location.pathname === '/about/'
+                ? 'active'
+                : 'inactive'
+            }
             to="/about"
           >
             About
@@ -100,7 +104,12 @@ const Header = ({ siteTitle, location }) => (
         </li>
         <li>
           <Link
-            className={location.pathname === '/contact' ? 'active' : 'inactive'}
+            className={
+              location.pathname === '/contact' ||
+              location.pathname === '/contact/'
+                ? 'active'
+                : 'inactive'
+            }
             to="/contact"
           >
             Contact
@@ -109,7 +118,10 @@ const Header = ({ siteTitle, location }) => (
         <li>
           <Link
             className={
-              location.pathname === '/portfolio' ? 'active' : 'inactive'
+              location.pathname === '/portfolio' ||
+              location.pathname === '/portfolio/'
+                ? 'active'
+                : 'inactive'
             }
             to="/portfolio"
           >
@@ -118,7 +130,11 @@ const Header = ({ siteTitle, location }) => (
         </li>
         <li>
           <Link
-            className={location.pathname === '/blog' ? 'active' : 'inactive'}
+            className={
+              location.pathname === '/blog' || location.pathname === '/blog/'
+                ? 'active'
+                : 'inactive'
+            }
             to="/blog"
           >
             Blog

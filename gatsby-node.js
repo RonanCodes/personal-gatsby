@@ -45,14 +45,30 @@ exports.createPages = ({ graphql, actions }) => {
       }
     `).then(results => {
       results.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        // Blog
-        createPage({
-          path: `/${node.frontmatter.category}/${node.frontmatter.slug}`,
-          component: path.resolve('./src/templates/blogTemplate.js'),
-          context: {
-            slug: node.frontmatter.slug,
-          },
-        })
+        let templatePath
+
+        switch (node.frontmatter.category) {
+          case 'blog':
+            templatePath = './src/templates/blogTemplate.js'
+            break
+          case 'portfolio':
+            templatePath = './src/templates/portfolioTemplate.js'
+            break
+          default:
+            templatePath = null
+            break
+        }
+
+        if (templatePath) {
+          // Blog
+          createPage({
+            path: `/${node.frontmatter.category}/${node.frontmatter.slug}`,
+            component: path.resolve(templatePath),
+            context: {
+              slug: node.frontmatter.slug,
+            },
+          })
+        }
 
         // TODO: use portfolio template for portfolio files
         // Portfolio

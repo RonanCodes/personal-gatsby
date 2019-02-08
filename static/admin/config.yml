@@ -87,7 +87,7 @@ collections: # A list of collections the CMS should be able to edit
           widget: image,
           required: false,
         }
-      - { name: category, label: Category, widget: hidden, default: blog }
+      - { name: category, label: Category, widget: hidden, default: portfolio }
       - {
           name: body,
           label: Body,
