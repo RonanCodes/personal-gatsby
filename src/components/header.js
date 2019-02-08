@@ -58,11 +58,11 @@ const HeaderContainer = styled.div`
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
       a {
-        color: #ad76ed;
+        color: #8a4cd3;
         text-decoration: none;
 
         :visited {
-          color: #ad76ed;
+          color: #8a4cd3;
           text-decoration: none;
         }
 
