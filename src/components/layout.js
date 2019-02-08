@@ -12,66 +12,22 @@ import Archive from './archive'
 import './layout.css'
 
 const Site = styled.div`
-  /* .site { */
-  /* display: flex;
-  min-height: 100vh;
-  flex-direction: column; */
-  /* html {
-    height: 100%;
-    background: brown;
-  } */
-
-  /* .site { */
-  /* min-height: 100%;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    background: blue; */
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background: coral;
-  /* } */
-
-  /* min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto; */
-  /* height: 100%;
-  display: flex;
-  flex-direction: column; */
-
-  /* display: flex;
-  flex-direction: column; */
-  /* } */
 
   .site-content {
     flex-grow: 1;
-    /* flex: 1 0 auto; */
-    /* margin-top: auto; */
-    background: yellow;
-    /* flex: 1 0 auto; */
-  }
-
-  footer {
-    background: pink;
-    /* flex-shrink: 0; */
-
-    /* grid-row-start: 6; */
-    /* grid-row-end: 7; */
-    flex-shrink: 0;
   }
 `
 
 const Footer = styled.footer`
   text-align: center;
-  /* border: 1px solid black; */
 `
 
 const MainLayout = styled.main`
   max-width: 90%;
   margin: 0 auto;
-  /* display: grid; */
-  /* grid-template-columns: 3fr 1fr; */
-  /* gap: 40px; */
   margin: 1rem auto;
 `
 
