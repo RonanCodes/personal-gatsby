@@ -12,13 +12,20 @@ import Archive from './archive'
 import './layout.css'
 
 const Site = styled.div`
+  /* We're using flexbox! */
   display: flex;
+  /* 100% of viewport height will be taken up by the height */
   min-height: 100vh;
+
+  /* vertical flex */
   flex-direction: column;
 
   .site-content {
+    /* grow to full in the size of the container it's in*/
     flex-grow: 1;
   }
+
+  /* The footer must show, so it shows at the bottom of the page since the site content grew to as much as it could */
 `
 
 const Footer = styled.footer`
@@ -67,25 +74,18 @@ const Layout = ({ children, location }) => (
     render={data => (
       <>
         <Site className="site">
-          {/* {useSpring({ opacity: 1, color: 'red' })} */}
           <Header siteTitle={data.site.siteMetadata.title} />
-          {/* styles gets passed in as the style for the child render prop */}
-          {/* <Spring from={{ height: 100 }} to={{ height: 200 }}> */}
-          <Spring
+
+          {/* <Spring
             from={{ height: location.pathname === '/' ? 100 : 200 }}
             to={{ height: location.pathname === '/' ? 200 : 100 }}
           >
-            {/* <Spring style={useSpring({ opacity: 1, from: { opacity: 0 } })}> */}
-            {/* this is a children render prop */}
             {styles => (
               <div style={{ ...styles, overflow: 'hidden' }}>
                 <Img fluid={data.file.childImageSharp.fluid} />
               </div>
-              // <div>
-              //   <Img fluid={data.file.childImageSharp.fluid} />
-              // </div>
             )}
-          </Spring>
+          </Spring> */}
 
           {/* {location.pathname === '/' && (
           <Img fluid={data.file.childImageSharp.fluid} />
