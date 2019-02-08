@@ -33,13 +33,21 @@ const IndexPage = ({ location }) => (
           />
           <h2>Hi I'm Gatsby. I'm a developer and designer.</h2>
           <p>
-            Lorem ipsum dolor amet pitchfork chicharrones brunch ugh twee
-            microdosing intelligentsia kogi semiotics meh. Disrupt meditation
-            letterpress next level marfa laboris. Godard messenger bag next
-            level, mumblecore art party copper mug anim craft beer magna meh
-            narwhal deserunt biodiesel glossier. Man braid scenester heirloom
-            green juice occaecat culpa. Ex chicharrones deserunt master cleanse
-            kogi ea salvia DIY lorem.
+            Lorem ipsum dolor amet minim plaid deep v adaptogen wayfarers.
+            Pickled ullamco hell of voluptate. Stumptown scenester woke austin
+            echo park church-key sed plaid do quinoa fanny pack tumeric celiac.
+            Sriracha vinyl butcher deserunt. In twee unicorn, chartreuse
+            chicharrones mollit elit aesthetic 8-bit irony gentrify. Culpa
+            kitsch direct trade forage irure squid VHS.
+          </p>
+
+          <p>
+            Nulla scenester kitsch whatever dolore cloud bread banh mi, air
+            plant sartorial migas XOXO green juice umami selvage. Keffiyeh
+            vexillologist gluten-free echo park nostrud meditation wayfarers.
+            Selvage labore four dollar toast non seitan offal. Selvage adaptogen
+            dreamcatcher neutra, distillery poutine humblebrag ut minim quinoa
+            vaporware keytar.
           </p>
         </div>
       </Layout>

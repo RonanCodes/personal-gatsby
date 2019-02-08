@@ -29,13 +29,14 @@ const ContactPage = ({ location }) => (
             }}
           />
           <p>
-            Lorem ipsum dolor amet pitchfork chicharrones brunch ugh twee
-            microdosing intelligentsia kogi semiotics meh. Disrupt meditation
-            letterpress next level marfa laboris. Godard messenger bag next
-            level, mumblecore art party copper mug anim craft beer magna meh
-            narwhal deserunt biodiesel glossier. Man braid scenester heirloom
-            green juice occaecat culpa. Ex chicharrones deserunt master cleanse
-            kogi ea salvia DIY lorem.
+            Pickled cliche elit lyft jianbing messenger bag mixtape normcore.
+            8-bit typewriter velit, schlitz locavore occupy deep v you probably
+            haven't heard of them tattooed hot chicken meditation PBR&B
+            scenester. Affogato magna put a bird on it hot chicken. Semiotics
+            XOXO hashtag ut meggings scenester narwhal irony af. Salvia man bun
+            distillery brunch chicharrones esse vaporware direct trade fanny
+            pack pickled messenger bag flannel art party. Ugh laborum aliquip
+            enamel pin do tofu.
           </p>
 
           {/* // TODO: TRY this next: https://github.com/imorente/gatsby-netlify-form-example/blob/master/src/pages/contact.js */}
