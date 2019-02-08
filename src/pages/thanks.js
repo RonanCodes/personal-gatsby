@@ -23,13 +23,17 @@ const ThanksPage = ({ location }) => (
             fluid={data.file.childImageSharp.fluid}
             style={{
               width: '500px',
+              margin: 'auto',
             }}
           />
 
-          {/* <Image imageName={'undraw_about_me_wa29.png'} /> */}
-
-          {/* <h1>ThanksPage Us</h1> */}
-          <p>Thanks for getting in contact!</p>
+          <p
+            style={{
+              textAlign: 'center',
+            }}
+          >
+            Thanks for getting in contact!
+          </p>
         </div>
       </Layout>
     )}
