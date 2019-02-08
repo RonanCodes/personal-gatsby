@@ -9,38 +9,116 @@ const HeaderWrapper = styled.div`
   background: #aeafe8;
   /* margin-bottom: 1.45rem; */
 
+  margin: 0px;
+
   img {
     margin-bottom: 0;
   }
 `
 
 const HeaderContainer = styled.div`
-  margin: 0 auto;
-  /* max-width: 960px; */
-  padding: 0.3rem;
-  margin-left: 20px;
-`
+  margin: 10px 20px 0px 20px;
 
-const Header = ({ siteTitle }) => (
+  /* margin: 0 auto; */
+  /* max-width: 960px; */
+  /* padding: 0.3rem; */
+  /* margin-left: 20px; */
+
+  /* display: inline-block; */
+
+  /* a {
+    padding: 0px !important;
+    margin: 0px !important;
+  } */
+
+  .logo-link {
+    float: left;
+    /* height: 100px; */
+
+    img {
+      height: 100px;
+    }
+  }
+
+  .nav {
+    /* background: yellow; */
+    float: right;
+    margin-top: 40px;
+
+    li {
+      display: inline;
+      margin: 40px;
+      /* font-family: 'Open Sans'; */
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+      a {
+        color: #ad76ed;
+        text-decoration: none;
+
+        :visited {
+          color: #ad76ed;
+          text-decoration: none;
+        }
+
+        &.active {
+          /* color: #dd0244; */
+          color: #5b00b7;
+
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+`
+// /* ${
+//           ({location}) => location.pathname ===
+//         } */
+const Header = ({ siteTitle, location }) => (
   <HeaderWrapper>
     <HeaderContainer>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          <img
-            src={logo}
-            alt="Personal Gatsby Logo"
-            style={{
-              width: '100px',
-            }}
-          />
-        </Link>
-      </h1>
+      {/* <h1 style={{ margin: 0 }} className="logo"> */}
+      <Link to="/" className="logo-link">
+        <img src={logo} alt="Personal Gatsby Logo" />
+      </Link>
+      {/* </h1> */}
+
+      <ul className="nav">
+        <li>
+          <Link
+            className={location.pathname === '/about' ? 'active' : 'inactive'}
+            to="/about"
+          >
+            About
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={location.pathname === '/contact' ? 'active' : 'inactive'}
+            to="/contact"
+          >
+            Contact
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={
+              location.pathname === '/portfolio' ? 'active' : 'inactive'
+            }
+            to="/portfolio"
+          >
+            Portfolio
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={location.pathname === '/blog' ? 'active' : 'inactive'}
+            to="/blog"
+          >
+            Blog
+          </Link>
+        </li>
+      </ul>
     </HeaderContainer>
   </HeaderWrapper>
 )

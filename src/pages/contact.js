@@ -2,10 +2,9 @@ import React from 'react'
 import Layout from '../components/layout'
 import ContactForm from '../components/contactForm'
 
-const Contact = ({ location }) => (
+const ContactPage = ({ location }) => (
   <Layout location={location}>
     <div>
-      <h1>Contact Us</h1>
       <p>
         Lorem ipsum dolor amet pitchfork chicharrones brunch ugh twee
         microdosing intelligentsia kogi semiotics meh. Disrupt meditation
@@ -21,4 +20,4 @@ const Contact = ({ location }) => (
   </Layout>
 )
 
-export default Contact
+export default ContactPage

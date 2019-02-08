@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
 
-const About = ({ location }) => (
+const AboutPage = ({ location }) => (
   <Layout location={location}>
     <div>
-      <h1>About Us</h1>
+      {/* <h1>AboutPage Us</h1> */}
       <p>
         Lorem ipsum dolor amet pitchfork chicharrones brunch ugh twee
         microdosing intelligentsia kogi semiotics meh. Disrupt meditation
@@ -18,4 +18,4 @@ const About = ({ location }) => (
   </Layout>
 )
 
-export default About
+export default AboutPage

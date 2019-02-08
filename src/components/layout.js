@@ -23,6 +23,7 @@ const Site = styled.div`
   .site-content {
     /* grow to full in the size of the container it's in*/
     flex-grow: 1;
+    margin: 50px 300px 0 300px;
   }
 
   /* The footer must show, so it shows at the bottom of the page since the site content grew to as much as it could */
@@ -74,7 +75,10 @@ const Layout = ({ children, location }) => (
     render={data => (
       <>
         <Site className="site">
-          <Header siteTitle={data.site.siteMetadata.title} />
+          <Header
+            siteTitle={data.site.siteMetadata.title}
+            location={location}
+          />
 
           {/* <Spring
             from={{ height: location.pathname === '/' ? 100 : 200 }}

@@ -4,9 +4,16 @@ import styled from 'styled-components'
 const Form = styled.form`
   /* border: 1px solid black; */
   margin: auto;
-  margin-top: 50px;
+  /* margin-top: 100px; */
+  /* background: yellow; */
+
   width: 602px;
   /* text-align: center; */
+
+  /* position: absolute;
+  top: 50%;
+  height: 400px;*/
+  margin-top: 100px;
 
   label {
     width: 100px;

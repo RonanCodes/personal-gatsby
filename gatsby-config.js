@@ -32,7 +32,7 @@ module.exports = {
         short_name: `PG`,
         start_url: `/`,
         background_color: `#AEAFE8`,
-        theme_color: `#AEAFE8`,
+        theme_color: `#4C2FC9`,
         display: `minimal-ui`,
         icon: `src/images/personal-gatsby-logo-no-text.png`, // This path is relative to the root of the site.
         include_favicon: true, // Include favicon
