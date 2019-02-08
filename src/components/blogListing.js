@@ -11,6 +11,7 @@ const LISTING_QUERY = graphql`
     allMarkdownRemark(
       limit: 10
       sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { category: { eq: "blog" } } }
     ) {
       edges {
         node {
@@ -59,24 +60,28 @@ const Post = styled.article`
   }
 `
 
-const Listing = () => (
+const BlogListing = () => (
   <StaticQuery
     query={LISTING_QUERY}
     render={({ allMarkdownRemark }) =>
-      allMarkdownRemark.edges.map(({ node }) => (
-        <Post key={node.frontmatter.slug}>
-          <header>
-            <Link to={`/${node.frontmatter.category}/${node.frontmatter.slug}`}>
-              <h2>{node.frontmatter.title}</h2>
-            </Link>
-            <h5>{node.frontmatter.date}</h5>
-          </header>
-          <p>{node.excerpt}</p>
-          <Link className="read-more" to={`/blog/${node.frontmatter.slug}`}>
-            Read More
-          </Link>
-        </Post>
-      ))
+      !allMarkdownRemark
+        ? null
+        : allMarkdownRemark.edges.map(({ node }) => (
+            <Post key={node.frontmatter.slug}>
+              <header>
+                <Link
+                  to={`/${node.frontmatter.category}/${node.frontmatter.slug}`}
+                >
+                  <h2>{node.frontmatter.title}</h2>
+                </Link>
+                <h5>{node.frontmatter.date}</h5>
+              </header>
+              <p>{node.excerpt}</p>
+              <Link className="read-more" to={`/blog/${node.frontmatter.slug}`}>
+                Read More
+              </Link>
+            </Post>
+          ))
     }
   />
   //   <div>
@@ -91,4 +96,4 @@ const Listing = () => (
   //   </div>
 )
 
-export default Listing
+export default BlogListing

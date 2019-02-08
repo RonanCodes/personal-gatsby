@@ -56,6 +56,54 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'SEO Description', name: 'description', widget: 'text' }
     editor:
       preview: true
+ - name: portfolio
+    label: 'Portfolio Items'
+    label_singular: 'Portfolio Item'
+    description: >
+      Create your portfolio item here.
+    folder: content/portfolio
+    slug: '{{slug}}'
+    create: true
+    fields:
+      - { name: title, label: Title, widget: string, tagname: h1 }
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'date',
+          dateFormat: 'YYYY-MM-DD',
+          format: 'YYYY-MM-DD',
+        }
+      - {
+          name: slug,
+          label: Slug,
+          widget: string,
+          default: '',
+          hint: 'Leave blank for auto slug',
+          required: false,
+        }
+      - {
+          name: cover-image,
+          label: Cover Image,
+          widget: image,
+          required: false,
+        }
+      - { name: category, label: Category, widget: hidden, default: blog }
+      - {
+          name: body,
+          label: Body,
+          widget: markdown,
+          hint: 'Main content goes here.',
+        }
+    meta:
+      - { label: 'SEO Description', name: 'description', widget: 'text' }
+    editor:
+      preview: true
+
+
+
+
+
+
 #   - name: portfolio
 #     label: Portfolio
 #     folder: portfolio
