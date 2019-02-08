@@ -129,3 +129,6 @@ backend:
 - The great people on:
   - Gitter: https://gitter.im/netlify/NetlifyCMS
   - Spectrum: https://spectrum.chat/gatsby-js/
+- Free Logo Design for their awesome logo: https://en.freelogodesign.org/
+- Font Meme for a great Cursive Text Logo: https://fontmeme.com/cursive-fonts/
+  - Garton 65 #2A2A57

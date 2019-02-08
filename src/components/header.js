@@ -4,6 +4,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import logo from '../images/personal-gatsby-logo.png'
+import cursive from '../images/personal-gatsby-cursive.png'
 
 const HeaderWrapper = styled.div`
   background: #aeafe8;
@@ -36,7 +37,11 @@ const HeaderContainer = styled.div`
     /* height: 100px; */
 
     img {
-      height: 100px;
+      /* logo */
+      /* height: 100px; */
+      /* cursive */
+      height: 80px;
+      padding-top: 20px;
     }
   }
 
@@ -79,7 +84,8 @@ const Header = ({ siteTitle, location }) => (
     <HeaderContainer>
       {/* <h1 style={{ margin: 0 }} className="logo"> */}
       <Link to="/" className="logo-link">
-        <img src={logo} alt="Personal Gatsby Logo" />
+        {/* <img src={logo} alt="Personal Gatsby Logo" /> */}
+        <img src={cursive} alt="Personal Gatsby Cursive" />
       </Link>
       {/* </h1> */}
 
