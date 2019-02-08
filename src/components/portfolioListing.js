@@ -77,7 +77,10 @@ const PortfolioListing = () => (
                 <h5>{node.frontmatter.date}</h5>
               </header>
               <p>{node.excerpt}</p>
-              <Link className="read-more" to={`/blog/${node.frontmatter.slug}`}>
+              <Link
+                className="read-more"
+                to={`/${node.frontmatter.category}}/${node.frontmatter.slug}`}
+              >
                 Read More
               </Link>
             </PortfolioItem>
