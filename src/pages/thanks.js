@@ -3,7 +3,7 @@ import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
 
-const SuccessPage = ({ location }) => (
+const ThanksPage = ({ location }) => (
   <StaticQuery
     query={graphql`
       query SuccessImageQuery {
@@ -23,13 +23,12 @@ const SuccessPage = ({ location }) => (
             fluid={data.file.childImageSharp.fluid}
             style={{
               width: '500px',
-              margin: 'auto',
             }}
           />
 
           {/* <Image imageName={'undraw_about_me_wa29.png'} /> */}
 
-          {/* <h1>SuccessPage Us</h1> */}
+          {/* <h1>ThanksPage Us</h1> */}
           <p>Thanks for getting in contact!</p>
         </div>
       </Layout>
@@ -37,4 +36,4 @@ const SuccessPage = ({ location }) => (
   />
 )
 
-export default SuccessPage
+export default ThanksPage
