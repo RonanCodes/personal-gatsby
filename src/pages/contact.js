@@ -9,7 +9,7 @@ const ContactPage = ({ location }) => (
   <StaticQuery
     query={graphql`
       query ContactImageQuery {
-        file(relativePath: { regex: "/undraw_message_sent/" }) {
+        file(relativePath: { regex: "/typewriter/" }) {
           childImageSharp {
             fluid(maxWidth: 2000) {
               ...GatsbyImageSharpFluid_tracedSVG
@@ -40,7 +40,12 @@ const ContactPage = ({ location }) => (
 
           {/* <ContactForm /> */}
           {/* PUT FORM DIRECTLY IN HERE< NOT AS A COMMPONENT */}
-          <form name="contact" method="POST" data-netlify="true">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            actoin="/pages/success"
+          >
             <p>
               <label>
                 Your Name: <input type="text" name="name" />

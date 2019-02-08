@@ -108,7 +108,7 @@ backend:
 
 # Color Palette
 
-- This project is using this color palette/scheme: https://dribbble.com/shots/4797890--Chat-Property-dashboard
+This project is using this color palette/scheme: https://dribbble.com/shots/4797890--Chat-Property-dashboard
 
 - primary: #AEAFE8
 - secondary: #4C2FC9
