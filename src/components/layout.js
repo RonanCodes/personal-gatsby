@@ -38,6 +38,13 @@ const Site = styled.div`
 
 const Footer = styled.footer`
   text-align: center;
+  color: #b3b2c0;
+
+  a,
+  a :visited {
+    text-decoration: none;
+    color: #b3b2c0;
+  }
 `
 
 const MainLayout = styled.main`
