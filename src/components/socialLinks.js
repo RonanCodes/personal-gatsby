@@ -21,6 +21,7 @@ const SocialLinksList = styled.ul`
 
     a {
       font-size: 30px;
+      color: #4c2fc9;
     }
   }
 `
