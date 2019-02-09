@@ -335,7 +335,7 @@ export default class Contact extends React.Component {
               required
             />
           </p>
-          <p class="message-container">
+          <p className="message-container">
             <label>Message:</label>
             <textarea
               className="userInput"

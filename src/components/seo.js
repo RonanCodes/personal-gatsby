@@ -10,6 +10,7 @@ function SEO({ description, lang, meta, keywords, title }) {
       render={data => {
         const metaDescription =
           description || data.site.siteMetadata.description
+
         return (
           <Helmet
             htmlAttributes={{
@@ -40,7 +41,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `twitter:creator`,
-                content: data.site.siteMetadata.author,
+                content: `@${data.site.siteMetadata.twitterHandle}`,
               },
               {
                 name: `twitter:title`,
@@ -90,6 +91,7 @@ const detailsQuery = graphql`
         title
         description
         author
+        twitterHandle
       }
     }
   }

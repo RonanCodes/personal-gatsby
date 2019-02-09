@@ -3,6 +3,7 @@ import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SocialLinks from '../components/socialLinks'
+import SEO from '../components/seo'
 
 const IndexPage = ({ location }) => (
   <StaticQuery
@@ -15,10 +16,20 @@ const IndexPage = ({ location }) => (
             }
           }
         }
+        site {
+          siteMetadata {
+            twitterHandle
+            linkedInHandle
+            githubHandle
+            email
+          }
+        }
       }
     `}
     render={data => (
       <Layout location={location}>
+        <SEO title="Personal Gatsby - Homepage" />
+
         <div>
           {/* <Image /> */}
           <Img
@@ -26,13 +37,11 @@ const IndexPage = ({ location }) => (
             style={{
               maxWidth: '600px',
               marginBottom: '50px',
-              // margin: 'auto',
-              // float: 'left',
-              // display: 'block',
-              // textCenter: 'left',
             }}
           />
-          <h1>Hi, I'm Gatsby. A Developer, Designer, & Outdoor Adventurer.</h1>
+          <h1>
+            Hi, I'm Gatsby. A Developer, Designer, &amp; Outdoor Adventurer.
+          </h1>
           <p>
             Lorem ipsum dolor amet minim plaid deep v adaptogen wayfarers.
             Pickled ullamco hell of voluptate. Stumptown scenester woke austin

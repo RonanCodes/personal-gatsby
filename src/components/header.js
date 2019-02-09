@@ -3,20 +3,20 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 
-import logo from '../images/personal-gatsby-logo.png'
+// import logo from '../images/personal-gatsby-logo.png'
 import cursive from '../images/personal-gatsby-cursive.png'
 
-const HeaderWrapper = styled.div`
-  background: #aeafe8;
-  /* margin-bottom: 1.45rem; */
+// const HeaderWrapper = styled.div`
+//   background: #aeafe8;
+//   /* margin-bottom: 1.45rem; */
 
-  /* margin: 10px 10px 0 10px; */
-  padding: 20px 20px 0 20px;
+//   /* margin: 10px 10px 0 10px; */
+//   padding: 20px 20px 0 20px;
 
-  img {
-    margin-bottom: 0;
-  }
-`
+//   img {
+//     margin-bottom: 0;
+//   }
+// `
 
 const HeaderContainer = styled.div`
   @media (min-width: 790px) {
@@ -114,10 +114,7 @@ const HeaderContainer = styled.div`
     }
   }
 `
-// /* ${
-//           ({location}) => location.pathname ===
-//         } */
-// <HeaderWrapper>
+
 const Header = ({ siteTitle, location }) => (
   <HeaderContainer>
     {/* <h1 style={{ margin: 0 }} className="logo"> */}
@@ -181,9 +178,6 @@ const Header = ({ siteTitle, location }) => (
     </ul>
   </HeaderContainer>
 )
-{
-  /* </HeaderWrapper> */
-}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

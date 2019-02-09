@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 // import { useSpring, animated } from 'react-spring'
-import { Spring } from 'react-spring'
+// import { Spring } from 'react-spring'
 
 import Header from './header'
-import Archive from './archive'
+// import Archive from './archive'
 
 import './layout.css'
 
@@ -116,7 +116,11 @@ const Layout = ({ children, location }) => (
           <Footer>
             © {new Date().getFullYear()}, Built with
             {` `}
-            <a target="_blank" href="https://github.com/RonanC/personal-gatsby">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/RonanC/personal-gatsby"
+            >
               Personal Gatsby
             </a>
           </Footer>

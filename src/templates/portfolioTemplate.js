@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 export default class portfolioTemplate extends Component {
   render() {
@@ -9,6 +10,8 @@ export default class portfolioTemplate extends Component {
 
     return (
       <Layout location={location}>
+        <SEO title={frontmatter.title} />
+
         <h1>{frontmatter.title}</h1>
         {/* <h5>{frontmatter.date}</h5> */}
         <div dangerouslySetInnerHTML={{ __html: html }} />

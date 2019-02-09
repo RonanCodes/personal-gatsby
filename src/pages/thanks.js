@@ -2,6 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 const ThanksPage = ({ location }) => (
   <StaticQuery
@@ -18,6 +19,7 @@ const ThanksPage = ({ location }) => (
     `}
     render={data => (
       <Layout location={location}>
+        <SEO title="Contact Thanks" />
         <div>
           <Img
             fluid={data.file.childImageSharp.fluid}

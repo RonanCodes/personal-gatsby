@@ -4,6 +4,11 @@ module.exports = {
     description: `Get your personal website kick-started with this Personal Gatsby Starter Project`,
     author: `Ronan Connolly <hi@ronanconnolly.ie>`,
     siteUrl: `https://silly-agnesi-43a1cd.netlify.com/`,
+    twitterHandle: `_RonanC`,
+    linkedInHandle: `RonanConnolly`,
+    githubHandle: `RonanC`,
+    email: `hi@ronanconnolly.ie`,
+    mapLink: `https://www.google.ie/maps/place/Galway/@53.2839064,-9.0837657,13z/data=!3m1!4b1!4m5!3m4!1s0x485b93955a2d5bff:0x32b1b440a495281!8m2!3d53.270668!4d-9.0567905`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,

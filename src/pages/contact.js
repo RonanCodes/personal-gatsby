@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import ContactForm from '../components/contactForm'
-import ContactLinks from '../components/contactLinks'
+import SEO from '../components/seo'
 
 const ContactPage = ({ location }) => (
   <StaticQuery
@@ -21,6 +21,8 @@ const ContactPage = ({ location }) => (
     `}
     render={data => (
       <Layout location={location}>
+        <SEO title="Contact Form" />
+
         <div>
           <Img
             fluid={data.file.childImageSharp.fluid}
