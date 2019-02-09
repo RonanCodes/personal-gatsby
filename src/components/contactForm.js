@@ -190,6 +190,7 @@ const Form = styled.form`
     background: #e2e2e2; */
     border: 2px inset #e2e2e2;
     background: #eaeaea;
+    border-radius: 10px;
   }
 
   textarea {
@@ -217,6 +218,7 @@ const Form = styled.form`
     button,
     input {
       background: #e2e2e2;
+      border-radius: 10px;
     }
   }
 `
