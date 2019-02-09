@@ -13,7 +13,6 @@ const BlogSiteSection = styled.section`
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   padding: 20px;
-  margin-bottom: 20px;
   font-size: 18px;
 
   a,

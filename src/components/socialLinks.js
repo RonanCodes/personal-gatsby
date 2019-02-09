@@ -17,10 +17,10 @@ const SocialLinksList = styled.ul`
 
   max-width: 300px;
   li {
-    padding: 0 40px 0 0;
+    /* padding: 0 40px 0 0; */
 
     a {
-      font-size: 30px;
+      font-size: 25px;
       color: #4c2fc9;
     }
   }

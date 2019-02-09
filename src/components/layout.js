@@ -35,13 +35,14 @@ const Site = styled.div`
 
   /* color: pink; */
   font-family: 'EB Garamond', 'Droid Serif', Georgia, serif;
-  font-size: 22px;
+  font-size: 18px;
 
   h1,
   h2,
   h3,
   h4,
-  h5 {
+  h5,
+  h6 {
     font-family: 'Open Sans', 'Droid Sans', serif;
   }
 

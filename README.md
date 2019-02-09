@@ -120,7 +120,7 @@ This project is using this color palette/scheme: https://dribbble.com/shots/4797
 
 **Other:**
 
-- light-pink: #DD6589
+- pink: #DD6589
 - dark-pink: #8A4966
 - gray: #B3B2C0
 
