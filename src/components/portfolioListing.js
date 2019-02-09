@@ -29,7 +29,7 @@ const LISTING_QUERY = graphql`
 `
 
 const PortfolioItem = styled.article`
-  box-shadow: 0px 3px 10px rgba(25, 17, 34, 0.2);
+  box-shadow: 0.5px 2px 10px rgba(25, 17, 34, 0.3);
   padding: 1rem;
   border-radius: 4px;
   margin-bottom: 2rem;

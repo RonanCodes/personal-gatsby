@@ -7,7 +7,7 @@
 //   /* margin-top: 100px; */
 //   /* background: yellow; */
 
-//   width: 602px;
+//   max-Width: 602px;
 //   /* text-align: center; */
 
 //   /* position: absolute;
@@ -16,17 +16,17 @@
 //   margin-top: 100px;
 
 //   label {
-//     width: 100px;
+//     max-Width: 100px;
 //     display: inline-block;
 //   }
 
 //   input {
 //     /* margin-left: 10px; */
-//     width: 500px;
+//     max-Width: 500px;
 //   }
 
 //   textarea {
-//     width: 600px;
+//     max-Width: 600px;
 //   }
 
 //   .hidden {
@@ -35,14 +35,14 @@
 //   }
 
 //   .actions {
-//     width: 600px;
+//     max-Width: 600px;
 //     margin: 0;
 //     text-align: center;
 //     li {
 //       display: inline;
 //       button,
 //       input {
-//         width: 200px;
+//         max-Width: 200px;
 //         margin-left: 20px;
 //         margin-right: 20px;
 //       }
@@ -156,7 +156,7 @@ const Form = styled.form`
   /* margin-top: 100px; */
   /* background: yellow; */
 
-  width: 602px;
+  max-width: 602px;
   /* text-align: center; */
 
   /* position: absolute;
@@ -164,19 +164,37 @@ const Form = styled.form`
   height: 400px;*/
   margin-top: 100px;
   margin-bottom: 100px;
+  /* display: inline; */
 
   label {
-    width: 100px;
+    /* max-width: 100px; */
+    width: 20%;
     display: inline-block;
   }
 
-  input {
+  p.message-container label {
+    width: 30%;
+  }
+
+  input,
+  button {
     /* margin-left: 10px; */
-    width: 500px;
+    /* max-width: 500px; */
+    width: 80%;
+    /* width: 70%; */
+    display: inline-block;
+  }
+
+  .userInput {
+    /* border: 2px inset #d3d3d3;
+    background: #e2e2e2; */
+    border: 2px inset #e2e2e2;
+    background: #eaeaea;
   }
 
   textarea {
-    width: 600px;
+    width: 100%;
+    background: #e2e2e2;
   }
 
   .hidden {
@@ -185,17 +203,20 @@ const Form = styled.form`
   }
 
   .actions {
-    width: 600px;
-    margin: 0;
+    max-width: 600px;
     text-align: center;
     li {
       display: inline;
       button,
       input {
-        width: 200px;
-        margin-left: 20px;
-        margin-right: 20px;
+        max-width: 200px;
+        margin: 5px 20px 5px 20px;
       }
+    }
+
+    button,
+    input {
+      background: #e2e2e2;
     }
   }
 `
@@ -290,6 +311,7 @@ export default class Contact extends React.Component {
           <p>
             <label>Name:</label>
             <input
+              className="userInput"
               type="text"
               name="name"
               onChange={this.handleChange}
@@ -299,15 +321,17 @@ export default class Contact extends React.Component {
           <p>
             <label>Email:</label>
             <input
+              className="userInput"
               type="email"
               name="email"
               onChange={this.handleChange}
               required
             />
           </p>
-          <label>Message:</label>
-          <p>
+          <p class="message-container">
+            <label>Message:</label>
             <textarea
+              className="userInput"
               name="message"
               rows="6"
               onChange={this.handleChange}

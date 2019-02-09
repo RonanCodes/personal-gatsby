@@ -16,7 +16,7 @@ export default class Image extends Component {
       <Img
         fluid={fluid}
         style={{
-          width: '500px',
+          maxWidth: '500px',
           margin: 'auto',
         }}
       />

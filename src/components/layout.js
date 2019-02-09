@@ -23,7 +23,14 @@ const Site = styled.div`
   .site-content {
     /* grow to full in the size of the container it's in*/
     flex-grow: 1;
-    margin: 10px 300px 0 300px;
+
+    /* // TODO: Make responsive */
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    /* margin-left: 30rem; */
+    /* margin-right: 30rem; */
+    width: 1100px;
   }
 
   /* The footer must show, so it shows at the bottom of the page since the site content grew to as much as it could */

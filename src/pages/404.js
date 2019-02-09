@@ -25,7 +25,7 @@ const NotFoundPage = () => (
         <Img
           fluid={data.file.childImageSharp.fluid}
           style={{
-            width: '500px',
+            maxWidth: '500px',
             margin: 'auto',
           }}
         />

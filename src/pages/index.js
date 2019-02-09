@@ -23,7 +23,7 @@ const IndexPage = ({ location }) => (
           <Img
             fluid={data.file.childImageSharp.fluid}
             style={{
-              width: '600px',
+              maxWidth: '600px',
               marginBottom: '50px',
               // margin: 'auto',
               // float: 'left',
