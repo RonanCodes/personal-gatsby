@@ -39,7 +39,7 @@ const Post = styled.article`
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 18px;
   }
 
   h2 {
