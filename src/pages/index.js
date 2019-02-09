@@ -2,6 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
+import SocialLinks from '../components/socialLinks'
 
 const IndexPage = ({ location }) => (
   <StaticQuery
@@ -31,7 +32,7 @@ const IndexPage = ({ location }) => (
               // textCenter: 'left',
             }}
           />
-          <h2>Hi I'm Gatsby. I'm a developer and designer.</h2>
+          <h2>Hi, I'm Gatsby. A Developer, Designer, & Outdoorsman.</h2>
           <p>
             Lorem ipsum dolor amet minim plaid deep v adaptogen wayfarers.
             Pickled ullamco hell of voluptate. Stumptown scenester woke austin
@@ -50,6 +51,8 @@ const IndexPage = ({ location }) => (
             vaporware keytar.
           </p>
         </div>
+
+        <SocialLinks />
       </Layout>
     )}
   />

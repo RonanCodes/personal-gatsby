@@ -132,3 +132,4 @@ This project is using this color palette/scheme: https://dribbble.com/shots/4797
 - Free Logo Design for their awesome logo: https://en.freelogodesign.org/
 - Font Meme for a great Cursive Text Logo: https://fontmeme.com/cursive-fonts/
   - Garton 65 #2A2A57
+- React Icons (+ font awesome) for adding the ability to effortlessly introduce font awesome icons: https://github.com/react-icons/react-icons
