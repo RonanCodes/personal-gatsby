@@ -79,7 +79,7 @@ const PortfolioListing = () => (
               <p>{node.excerpt}</p>
               <Link
                 className="read-more"
-                to={`/${node.frontmatter.category}}/${node.frontmatter.slug}`}
+                to={`/${node.frontmatter.category}/${node.frontmatter.slug}`}
               >
                 Read More
               </Link>
