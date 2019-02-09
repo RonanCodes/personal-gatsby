@@ -222,6 +222,8 @@ const Form = styled.form`
     }
   }
 `
+
+// Create the data object with key/value pairs for the body of the submission
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
@@ -229,15 +231,18 @@ function encode(data) {
 }
 
 export default class Contact extends React.Component {
+  // Create state object
   constructor(props) {
     super(props)
     this.state = {}
   }
 
+  // Save input changes to state
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
   }
 
+  // Handle the submission process
   handleSubmit = e => {
     e.preventDefault()
     const form = e.target
