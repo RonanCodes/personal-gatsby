@@ -110,8 +110,15 @@ backend:
 
 This project is using this color palette/scheme: https://dribbble.com/shots/4797890--Chat-Property-dashboard
 
-- primary: #AEAFE8
-- secondary: #4C2FC9
+- primary (header): #4C2FC9
+- secondary (lighter shade): #AEAFE8
+- accent (text): #2A2A57
+- light grey (background): #eaeaea
+- border grey (border): #e2e2e2
+- regular text: black
+
+**Other:**
+
 - accent: #9056D4
 - light-pink: #DD6589
 - dark-pink: #8A4966
@@ -119,9 +126,12 @@ This project is using this color palette/scheme: https://dribbble.com/shots/4797
 
 # Inspiration
 
+- Main website used to template this one (sorry for ripping you off 🙃): https://emmawedekind.com/
+
+# Resources
+
 - Sites and colour palettes/schemes: https://dribbble.com/
 - Imagery: https://undraw.co/
-- Main website used to template this one (sorry for ripping you off 🙃): https://emmawedekind.com/
 - Tutorials:
   - Wes Bos' React for Beginners course: https://reactforbeginners.com/
   - Scot Tolinski's Pro Gatsby 2 course: https://www.leveluptutorials.com/tutorials/pro-gatsby-2
@@ -130,6 +140,8 @@ This project is using this color palette/scheme: https://dribbble.com/shots/4797
   - Gitter: https://gitter.im/netlify/NetlifyCMS
   - Spectrum: https://spectrum.chat/gatsby-js/
 - Free Logo Design for their awesome logo: https://en.freelogodesign.org/
-- Font Meme for a great Cursive Text Logo: https://fontmeme.com/cursive-fonts/
+- Font Meme for a great Cursive Text Logo Inspiration: https://fontmeme.com/cursive-fonts/
   - Garton 65 #2A2A57
+- Font Squirral for giving me the Garton Font, which allowed me to create an SVG version: https://www.fontsquirrel.com/fonts/garton
+- Figma fordoing up the cursive font and exporting to SVG: https://www.figma.com/login
 - React Icons (+ font awesome) for adding the ability to effortlessly introduce font awesome icons: https://github.com/react-icons/react-icons
