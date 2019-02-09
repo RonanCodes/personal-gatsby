@@ -116,7 +116,7 @@ const Layout = ({ children, location }) => (
           <Footer>
             © {new Date().getFullYear()}, Built with
             {` `}
-            <a href="https://github.com/RonanC/personal-gatsby">
+            <a target="_blank" href="https://github.com/RonanC/personal-gatsby">
               Personal Gatsby
             </a>
           </Footer>

@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center">
-  <a href="https://silly-agnesi-43a1cd.netlify.com/">
+  <a target="_blank" href="https://silly-agnesi-43a1cd.netlify.com/">
     <img alt="Personal Gatsby Logo" src="https://github.com/RonanC/personal-gatsby/blob/master/src/images/personal-gatsby-logo.png" width="150" />
   </a>
 </p>

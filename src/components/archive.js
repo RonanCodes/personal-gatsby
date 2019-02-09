@@ -53,7 +53,7 @@ const Archive = () => (
 
             {allMarkdownRemark.edges.map(edge => (
               <li key={edge.node.frontmatter.slug}>
-                {/* <a href={edge.node.frontmatter.slug}>
+                {/* <a target="_blank" href={edge.node.frontmatter.slug}>
                   {edge.node.frontmatter.title}
                 </a> */}
                 <Link

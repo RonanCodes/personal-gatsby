@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import ContactForm from '../components/contactForm'
+import ContactLinks from '../components/contactLinks'
 
 const ContactPage = ({ location }) => (
   <StaticQuery
@@ -38,6 +39,8 @@ const ContactPage = ({ location }) => (
             pack pickled messenger bag flannel art party. Ugh laborum aliquip
             enamel pin do tofu.
           </p>
+
+          {/* <ContactLinks /> */}
 
           {/* // TODO: TRY this next: https://github.com/imorente/gatsby-netlify-form-example/blob/master/src/pages/contact.js */}
 
