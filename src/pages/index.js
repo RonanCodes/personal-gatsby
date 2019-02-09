@@ -32,7 +32,7 @@ const IndexPage = ({ location }) => (
               // textCenter: 'left',
             }}
           />
-          <h2>Hi, I'm Gatsby. A Developer, Designer, & Outdoor Adventurer.</h2>
+          <h1>Hi, I'm Gatsby. A Developer, Designer, & Outdoor Adventurer.</h1>
           <p>
             Lorem ipsum dolor amet minim plaid deep v adaptogen wayfarers.
             Pickled ullamco hell of voluptate. Stumptown scenester woke austin
