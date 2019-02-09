@@ -68,10 +68,10 @@ const Post = styled.article`
 
   .cover-image {
     width: 100%;
-    /* overflow-y: auto; */
+    overflow-y: auto;
 
     max-height: 200px;
-    overflow: hidden;
+    /* overflow: hidden; */
 
     img {
       /* margin-top: -50px; */

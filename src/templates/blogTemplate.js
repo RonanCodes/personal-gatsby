@@ -27,29 +27,22 @@ export default class blogTemplate extends Component {
       margin-top: -10px;
 
       .cover-image {
-        width: 100vw;
-        position: absolute;
-        right: 0;
-        margin-top: -200px;
-        /* margin-bottom: 200px; */
-        z-index: -1;
         overflow: hidden;
-        height: 600px;
+        max-height: 400px;
         img {
-          /* background-size: cover;
-    float: left;
-    position: absolute; */
+          margin-bottom: -10px;
+          width: 100%;
         }
-
-        /* margin-bottom: 400px; */
       }
 
-      .content {
-        padding-top: ${!this.props.data ||
-        !this.props.data.markdownRemark.frontmatter.cover_image
-          ? '0px'
-          : ' 400px;'};
-      }
+      /* .content {
+        padding-top: ${
+          !this.props.data ||
+          !this.props.data.markdownRemark.frontmatter.cover_image
+            ? '0px'
+            : ' 400px;'
+        };
+      } */
 
       .header {
         /* margin-top: 600px; */
