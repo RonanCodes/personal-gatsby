@@ -33,6 +33,18 @@ const Site = styled.div`
     width: 1100px;
   }
 
+  /* color: pink; */
+  font-family: 'EB Garamond', 'Droid Serif', Georgia, serif;
+  font-size: 22px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'Open Sans', 'Droid Sans', serif;
+  }
+
   /* The footer must show, so it shows at the bottom of the page since the site content grew to as much as it could */
 `
 

@@ -9,6 +9,8 @@ module.exports = {
     githubHandle: `RonanC`,
     email: `hi@ronanconnolly.ie`,
     mapLink: `https://www.google.ie/maps/place/Galway/@53.2839064,-9.0837657,13z/data=!3m1!4b1!4m5!3m4!1s0x485b93955a2d5bff:0x32b1b440a495281!8m2!3d53.270668!4d-9.0567905`,
+    mediumHandle: `_RonanC`,
+    devHandle: `ronanc`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,
@@ -48,6 +50,25 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/personal-gatsby-logo-no-text.png`, // This path is relative to the root of the site.
         include_favicon: true, // Include favicon
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: [
+            'Droid Sans',
+            'Droid Serif',
+            'EB Garamond',
+            'Roboto',
+            'Roboto Slab',
+            'Roboto Mono',
+            'Open Sans',
+          ],
+        },
+        typeKit: {
+          families: ['Garamond'],
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

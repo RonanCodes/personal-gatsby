@@ -116,10 +116,10 @@ This project is using this color palette/scheme: https://dribbble.com/shots/4797
 - light grey (background): #eaeaea
 - border grey (border): #e2e2e2
 - regular text: black
+- accent2 (text): #9056D4
 
 **Other:**
 
-- accent: #9056D4
 - light-pink: #DD6589
 - dark-pink: #8A4966
 - gray: #B3B2C0
@@ -145,3 +145,32 @@ This project is using this color palette/scheme: https://dribbble.com/shots/4797
 - Font Squirral for giving me the Garton Font, which allowed me to create an SVG version: https://www.fontsquirrel.com/fonts/garton
 - Figma fordoing up the cursive font and exporting to SVG: https://www.figma.com/login
 - React Icons (+ font awesome) for adding the ability to effortlessly introduce font awesome icons: https://github.com/react-icons/react-icons
+- Google Fonts: https://fonts.google.com/
+
+# Other
+
+Old font family:
+
+```css
+ {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+```
+
+New font family:
+
+```css
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans', 'Droid Sans', serif;
+}
+
+p {
+  font-family: 'EB Garamond', 'Droid Serif', Georgia, serif;
+  font-size: 22px;
+}
+```

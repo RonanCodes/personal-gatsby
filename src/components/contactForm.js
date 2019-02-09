@@ -197,6 +197,7 @@ const Form = styled.form`
     width: 100%;
     background: #e2e2e2;
     resize: none;
+    margin-top: 5px;
   }
 
   .hidden {
@@ -222,6 +223,8 @@ const Form = styled.form`
       border-radius: 10px;
     }
   }
+
+  font-family: 'Open Sans', 'Droid Sans', serif;
 `
 
 // Create the data object with key/value pairs for the body of the submission

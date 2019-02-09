@@ -52,8 +52,7 @@ const PortfolioItem = styled.article`
   }
 
   .read-more {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: 'Open Sans', 'Droid Sans', serif;
     font-size: 0.8rem;
     text-decoration: underline;
     color: #9056d4;

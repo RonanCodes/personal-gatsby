@@ -92,8 +92,11 @@ const HeaderContainer = styled.div`
 
       /* margin: 40px; */
       /* font-family: 'Open Sans'; */
-      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+      /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+
+      font-family: 'Open Sans', 'Droid Sans', serif;
 
       a {
         color: #8a4cd3;
