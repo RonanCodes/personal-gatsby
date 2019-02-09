@@ -4,7 +4,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 // import logo from '../images/personal-gatsby-logo.png'
-import cursive from '../images/personal-gatsby-cursive.png'
+import cursive from '../images/personal-gatsby-cursive.svg'
 
 // const HeaderWrapper = styled.div`
 //   background: #aeafe8;
