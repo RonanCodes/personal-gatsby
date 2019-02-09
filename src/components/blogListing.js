@@ -74,7 +74,8 @@ const Post = styled.article`
     /* overflow: hidden; */
 
     img {
-      /* margin-top: -50px; */
+      margin-top: -12%;
+      /* margin-top: -100px; */
       /* margin-bottom: 0; */
     }
   }

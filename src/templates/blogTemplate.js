@@ -31,6 +31,7 @@ export default class blogTemplate extends Component {
         max-height: 400px;
         img {
           margin-bottom: -10px;
+          /* margin-bottom: -10px; */
           width: 100%;
         }
       }
