@@ -196,6 +196,7 @@ const Form = styled.form`
   textarea {
     width: 100%;
     background: #e2e2e2;
+    resize: none;
   }
 
   .hidden {
@@ -217,7 +218,7 @@ const Form = styled.form`
 
     button,
     input {
-      background: #e2e2e2;
+      background: #aeafe8;
       border-radius: 10px;
     }
   }
