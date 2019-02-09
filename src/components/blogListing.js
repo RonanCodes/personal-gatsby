@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
-
 import styled from 'styled-components'
 
 // import Image from '../components/image'
@@ -23,12 +22,6 @@ const LISTING_QUERY = graphql`
             category
           }
         }
-      }
-    }
-    site {
-      siteMetadata {
-        mediumHandle
-        devHandle
       }
     }
   }
@@ -65,74 +58,31 @@ const Post = styled.article`
   }
 `
 
-const BlogSiteSection = styled.section`
-  width: 100%;
-  background: #eaeaea;
-  color: #9056d4;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  padding: 20px;
-  margin-bottom: 20px;
-  font-size: 18px;
-
-  a,
-  a :visited {
-    text-decoration: none;
-    color: #4c2fc9;
-  }
-`
-
 const BlogListing = () => (
   <StaticQuery
     query={LISTING_QUERY}
-    render={({ allMarkdownRemark, site }) => {
-      return (
-        <>
-          <BlogSiteSection>
-            For more articles check out:{` `}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={`https://dev.to/${site.siteMetadata.devHandle}`}
-            >
-              Dev
-            </a>
-            {`    &    `}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={`https://medium.com/@${site.siteMetadata.mediumHandle}`}
-            >
-              Medium
-            </a>
-          </BlogSiteSection>
-          {!allMarkdownRemark
-            ? null
-            : allMarkdownRemark.edges.map(({ node }) => (
-                <Post key={node.frontmatter.slug}>
-                  <header>
-                    <Link
-                      to={`/${node.frontmatter.category}/${
-                        node.frontmatter.slug
-                      }`}
-                    >
-                      <h2>{node.frontmatter.title}</h2>
-                    </Link>
-                    <h5>{node.frontmatter.date}</h5>
-                  </header>
-                  <p>{node.excerpt}</p>
-                  <Link
-                    className="read-more"
-                    to={`/${node.frontmatter.category}/${
-                      node.frontmatter.slug
-                    }`}
-                  >
-                    Read More
-                  </Link>
-                </Post>
-              ))}
-        </>
-      )
+    render={({ allMarkdownRemark }) => {
+      return !allMarkdownRemark
+        ? null
+        : allMarkdownRemark.edges.map(({ node }) => (
+            <Post key={node.frontmatter.slug}>
+              <header>
+                <Link
+                  to={`/${node.frontmatter.category}/${node.frontmatter.slug}`}
+                >
+                  <h2>{node.frontmatter.title}</h2>
+                </Link>
+                <h5>{node.frontmatter.date}</h5>
+              </header>
+              <p>{node.excerpt}</p>
+              <Link
+                className="read-more"
+                to={`/${node.frontmatter.category}/${node.frontmatter.slug}`}
+              >
+                Read More
+              </Link>
+            </Post>
+          ))
     }}
   />
   //   <div>

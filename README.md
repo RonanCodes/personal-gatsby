@@ -147,7 +147,7 @@ This project is using this color palette/scheme: https://dribbble.com/shots/4797
 - React Icons (+ font awesome) for adding the ability to effortlessly introduce font awesome icons: https://github.com/react-icons/react-icons
 - Google Fonts: https://fonts.google.com/
 
-# Other
+# Font Family
 
 Old font family:
 
@@ -174,3 +174,10 @@ p {
   font-size: 22px;
 }
 ```
+
+# Anchor Links
+
+`rel="noopener noreferrer"` should be added to links containing `target="_blank"` as a precaution against reverse tabnabbing. For more information, please refer to the following article:
+https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/
+
+Source: https://github.com/asciidoctor/asciidoctor/issues/2071
