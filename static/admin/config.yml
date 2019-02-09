@@ -1,12 +1,10 @@
 backend:
-  # name: github
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-  # repo: RonanC/personal-gatsby
 
 media_folder: 'static/images' # Media files will be stored in the repo under images/uploads
 public_folder: '/images'
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 
 slug:
   encoding: 'ascii'
@@ -98,34 +96,3 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'SEO Description', name: 'description', widget: 'text' }
     editor:
       preview: true
-#   - name: portfolio
-#     label: Portfolio
-#     folder: portfolio
-#     create: true
-#     slug: '{{slug}}'
-#     fields:
-#       - { name: date, label: Date, widget: date, default:  }
-#       - { name: title, label: Title, widget: string }
-#       - { name: category, label: Category, widget: hidden, default: blog }
-#       - { name: body, label: Body, widget: markdown }
-
-# collections:
-#   - name: 'team'
-#     label: 'Team'
-#     folder: 'src/team'
-#     create: true
-#     slug: '{{slug}}'
-#     fields:
-#       - { label: 'Team Member', name: 'title', widget: 'string' }
-#       - { label: 'Bio', name: 'bio', widget: 'markdown' }
-#       - { name: category, label: Category, widget: hidden, default: team }
-
-# - name: 'posts'
-#   label: 'Posts'
-#   folder: 'src/posts'
-#   create: true
-#   slug: '{{slug}}'
-#   fields:
-#     - { label: 'Team Member', name: 'title', widget: 'string' }
-#     - { label: 'Bio', name: 'bio', widget: 'markdown' }
-#     -
