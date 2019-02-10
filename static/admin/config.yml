@@ -37,12 +37,7 @@ collections: # A list of collections the CMS should be able to edit
           hint: 'Leave blank for auto slug',
           required: false,
         }
-      - {
-          name: cover-image,
-          label: Cover Image,
-          widget: image,
-          required: false,
-        }
+      - { name: coverImage, label: Cover Image, widget: image, required: false }
       - { name: category, label: Category, widget: hidden, default: blog }
       - {
           name: body,
@@ -63,21 +58,47 @@ collections: # A list of collections the CMS should be able to edit
     slug: '{{slug}}'
     create: true
     fields:
-      - { name: image, label: 'Project Image', widget: image, tagname: img }
-      - { name: start, label: 'Start Year/Month', widget: string, tagname: h6 }
-      - { name: end, label: 'End Year/Month', widget: string, tagname: h6 }
-      - { name: technologies, label: 'Technologies Used', widget: markdown }
-      - { name: goal, label: 'Project Goal', widget: markdown }
       - {
-          name: project,
+          name: title,
           label: Project Name,
           widget: string,
           tagname: h1,
+        }
+      - {
+          name: coverImage,
+          label: 'Project Image',
+          widget: image,
+          tagname: img,
+          hint: 'This image will be stretched to the full width of the portoflio list item, make sure it's wide enough
+        }
+      - {
+          label: 'Start Date',
+          name: 'startDate',
+          widget: 'date',
+          dateFormat: 'YYYY-MM-DD',
+          format: 'YYYY-MM-DD',
+        }
+      - {
+          label: 'End Date',
+          name: 'endDate',
+          widget: 'date',
+          dateFormat: 'YYYY-MM-DD',
+          format: 'YYYY-MM-DD',
+        }
+      # - { name: start, label: 'Start Year/Month', widget: string, tagname: h6 }
+      # - { name: end, label: 'End Year/Month', widget: string, tagname: h6 }
+      - { name: technologies, label: 'Technologies Used', widget: markdown }
+      - { name: goals, label: 'Project Goals', widget: markdown }
+      - {
+          name: projectLink,
+          label: Link to Project,
+          widget: string,
+          tagname: p,
           required: false,
         }
       - {
-          name: link,
-          label: Link to Project,
+          name: gitLink,
+          label: Link to Git Source,
           widget: string,
           tagname: p,
           required: false,

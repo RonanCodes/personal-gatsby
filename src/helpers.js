@@ -9,9 +9,9 @@ export function slugify(text) {
     .replace(/-+$/, '')
 }
 
-export function getAltImageNameFromPath(cover_image) {
-  return cover_image.substr(
-    cover_image.lastIndexOf('/') + 1,
-    cover_image.lastIndexOf('.') - cover_image.lastIndexOf('/') - 1
+export function getAltImageNameFromPath(coverImage) {
+  return coverImage.substr(
+    coverImage.lastIndexOf('/') + 1,
+    coverImage.lastIndexOf('.') - coverImage.lastIndexOf('/') - 1
   )
 }

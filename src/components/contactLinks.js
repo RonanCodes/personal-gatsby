@@ -42,11 +42,7 @@ class ContactLinks extends React.Component {
             </a>
           </li>
           <li>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="mailto:hi@ronanconnolly.ie"
-            >
+            <a href="mailto:hi@ronanconnolly.ie">
               <FaEnvelope />
             </a>
           </li>

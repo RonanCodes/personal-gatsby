@@ -9,7 +9,7 @@ import { getAltImageNameFromPath } from '../helpers'
 const LISTING_QUERY = graphql`
   query BlogPostListing {
     allMarkdownRemark(
-      limit: 10
+      # limit: 10
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { category: { eq: "blog" } } }
     ) {
@@ -22,7 +22,7 @@ const LISTING_QUERY = graphql`
             title
             slug
             category
-            cover_image
+            coverImage
           }
         }
       }
@@ -101,16 +101,14 @@ const BlogListing = () => (
         ? null
         : allMarkdownRemark.edges.map(({ node }) => (
             <Post key={node.frontmatter.slug}>
-              {!node.frontmatter.cover_image ? null : (
+              {!node.frontmatter.coverImage ? null : (
                 <Link
                   to={`/${node.frontmatter.category}/${node.frontmatter.slug}`}
                 >
                   <div className="cover-image">
                     <img
-                      src={node.frontmatter.cover_image}
-                      alt={getAltImageNameFromPath(
-                        node.frontmatter.cover_image
-                      )}
+                      src={node.frontmatter.coverImage}
+                      alt={getAltImageNameFromPath(node.frontmatter.coverImage)}
                     />
                   </div>
                 </Link>

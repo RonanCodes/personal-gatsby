@@ -2,18 +2,17 @@
 title: Our Second Post
 date: '2019-02-20'
 slug: ''
-cover-image: /images/canal-cover.jpg
+coverImage: /images/canal-cover.jpg
 category: blog
 ---
+
 # Yo yo yo!
 
 ## Woke
 
 Lorem ipsum dolor amet cupidatat XOXO schlitz next level actually hexagon dolore woke cillum vexillologist. Deserunt neutra in art party reprehenderit air plant meggings brunch. Kitsch blog incididunt pinterest. Bitters chicharrones kitsch, eu nisi celiac ut gastropub voluptate. Stumptown reprehenderit subway tile, sunt kinfolk ad next level jianbing. Gastropub thundercats hashtag fingerstache fixie.
 
-
-
-![Dogs](/images/received_10204166871689131.jpeg "Two Doggos")
+![Dogs](/images/received_10204166871689131.jpeg 'Two Doggos')
 
 ## Bespoke
 

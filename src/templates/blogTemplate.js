@@ -39,7 +39,7 @@ export default class blogTemplate extends Component {
       /* .content {
         padding-top: ${
           !this.props.data ||
-          !this.props.data.markdownRemark.frontmatter.cover_image
+          !this.props.data.markdownRemark.frontmatter.coverImage
             ? '0px'
             : ' 400px;'
         };
@@ -71,11 +71,11 @@ export default class blogTemplate extends Component {
       <Layout location={location}>
         <SEO title={frontmatter.title} />
         <BlogPost>
-          {!frontmatter.cover_image ? null : (
+          {!frontmatter.coverImage ? null : (
             <div className="cover-image">
               <img
-                src={frontmatter.cover_image}
-                alt={getAltImageNameFromPath(frontmatter.cover_image)}
+                src={frontmatter.coverImage}
+                alt={getAltImageNameFromPath(frontmatter.coverImage)}
               />
             </div>
           )}
@@ -107,7 +107,7 @@ export const query = graphql`
         title
         date(formatString: "MMM DD, YYYY")
         slug
-        cover_image
+        coverImage
       }
     }
   }

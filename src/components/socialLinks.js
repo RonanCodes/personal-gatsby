@@ -90,11 +90,7 @@ class SocialLinks extends React.Component {
               </a>
             </li>
             <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={`mailto:${data.site.siteMetadata.email}`}
-              >
+              <a href={`mailto:${data.site.siteMetadata.email}`}>
                 <FaEnvelope />
               </a>
             </li>
