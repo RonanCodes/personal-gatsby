@@ -9,6 +9,20 @@ import {
   FaEnvelope,
 } from 'react-icons/fa'
 
+const SOCIAL_DATA_QUERY = graphql`
+  query SocialDataQuery {
+    site {
+      siteMetadata {
+        twitterHandle
+        linkedInHandle
+        githubHandle
+        email
+        mapLink
+      }
+    }
+  }
+`
+
 const SocialLinksList = styled.ul`
   list-style: none;
   margin: 60px 10px 40px 0px;
@@ -31,19 +45,7 @@ class SocialLinks extends React.Component {
   render() {
     return (
       <StaticQuery
-        query={graphql`
-          query SocialDataQuery {
-            site {
-              siteMetadata {
-                twitterHandle
-                linkedInHandle
-                githubHandle
-                email
-                mapLink
-              }
-            }
-          }
-        `}
+        query={SOCIAL_DATA_QUERY}
         render={data => (
           <SocialLinksList>
             <li>

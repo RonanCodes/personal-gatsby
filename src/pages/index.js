@@ -7,30 +7,32 @@ import SEO from '../components/seo'
 
 import SocialLinks from '../components/socialLinks'
 
+const HOMEPAGE_IMAGE_QUERY = graphql`
+  query HomePageImageQuery {
+    file(relativePath: { regex: "/undraw_designer_kcp7_cropped/" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+    site {
+      siteMetadata {
+        twitterHandle
+        linkedInHandle
+        githubHandle
+        email
+      }
+    }
+  }
+`
+
 /**
  * The Home page.
  */
 const IndexPage = ({ location }) => (
   <StaticQuery
-    query={graphql`
-      query HomeImageQuery {
-        file(relativePath: { regex: "/undraw_designer_kcp7_cropped/" }) {
-          childImageSharp {
-            fluid(maxWidth: 2000) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
-        site {
-          siteMetadata {
-            twitterHandle
-            linkedInHandle
-            githubHandle
-            email
-          }
-        }
-      }
-    `}
+    query={HOMEPAGE_IMAGE_QUERY}
     render={data => (
       <Layout location={location}>
         <SEO

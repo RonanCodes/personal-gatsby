@@ -5,22 +5,24 @@ import { StaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+const ABOUT_IMAGE_QUERY = graphql`
+  query AboutImageQuery {
+    file(relativePath: { regex: "/walk_in_the_city/" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`
+
 /**
  * The About Us page.
  */
 const AboutPage = ({ location }) => (
   <StaticQuery
-    query={graphql`
-      query AboutImageQuery {
-        file(relativePath: { regex: "/walk_in_the_city/" }) {
-          childImageSharp {
-            fluid(maxWidth: 2000) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
-      }
-    `}
+    query={ABOUT_IMAGE_QUERY}
     render={data => (
       <Layout location={location}>
         <SEO title="About Us" keywords={[`about us`, `about`, `information`]} />

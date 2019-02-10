@@ -8,6 +8,23 @@ import './layout.css'
 
 import Header from './header'
 
+const LAYOUT_PAGE_QUERY = graphql`
+  query LayoutPageQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    file(relativePath: { regex: "/cover/" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
 const Site = styled.div`
   /* We're using flexbox! */
   display: flex;
@@ -66,22 +83,7 @@ const MainLayout = styled.main`
  */
 const Layout = ({ children, location }) => (
   <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-        file(relativePath: { regex: "/cover/" }) {
-          childImageSharp {
-            fluid(maxWidth: 2000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    `}
+    query={LAYOUT_PAGE_QUERY}
     render={data => (
       <>
         <Site className="site">

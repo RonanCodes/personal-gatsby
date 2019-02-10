@@ -7,6 +7,24 @@ import SEO from '../components/seo'
 import { extractLastStringInPath } from '../helpers'
 import { ListingMain } from '../styled-components'
 
+/**
+ * This gets ran on load, and the data object added to this pages props object.
+ */
+export const BLOG_POST_QUERY = graphql`
+  query BlogPostQuery($slug: String!) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+      html
+      timeToRead
+      frontmatter {
+        title
+        date(formatString: "MMM DD, YYYY")
+        slug
+        coverImage
+      }
+    }
+  }
+`
+
 const SubHeading = styled.h6`
   color: grey;
   margin-bottom: 0px;
@@ -84,21 +102,3 @@ export default class blogTemplate extends Component {
     )
   }
 }
-
-/**
- * This gets ran on load, and the data object added to this pages props object.
- */
-export const query = graphql`
-  query blogQuery($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-      html
-      timeToRead
-      frontmatter {
-        title
-        date(formatString: "MMM DD, YYYY")
-        slug
-        coverImage
-      }
-    }
-  }
-`

@@ -5,22 +5,24 @@ import { StaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+const NOT_FOUND_QUERY = graphql`
+  query NotFoundImageQuery {
+    file(relativePath: { regex: "/not_found/" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`
+
 /**
  * The 404 Not Found page.
  */
 const NotFoundPage = () => (
   <StaticQuery
-    query={graphql`
-      query NotFOundImageQuery {
-        file(relativePath: { regex: "/not_found/" }) {
-          childImageSharp {
-            fluid(maxWidth: 2000) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
-      }
-    `}
+    query={NOT_FOUND_QUERY}
     render={data => (
       <Layout>
         <SEO

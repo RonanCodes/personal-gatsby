@@ -7,22 +7,24 @@ import SEO from '../components/seo'
 
 import ContactForm from '../components/contactForm'
 
+const CONTACT_IMAGE_QUERY = graphql`
+  query ContactImageQuery {
+    file(relativePath: { regex: "/typewriter/" }) {
+      childImageSharp {
+        fluid(maxWidth: 2000) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`
+
 /**
  * The Contact Us page.
  */
 const ContactPage = ({ location }) => (
   <StaticQuery
-    query={graphql`
-      query ContactImageQuery {
-        file(relativePath: { regex: "/typewriter/" }) {
-          childImageSharp {
-            fluid(maxWidth: 2000) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
-      }
-    `}
+    query={CONTACT_IMAGE_QUERY}
     render={data => (
       <Layout location={location}>
         <SEO

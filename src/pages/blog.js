@@ -9,6 +9,17 @@ import BlogListing from '../components/blogListing'
 
 import { ListingMain } from '../styled-components'
 
+const BLOG_PAGE_QUERY = graphql`
+  query BlogPageQuery {
+    site {
+      siteMetadata {
+        mediumHandle
+        devHandle
+      }
+    }
+  }
+`
+
 const BlogSiteSection = styled.section`
   width: 100%;
   background: #eaeaea;
@@ -30,16 +41,7 @@ const BlogSiteSection = styled.section`
  */
 const BlogPage = ({ location }) => (
   <StaticQuery
-    query={graphql`
-      query BlogQuery {
-        site {
-          siteMetadata {
-            mediumHandle
-            devHandle
-          }
-        }
-      }
-    `}
+    query={BLOG_PAGE_QUERY}
     render={({ site }) => (
       <Layout location={location}>
         <SEO

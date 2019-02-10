@@ -3,13 +3,26 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+const SEO_DETAILS_QUERY = graphql`
+  query DefaultSEOQuery {
+    site {
+      siteMetadata {
+        title
+        description
+        author
+        twitterHandle
+      }
+    }
+  }
+`
+
 /**
  * Creates the SEO header meta tags for the page.
  */
 function SEO({ description, lang, meta, keywords, title }) {
   return (
     <StaticQuery
-      query={detailsQuery}
+      query={SEO_DETAILS_QUERY}
       render={data => {
         const metaDescription =
           description || data.site.siteMetadata.description
@@ -86,16 +99,3 @@ SEO.propTypes = {
 }
 
 export default SEO
-
-const detailsQuery = graphql`
-  query DefaultSEOQuery {
-    site {
-      siteMetadata {
-        title
-        description
-        author
-        twitterHandle
-      }
-    }
-  }
-`
