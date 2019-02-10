@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -27,6 +28,10 @@ const HOMEPAGE_IMAGE_QUERY = graphql`
   }
 `
 
+const HomeSection = styled.section`
+  margin-top: 30px;
+`
+
 /**
  * The Home page.
  */
@@ -48,7 +53,7 @@ const IndexPage = ({ location }) => (
           ]}
         />
 
-        <div>
+        <HomeSection>
           <Img
             fluid={data.file.childImageSharp.fluid}
             style={{
@@ -76,7 +81,7 @@ const IndexPage = ({ location }) => (
             dreamcatcher neutra, distillery poutine humblebrag ut minim quinoa
             vaporware keytar.
           </p>
-        </div>
+        </HomeSection>
 
         <SocialLinks />
       </Layout>
