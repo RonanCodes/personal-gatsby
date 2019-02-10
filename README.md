@@ -1,7 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8280c50c-658d-4ec9-929d-d24edfb48cc1/deploy-status)](https://app.netlify.com/sites/personalgatsby/deploys)
 
 <h1 align="center">
-    <img alt="Personal Gatsby Cursive" src="https://github.com/RonanC/personal-gatsby/blob/master/src/images/personal-gatsby-cursive.png" width="400" />
+    <img alt="Personal Gatsby Cursive" src="https://github.com/RonanC/personal-gatsby/blob/master/src/images/personal-gatsby-cursive.svg" width="400" />
 </h1>
 
 <p align="center">
@@ -177,7 +177,10 @@ p {
 
 # Anchor Links
 
-`rel="noopener noreferrer"` should be added to links containing `target="_blank"` as a precaution against reverse tabnabbing. For more information, please refer to the following article:
+`rel="noopener noreferrer"` should be added to links containing `target="_blank"` as a precaution against reverse tabnabbing.
+
+For more information, please refer to the following article:
 https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/
 
-Source: https://github.com/asciidoctor/asciidoctor/issues/2071
+**Source:**
+https://github.com/asciidoctor/asciidoctor/issues/2071
