@@ -6,7 +6,9 @@
           <img alt="Personal Gatsby Cursive" src="https://github.com/RonanC/personal-gatsby/blob/master/src/images/personal-gatsby-cursive.svg" width="400" />
     </a>
   </h1>
+</p>
 
+<p align="center">
   <a target="_blank" rel="noopener noreferrer" href="https://personalgatsby.xyz">
     <img alt="Personal Gatsby Logo" src="https://github.com/RonanC/personal-gatsby/blob/master/src/images/personal-gatsby-logo.png" width="150" />
   </a>
