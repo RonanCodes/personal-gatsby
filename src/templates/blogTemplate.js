@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { getAltImageNameFromPath } from '../helpers'
+import { extractLastStringInPath } from '../helpers'
 import { ListingMain } from '../styled-components'
 
 const SubHeading = styled.h6`
@@ -63,7 +63,7 @@ export default class blogTemplate extends Component {
               <div className="cover-image">
                 <img
                   src={frontmatter.coverImage}
-                  alt={getAltImageNameFromPath(frontmatter.coverImage)}
+                  alt={extractLastStringInPath(frontmatter.coverImage)}
                 />
               </div>
             )}

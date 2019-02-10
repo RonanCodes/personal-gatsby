@@ -6,6 +6,9 @@ import { ListingMain } from '../styled-components'
 
 import PortfolioListing from '../components/portfolioListing'
 
+/**
+ * The Portfolio page.
+ */
 const PortfolioPage = ({ location }) => (
   <Layout location={location}>
     <SEO

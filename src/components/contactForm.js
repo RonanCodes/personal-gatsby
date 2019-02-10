@@ -70,7 +70,10 @@ function encode(data) {
     .join('&')
 }
 
-export default class Contact extends React.Component {
+/**
+ * A contact us form.
+ */
+export default class ContactForm extends React.Component {
   // Create state object
   constructor(props) {
     super(props)

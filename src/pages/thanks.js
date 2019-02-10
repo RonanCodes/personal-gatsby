@@ -5,6 +5,9 @@ import { StaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+/**
+ * The Thanks for contacting us page.
+ */
 const ThanksPage = ({ location }) => (
   <StaticQuery
     query={graphql`

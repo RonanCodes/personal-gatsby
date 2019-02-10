@@ -25,6 +25,9 @@ const BlogSiteSection = styled.section`
   }
 `
 
+/**
+ * The Blog page.
+ */
 const BlogPage = ({ location }) => (
   <StaticQuery
     query={graphql`

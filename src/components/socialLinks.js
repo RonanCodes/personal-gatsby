@@ -24,6 +24,9 @@ const SocialLinksList = styled.ul`
   }
 `
 
+/**
+ * A horizontal list of social, email, and map links.
+ */
 class SocialLinks extends React.Component {
   render() {
     return (
@@ -42,8 +45,6 @@ class SocialLinks extends React.Component {
           }
         `}
         render={data => (
-          // {metaData = data.site.siteMetadata}
-
           <SocialLinksList>
             <li>
               <a

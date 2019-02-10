@@ -5,6 +5,9 @@ import { StaticQuery, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+/**
+ * The About Us page.
+ */
 const AboutPage = ({ location }) => (
   <StaticQuery
     query={graphql`

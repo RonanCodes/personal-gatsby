@@ -2,9 +2,9 @@ import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
-import { getAltImageNameFromPath } from '../helpers'
+import { extractLastStringInPath } from '../helpers'
 
-const LISTING_QUERY = graphql`
+const BLOG_LISTING_QUERY = graphql`
   query BlogPostListing {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
@@ -36,15 +36,6 @@ const Post = styled.article`
   .content {
     padding: 1rem;
 
-    a {
-      text-decoration: none;
-      color: #000;
-    }
-
-    p {
-      font-size: 18px;
-    }
-
     h2 {
       margin-bottom: 0;
     }
@@ -52,6 +43,15 @@ const Post = styled.article`
     h5,
     h6 {
       color: grey;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    p {
+      font-size: 18px;
     }
 
     .read-more {
@@ -65,7 +65,6 @@ const Post = styled.article`
   .cover-image {
     width: 100%;
     overflow-y: hidden;
-
     max-height: 200px;
 
     img {
@@ -86,9 +85,12 @@ const SubHeading = styled.h6`
   }
 `
 
+/**
+ * A list of clickable blog posts.
+ */
 const BlogListing = () => (
   <StaticQuery
-    query={LISTING_QUERY}
+    query={BLOG_LISTING_QUERY}
     render={({ allMarkdownRemark }) => {
       return !allMarkdownRemark
         ? null
@@ -101,7 +103,7 @@ const BlogListing = () => (
                   <div className="cover-image">
                     <img
                       src={node.frontmatter.coverImage}
-                      alt={getAltImageNameFromPath(node.frontmatter.coverImage)}
+                      alt={extractLastStringInPath(node.frontmatter.coverImage)}
                     />
                   </div>
                 </Link>

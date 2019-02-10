@@ -5,15 +5,7 @@ import styled from 'styled-components'
 import cursive from '../images/personal-gatsby-cursive.svg'
 
 const HeaderContainer = styled.div`
-  @media (min-width: 790px) {
-    flex-direction: row;
-  }
-
   background: #aeafe8;
-
-  img {
-    margin-bottom: 0;
-  }
 
   padding: 20px 20px 0 20px;
   display: flex;
@@ -27,6 +19,14 @@ const HeaderContainer = styled.div`
   overflow: hidden;
   margin-bottom: 0;
 
+  @media (min-width: 790px) {
+    flex-direction: row;
+  }
+
+  img {
+    margin-bottom: 0;
+  }
+
   .logo-link {
     img {
       padding-top: 20px;
@@ -36,7 +36,6 @@ const HeaderContainer = styled.div`
   .nav {
     display: flex;
     list-style: none;
-
     margin: 0;
 
     li {
@@ -61,7 +60,10 @@ const HeaderContainer = styled.div`
   }
 `
 
-const Header = ({ siteTitle, location }) => (
+/**
+ * A header that the layout uses for all the pages.
+ */
+const Header = ({ location }) => (
   <HeaderContainer>
     <Link to="/" className="logo-link">
       <img src={cursive} alt="Personal Gatsby Cursive" />

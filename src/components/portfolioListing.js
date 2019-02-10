@@ -2,12 +2,11 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
-import { getAltImageNameFromPath } from '../helpers'
+import { extractLastStringInPath } from '../helpers'
 
-const LISTING_QUERY = graphql`
+const PORTFOLIO_LISTING_QUERY = graphql`
   query PortfolioItemListing {
     allMarkdownRemark(
-      # limit: 10
       sort: { order: DESC, fields: [frontmatter___startDate] }
       filter: { frontmatter: { category: { eq: "portfolio" } } }
     ) {
@@ -37,21 +36,39 @@ const PortfolioItem = styled.article`
   border-radius: 4px;
   margin-bottom: 2rem;
 
-  a {
-    text-decoration: none;
-    color: #000;
+  h1 {
+    font-weight: 900;
+  }
+
+  h2 {
+    color: #2a2a57;
+    font-weight: 100;
+    margin-bottom: 0;
+  }
+
+  h5 {
+    color: grey;
   }
 
   p {
     font-size: 18px;
   }
 
-  h2 {
-    margin-bottom: 0;
+  a,
+  a :visited {
+    text-decoration: none;
+    color: #aeafe8;
+
+    strong {
+      color: #9056d4;
+      font-weight: bold;
+    }
   }
 
-  h5 {
-    color: grey;
+  hr {
+    margin: 75px 0 50px 0;
+    background: #aeafe8;
+    height: 1.5px;
   }
 
   .read-more {
@@ -68,40 +85,15 @@ const PortfolioItem = styled.article`
   .end-date {
     margin-left: 10px;
   }
-
-  hr {
-    margin: 75px 0 50px 0;
-    background: #aeafe8;
-    height: 1.5px;
-  }
-
-  a,
-  a :visited {
-    color: #aeafe8;
-
-    strong {
-      color: #9056d4;
-      font-weight: bold;
-    }
-  }
-
-  h1 {
-    font-weight: 900;
-  }
-
-  h2 {
-    color: #2a2a57;
-    font-weight: 100;
-  }
-`
-
-const Header = styled.header`
-  h1 {
-    margin-bottom: 5px;
-  }
 `
 
 const header = frontmatter => {
+  const Header = styled.header`
+    h1 {
+      margin-bottom: 5px;
+    }
+  `
+
   return (
     <Header>
       <h1>{frontmatter.title}</h1>
@@ -113,9 +105,12 @@ const header = frontmatter => {
   )
 }
 
+/**
+ * A list of portfolio items.
+ */
 const PortfolioListing = () => (
   <StaticQuery
-    query={LISTING_QUERY}
+    query={PORTFOLIO_LISTING_QUERY}
     render={({ allMarkdownRemark }) =>
       !allMarkdownRemark
         ? null
@@ -123,7 +118,7 @@ const PortfolioListing = () => (
             <PortfolioItem key={edge.node.frontmatter.title}>
               <img
                 src={edge.node.frontmatter.coverImage}
-                alt={getAltImageNameFromPath(edge.node.frontmatter.coverImage)}
+                alt={extractLastStringInPath(edge.node.frontmatter.coverImage)}
               />
 
               {header(edge.node.frontmatter)}

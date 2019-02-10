@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+/**
+ * Creates the SEO header meta tags for the page.
+ */
 function SEO({ description, lang, meta, keywords, title }) {
   return (
     <StaticQuery

@@ -25,6 +25,9 @@ function ensureSlugExists(node, getNode) {
   }
 }
 
+/**
+ * Creates a page for each portfolio item.
+ */
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 

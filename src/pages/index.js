@@ -7,6 +7,9 @@ import SEO from '../components/seo'
 
 import SocialLinks from '../components/socialLinks'
 
+/**
+ * The Home page.
+ */
 const IndexPage = ({ location }) => (
   <StaticQuery
     query={graphql`

@@ -59,8 +59,11 @@ const MainLayout = styled.main`
   margin: 0 auto;
   margin: 1rem auto;
 `
-// This component is the wrapper for all the pages within the site.
-// We set the main styles of the website inside this component.
+
+/**
+ * A wrapper for all the pages within the site.
+ * We set the main styles of the website inside this component.
+ */
 const Layout = ({ children, location }) => (
   <StaticQuery
     query={graphql`
