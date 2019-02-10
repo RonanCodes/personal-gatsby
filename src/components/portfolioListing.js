@@ -37,7 +37,7 @@ const LISTING_QUERY = graphql`
 `
 
 const PortfolioItem = styled.article`
-  width: 920px;
+  max-width: 920px;
   margin: auto;
 
   /* box-shadow: 0.5px 2px 10px rgba(25, 17, 34, 0.3); */
@@ -111,6 +111,7 @@ const CoverImage = styled.img`
   /* overflow: hidden; */
   /* margin-left: auto; */
   /* margin-right: auto; */
+  /* max-width: 200px */
 `
 
 const Header = styled.header`
