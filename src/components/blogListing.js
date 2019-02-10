@@ -67,10 +67,6 @@ const Post = styled.article`
     overflow-y: hidden;
     max-height: 200px;
     text-align: center;
-
-    img {
-      margin-top: -12%;
-    }
   }
 `
 
