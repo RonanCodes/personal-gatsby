@@ -3,7 +3,7 @@ module.exports = {
     title: `Personal Gatsby`,
     description: `Get your personal website kick-started with this Personal Gatsby Starter Project`,
     author: `Ronan Connolly <hi@ronanconnolly.ie>`,
-    siteUrl: `https://silly-agnesi-43a1cd.netlify.com/`,
+    siteUrl: `https://personalgatsby.xyz`,
     twitterHandle: `_RonanC`,
     linkedInHandle: `RonanConnolly`,
     githubHandle: `RonanC`,

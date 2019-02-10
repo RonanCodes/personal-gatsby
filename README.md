@@ -1,11 +1,11 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8280c50c-658d-4ec9-929d-d24edfb48cc1/deploy-status)](https://app.netlify.com/sites/silly-agnesi-43a1cd/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8280c50c-658d-4ec9-929d-d24edfb48cc1/deploy-status)](https://app.netlify.com/sites/personalgatsby/deploys)
 
 <h1 align="center">
     <img alt="Personal Gatsby Cursive" src="https://github.com/RonanC/personal-gatsby/blob/master/src/images/personal-gatsby-cursive.png" width="400" />
 </h1>
 
 <p align="center">
-  <a target="_blank" rel="noopener noreferrer" href="https://silly-agnesi-43a1cd.netlify.com/">
+  <a target="_blank" rel="noopener noreferrer" href="https://personalgatsby.xyz">
     <img alt="Personal Gatsby Logo" src="https://github.com/RonanC/personal-gatsby/blob/master/src/images/personal-gatsby-logo.png" width="150" />
   </a>
 </p>
@@ -26,7 +26,7 @@
 - Optimized pre-loading of pages (on link hover)
 
 **Example:**
-https://silly-agnesi-43a1cd.netlify.com/
+https://personalgatsby.xyz
 
 ## 💻 How to run dev
 
@@ -65,18 +65,18 @@ npx netlify deploy
 ## ✏️ Netlify CMS setup
 
 - Turn on Identity here:
-  https://app.netlify.com/sites/silly-agnesi-43a1cd/identity
+  https://app.netlify.com/sites/YOURSITENAME/identity
 
 - Make registration invite only:
-  https://app.netlify.com/sites/silly-agnesi-43a1cd/settings/identity#registration-preferences
+  https://app.netlify.com/sites/YOURSITENAME/settings/identity#registration-preferences
 
 - Invite yourself, create an account, and login via your site `/admin/`
 
 **If you get an error when you land on the admin page it may be because you edited your project settings:**
 To fix this reset the project link and the git-gateway in the below two places.
 
-1. https://app.netlify.com/sites/silly-agnesi-43a1cd/settings/deploys#build-settings
-2. https://app.netlify.com/sites/silly-agnesi-43a1cd/settings/identity#services
+1. https://app.netlify.com/sites/YOURSITENAME/settings/deploys#build-settings
+2. https://app.netlify.com/sites/YOURSITENAME/settings/identity#services
 
 Make sure that you you're using `git-gateway` in your `config.yml` file:
 
