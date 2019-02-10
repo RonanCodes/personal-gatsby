@@ -82,14 +82,14 @@ collections: # A list of collections the CMS should be able to edit
           tagname: p,
           required: false,
         }
-      - {
-          name: slug,
-          label: Slug,
-          widget: string,
-          default: '',
-          hint: 'Leave blank for auto slug',
-          required: false,
-        }
+      # - {
+      #     name: slug,
+      #     label: Slug,
+      #     widget: string,
+      #     default: '',
+      #     hint: 'Leave blank for auto slug',
+      #     required: false,
+      #   }
       - { name: category, label: Category, widget: hidden, default: portfolio }
     meta:
       - { label: 'SEO Description', name: 'description', widget: 'text' }
