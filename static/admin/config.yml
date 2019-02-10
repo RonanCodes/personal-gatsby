@@ -58,18 +58,13 @@ collections: # A list of collections the CMS should be able to edit
     slug: '{{slug}}'
     create: true
     fields:
-      - {
-          name: title,
-          label: Project Name,
-          widget: string,
-          tagname: h1,
-        }
+      - { name: title, label: Project Name, widget: string, tagname: h1 }
       - {
           name: coverImage,
           label: 'Project Image',
           widget: image,
           tagname: img,
-          hint: 'This image will be stretched to the full width of the portoflio list item, make sure it's wide enough
+          hint: "This image will be stretched to the full width of the portoflio list item, make sure it's wide enough, and not too tall",
         }
       - {
           label: 'Start Date',
@@ -77,6 +72,7 @@ collections: # A list of collections the CMS should be able to edit
           widget: 'date',
           dateFormat: 'YYYY-MM-DD',
           format: 'YYYY-MM-DD',
+          tagname: date,
         }
       - {
           label: 'End Date',
@@ -84,11 +80,20 @@ collections: # A list of collections the CMS should be able to edit
           widget: 'date',
           dateFormat: 'YYYY-MM-DD',
           format: 'YYYY-MM-DD',
+          tagname: date,
         }
-      # - { name: start, label: 'Start Year/Month', widget: string, tagname: h6 }
-      # - { name: end, label: 'End Year/Month', widget: string, tagname: h6 }
-      - { name: technologies, label: 'Technologies Used', widget: markdown }
-      - { name: goals, label: 'Project Goals', widget: markdown }
+      - {
+          name: technologies,
+          label: 'Technologies Used',
+          widget: markdown,
+          tagname: article,
+        }
+      - {
+          name: goals,
+          label: 'Project Goals',
+          widget: markdown,
+          tagname: article,
+        }
       - {
           name: projectLink,
           label: Link to Project,
@@ -103,14 +108,6 @@ collections: # A list of collections the CMS should be able to edit
           tagname: p,
           required: false,
         }
-      # - {
-      #     name: slug,
-      #     label: Slug,
-      #     widget: string,
-      #     default: '',
-      #     hint: 'Leave blank for auto slug',
-      #     required: false,
-      #   }
       - { name: category, label: Category, widget: hidden, default: portfolio }
     meta:
       - { label: 'SEO Description', name: 'description', widget: 'text' }

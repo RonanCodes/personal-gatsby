@@ -22,6 +22,7 @@ const BLOG_PAGE_QUERY = graphql`
 
 const BlogSiteSection = styled.section`
   width: 100%;
+
   background: #eaeaea;
   color: #9056d4;
   text-align: center;

@@ -66,6 +66,7 @@ const Post = styled.article`
     width: 100%;
     overflow-y: hidden;
     max-height: 200px;
+    text-align: center;
 
     img {
       margin-top: -12%;

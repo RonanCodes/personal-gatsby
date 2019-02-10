@@ -50,9 +50,11 @@ export default class blogTemplate extends Component {
       .cover-image {
         overflow: hidden;
         max-height: 400px;
+
+        text-align: center;
         img {
           margin-bottom: -10px;
-          width: 100%;
+          max-width: 100%;
         }
       }
 
