@@ -1,11 +1,7 @@
 import React from 'react'
-import { Link, StaticQuery, graphql } from 'gatsby'
-
+import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import { getAltImageNameFromPath } from '../helpers'
-
-// import Image from '../components/image'
-// import SEO from '../components/seo'
 
 const LISTING_QUERY = graphql`
   query PortfolioItemListing {
@@ -37,8 +33,8 @@ const LISTING_QUERY = graphql`
 `
 
 const PortfolioItem = styled.article`
-  max-width: 920px;
-  margin: auto;
+  /* max-width: 920px;
+  margin: auto; */
 
   /* box-shadow: 0.5px 2px 10px rgba(25, 17, 34, 0.3); */
   /* padding: 1rem; */

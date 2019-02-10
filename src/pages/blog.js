@@ -6,6 +6,8 @@ import Layout from '../components/layout'
 import BlogListing from '../components/blogListing'
 import SEO from '../components/seo'
 
+import { ListingMain } from '../styled-components'
+
 const BlogSiteSection = styled.section`
   width: 100%;
   background: #eaeaea;
@@ -22,6 +24,11 @@ const BlogSiteSection = styled.section`
   }
 `
 
+// const BlogSection = styled.section`
+//   max-width: 920px;
+//   margin: auto;
+// `
+
 const BlogPage = ({ location }) => (
   <StaticQuery
     query={graphql`
@@ -37,31 +44,33 @@ const BlogPage = ({ location }) => (
     render={({ site }) => (
       <Layout location={location}>
         <SEO title="Blog Posts" />
-        <BlogSiteSection>
-          For more articles check out:{` `}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={`https://dev.to/${site.siteMetadata.devHandle}`}
+        <ListingMain>
+          <BlogSiteSection>
+            For more articles check out:{` `}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={`https://dev.to/${site.siteMetadata.devHandle}`}
+            >
+              Dev
+            </a>
+            {`    &    `}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={`https://medium.com/@${site.siteMetadata.mediumHandle}`}
+            >
+              Medium
+            </a>
+          </BlogSiteSection>
+          <div
+            style={{
+              paddingTop: '30px',
+            }}
           >
-            Dev
-          </a>
-          {`    &    `}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={`https://medium.com/@${site.siteMetadata.mediumHandle}`}
-          >
-            Medium
-          </a>
-        </BlogSiteSection>
-        <div
-          style={{
-            paddingTop: '30px',
-          }}
-        >
-          <BlogListing />
-        </div>
+            <BlogListing />
+          </div>
+        </ListingMain>
       </Layout>
     )}
   />

@@ -4,11 +4,11 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { getAltImageNameFromPath } from '../helpers'
 import styled from 'styled-components'
+import { ListingMain } from '../styled-components'
 
 const SubHeading = styled.h6`
   color: grey;
   /* font-size: 15px; */
-
   margin-bottom: 0px;
 
   .left-side {
@@ -70,28 +70,30 @@ export default class blogTemplate extends Component {
     return (
       <Layout location={location}>
         <SEO title={frontmatter.title} />
-        <BlogPost>
-          {!frontmatter.coverImage ? null : (
-            <div className="cover-image">
-              <img
-                src={frontmatter.coverImage}
-                alt={getAltImageNameFromPath(frontmatter.coverImage)}
-              />
-            </div>
-          )}
-          <section className="content">
-            <section className="header">
-              <h1 className="blog-title">{frontmatter.title}</h1>
-              <SubHeading className="sub-heading">
-                <span className="left-side">{frontmatter.date}</span>•
-                <span className="right-side">{timeToRead}</span> min
-              </SubHeading>
-            </section>
+        <ListingMain>
+          <BlogPost>
+            {!frontmatter.coverImage ? null : (
+              <div className="cover-image">
+                <img
+                  src={frontmatter.coverImage}
+                  alt={getAltImageNameFromPath(frontmatter.coverImage)}
+                />
+              </div>
+            )}
+            <section className="content">
+              <section className="header">
+                <h1 className="blog-title">{frontmatter.title}</h1>
+                <SubHeading className="sub-heading">
+                  <span className="left-side">{frontmatter.date}</span>•
+                  <span className="right-side">{timeToRead}</span> min
+                </SubHeading>
+              </section>
 
-            {/* <h5>{frontmatter.date}</h5> */}
-            <div dangerouslySetInnerHTML={{ __html: html }} />
-          </section>
-        </BlogPost>
+              {/* <h5>{frontmatter.date}</h5> */}
+              <div dangerouslySetInnerHTML={{ __html: html }} />
+            </section>
+          </BlogPost>
+        </ListingMain>
       </Layout>
     )
   }
