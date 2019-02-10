@@ -8,7 +8,17 @@ import PortfolioListing from '../components/portfolioListing'
 
 const PortfolioPage = ({ location }) => (
   <Layout location={location}>
-    <SEO title="Portfolio Items" />
+    <SEO
+      title="Portfolio Items"
+      keywords={[
+        `portfolio items`,
+        `portfolio`,
+        `items`,
+        `projects`,
+        `project`,
+        `work`,
+      ]}
+    />
     <ListingMain>
       <div
         style={{

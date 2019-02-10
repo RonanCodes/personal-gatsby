@@ -22,7 +22,10 @@ const ContactPage = ({ location }) => (
     `}
     render={data => (
       <Layout location={location}>
-        <SEO title="Contact Form" />
+        <SEO
+          title="Contact Form"
+          keywords={[`contact form`, `contact`, `form`, `get in touch`]}
+        />
 
         <div>
           <Img

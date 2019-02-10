@@ -20,7 +20,7 @@ const ThanksPage = ({ location }) => (
     `}
     render={data => (
       <Layout location={location}>
-        <SEO title="Contact Thanks" />
+        <SEO title="Contact Thanks" keywords={[`contact`, `thanks`]} />
         <div>
           <Img
             fluid={data.file.childImageSharp.fluid}

@@ -20,7 +20,7 @@ const AboutPage = ({ location }) => (
     `}
     render={data => (
       <Layout location={location}>
-        <SEO title="About Us" />
+        <SEO title="About Us" keywords={[`about us`, `about`, `information`]} />
 
         <div>
           <Img

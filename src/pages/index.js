@@ -30,7 +30,18 @@ const IndexPage = ({ location }) => (
     `}
     render={data => (
       <Layout location={location}>
-        <SEO title="Personal Gatsby - Homepage" />
+        <SEO
+          title="Personal Gatsby - Homepage"
+          keywords={[
+            `personal gatsby`,
+            `personal`,
+            `gatsby`,
+            `homepage`,
+            `home`,
+            `react`,
+            `graphql`,
+          ]}
+        />
 
         <div>
           <Img

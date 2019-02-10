@@ -56,7 +56,7 @@ export default class blogTemplate extends Component {
 
     return (
       <Layout location={location}>
-        <SEO title={frontmatter.title} />
+        <SEO title={frontmatter.title} keywords={[`blog`, `post`, `article`]} />
         <ListingMain>
           <BlogPost>
             {!frontmatter.coverImage ? null : (

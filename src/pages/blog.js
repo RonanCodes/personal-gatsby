@@ -39,7 +39,10 @@ const BlogPage = ({ location }) => (
     `}
     render={({ site }) => (
       <Layout location={location}>
-        <SEO title="Blog Posts" />
+        <SEO
+          title="Blog Posts"
+          keywords={[`blog posts`, `blog`, `posts`, `articles`, `article`]}
+        />
         <ListingMain>
           <BlogSiteSection>
             For more articles check out:{` `}
