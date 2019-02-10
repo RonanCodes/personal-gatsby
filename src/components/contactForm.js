@@ -6,7 +6,6 @@ const Form = styled.form`
   margin: auto;
   max-width: 602px;
   margin-top: 100px;
-  margin-bottom: 100px;
 
   label {
     width: 20%;

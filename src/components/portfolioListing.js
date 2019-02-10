@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import { extractLastStringInPath } from '../helpers'
+import { Hr } from '../styled-components'
 
 const PORTFOLIO_LISTING_QUERY = graphql`
   query PortfolioItemListing {
@@ -63,12 +64,6 @@ const PortfolioItem = styled.article`
       color: #9056d4;
       font-weight: bold;
     }
-  }
-
-  hr {
-    margin: 75px 0 50px 0;
-    background: #aeafe8;
-    height: 1.5px;
   }
 
   .read-more {
@@ -152,7 +147,7 @@ const PortfolioListing = () => (
                 </h4>
               )}
 
-              {!edge.next || !edge.next.id ? null : <hr />}
+              {!edge.next || !edge.next.id ? null : <Hr />}
             </PortfolioItem>
           ))
     }

@@ -39,7 +39,7 @@ const Site = styled.div`
     flex-grow: 1;
 
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 60px;
 
     width: 1100px;
   }

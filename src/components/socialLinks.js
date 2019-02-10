@@ -25,7 +25,7 @@ const SOCIAL_DATA_QUERY = graphql`
 
 const SocialLinksList = styled.ul`
   list-style: none;
-  margin: 60px 10px 40px 0px;
+  margin: 60px 10px 0px 0px;
   display: flex;
   justify-content: space-between;
 
