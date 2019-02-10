@@ -63,13 +63,24 @@ collections: # A list of collections the CMS should be able to edit
     slug: '{{slug}}'
     create: true
     fields:
-      - { name: title, label: Title, widget: string, tagname: h1 }
+      - { name: image, label: 'Project Image', widget: image, tagname: img }
+      - { name: start, label: 'Start Year/Month', widget: string, tagname: h6 }
+      - { name: end, label: 'End Year/Month', widget: string, tagname: h6 }
+      - { name: technologies, label: 'Technologies Used', widget: markdown }
+      - { name: goal, label: 'Project Goal', widget: markdown }
       - {
-          label: 'Publish Date',
-          name: 'date',
-          widget: 'date',
-          dateFormat: 'YYYY-MM-DD',
-          format: 'YYYY-MM-DD',
+          name: project,
+          label: Project Name,
+          widget: string,
+          tagname: h1,
+          required: false,
+        }
+      - {
+          name: link,
+          label: Link to Project,
+          widget: string,
+          tagname: p,
+          required: false,
         }
       - {
           name: slug,
@@ -79,19 +90,7 @@ collections: # A list of collections the CMS should be able to edit
           hint: 'Leave blank for auto slug',
           required: false,
         }
-      - {
-          name: cover-image,
-          label: Cover Image,
-          widget: image,
-          required: false,
-        }
       - { name: category, label: Category, widget: hidden, default: portfolio }
-      - {
-          name: body,
-          label: Body,
-          widget: markdown,
-          hint: 'Main content goes here.',
-        }
     meta:
       - { label: 'SEO Description', name: 'description', widget: 'text' }
     editor:
