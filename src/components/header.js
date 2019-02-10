@@ -60,6 +60,27 @@ const HeaderContainer = styled.div`
   }
 `
 
+const navItems = ['about', 'contact', 'portfolio', 'blog']
+
+/**
+ * Generates the navigation list via a list of strings (which refer to pages).
+ */
+const navList = (pathname, navItems) =>
+  navItems.map(navItem => (
+    <li>
+      <Link
+        className={
+          pathname === `/${navItem}` || pathname === `/${navItem}/`
+            ? 'active'
+            : 'inactive'
+        }
+        to={`/${navItem}`}
+      >
+        {navItem.charAt(0).toUpperCase() + navItem.slice(1)}
+      </Link>
+    </li>
+  ))
+
 /**
  * A header that the layout uses for all the pages.
  */
@@ -69,58 +90,7 @@ const Header = ({ location }) => (
       <img src={cursive} alt="Personal Gatsby Cursive" />
     </Link>
 
-    <ul className="nav">
-      <li>
-        <Link
-          className={
-            location.pathname === '/about' || location.pathname === '/about/'
-              ? 'active'
-              : 'inactive'
-          }
-          to="/about"
-        >
-          About
-        </Link>
-      </li>
-      <li>
-        <Link
-          className={
-            location.pathname === '/contact' ||
-            location.pathname === '/contact/'
-              ? 'active'
-              : 'inactive'
-          }
-          to="/contact"
-        >
-          Contact
-        </Link>
-      </li>
-      <li>
-        <Link
-          className={
-            location.pathname === '/portfolio' ||
-            location.pathname === '/portfolio/'
-              ? 'active'
-              : 'inactive'
-          }
-          to="/portfolio"
-        >
-          Portfolio
-        </Link>
-      </li>
-      <li>
-        <Link
-          className={
-            location.pathname === '/blog' || location.pathname === '/blog/'
-              ? 'active'
-              : 'inactive'
-          }
-          to="/blog"
-        >
-          Blog
-        </Link>
-      </li>
-    </ul>
+    <ul className="nav">{navList(location.pathname, navItems)}</ul>
   </HeaderContainer>
 )
 
