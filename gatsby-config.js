@@ -90,6 +90,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-netlify`, // make sure this is last
+    `gatsby-plugin-netlify`, // Make sure this is last
   ],
 }

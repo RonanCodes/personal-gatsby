@@ -3,8 +3,9 @@ import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import ContactForm from '../components/contactForm'
 import SEO from '../components/seo'
+
+import ContactForm from '../components/contactForm'
 
 const ContactPage = ({ location }) => (
   <StaticQuery

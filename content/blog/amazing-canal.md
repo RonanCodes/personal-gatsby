@@ -12,7 +12,7 @@ category: blog
 
 Lorem ipsum dolor amet cupidatat XOXO schlitz next level actually hexagon dolore woke cillum vexillologist. Deserunt neutra in art party reprehenderit air plant meggings brunch. Kitsch blog incididunt pinterest. Bitters chicharrones kitsch, eu nisi celiac ut gastropub voluptate. Stumptown reprehenderit subway tile, sunt kinfolk ad next level jianbing. Gastropub thundercats hashtag fingerstache fixie.
 
-![Dogs](/images/received_10204166871689131.jpeg 'Two Doggos')
+![Dogs](/images/dogs.jpeg 'Two Doggos')
 
 ## Bespoke
 

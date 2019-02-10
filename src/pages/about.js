@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
+
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
@@ -30,9 +31,6 @@ const AboutPage = ({ location }) => (
             }}
           />
 
-          {/* <Image imageName={'undraw_about_me_wa29.png'} /> */}
-
-          {/* <h1>AboutPage Us</h1> */}
           <p>
             Truffaut iceland 8-bit, ut chartreuse sriracha aliquip edison bulb
             austin snackwave ullamco adaptogen. Everyday carry pok pok narwhal

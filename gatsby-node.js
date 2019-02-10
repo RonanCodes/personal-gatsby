@@ -51,16 +51,13 @@ exports.createPages = ({ graphql, actions }) => {
           case 'blog':
             templatePath = './src/templates/blogTemplate.js'
             break
-          case 'portfolio':
-            templatePath = './src/templates/portfolioTemplate.js'
-            break
           default:
             templatePath = null
             break
         }
 
         if (templatePath) {
-          // Blog
+          // Create blog pages
           createPage({
             path: `/${node.frontmatter.category}/${node.frontmatter.slug}`,
             component: path.resolve(templatePath),
@@ -69,12 +66,9 @@ exports.createPages = ({ graphql, actions }) => {
             },
           })
         }
-
-        // TODO: use portfolio template for portfolio files
-        // Portfolio
       })
 
-      // finalise the promise
+      // Finalize the promise
       resolve()
     })
   })

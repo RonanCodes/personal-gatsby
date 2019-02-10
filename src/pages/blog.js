@@ -3,8 +3,9 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
-import BlogListing from '../components/blogListing'
 import SEO from '../components/seo'
+
+import BlogListing from '../components/blogListing'
 
 import { ListingMain } from '../styled-components'
 
@@ -23,11 +24,6 @@ const BlogSiteSection = styled.section`
     color: #4c2fc9;
   }
 `
-
-// const BlogSection = styled.section`
-//   max-width: 920px;
-//   margin: auto;
-// `
 
 const BlogPage = ({ location }) => (
   <StaticQuery

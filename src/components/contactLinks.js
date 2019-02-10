@@ -10,13 +10,9 @@ const ContactLinksList = styled.ul`
   flex-direction: row;
 
   justify-content: space-between;
-  /* align-items: center; */
-  /* text-align: center; */
   margin: auto;
-
-  /* background: yellow; */
-
   max-width: 300px;
+
   li {
     padding: 0 20px 0 20px;
 

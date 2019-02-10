@@ -1,6 +1,6 @@
 ---
 title: Doggos
-coverImage: /images/received_10204166871689131.jpeg
+coverImage: /images/dogs.jpeg
 startDate: '2018-01-01'
 endDate: '2018-04-10'
 technologies: Bones, Food, Cuddles

@@ -1,8 +1,10 @@
 import React from 'react'
+
 import Layout from '../components/layout'
-import PortfolioListing from '../components/portfolioListing'
 import SEO from '../components/seo'
 import { ListingMain } from '../styled-components'
+
+import PortfolioListing from '../components/portfolioListing'
 
 const PortfolioPage = ({ location }) => (
   <Layout location={location}>

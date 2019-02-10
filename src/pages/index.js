@@ -1,9 +1,11 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
+
 import Layout from '../components/layout'
-import SocialLinks from '../components/socialLinks'
 import SEO from '../components/seo'
+
+import SocialLinks from '../components/socialLinks'
 
 const IndexPage = ({ location }) => (
   <StaticQuery
@@ -31,7 +33,6 @@ const IndexPage = ({ location }) => (
         <SEO title="Personal Gatsby - Homepage" />
 
         <div>
-          {/* <Image /> */}
           <Img
             fluid={data.file.childImageSharp.fluid}
             style={{

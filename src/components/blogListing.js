@@ -1,15 +1,12 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-// import Img from 'gatsby-image'
+
 import { getAltImageNameFromPath } from '../helpers'
-// import Image from '../components/image'
-// import SEO from '../components/seo'
 
 const LISTING_QUERY = graphql`
   query BlogPostListing {
     allMarkdownRemark(
-      # limit: 10
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { category: { eq: "blog" } } }
     ) {
@@ -37,7 +34,6 @@ const Post = styled.article`
   border-radius: 5px;
 
   .content {
-    /* box-shadow: 0.5px 2px 10px rgba(25, 17, 34, 0.3); */
     padding: 1rem;
 
     a {
@@ -71,12 +67,9 @@ const Post = styled.article`
     overflow-y: hidden;
 
     max-height: 200px;
-    /* overflow: hidden; */
 
     img {
       margin-top: -12%;
-      /* margin-top: -100px; */
-      /* margin-bottom: 0; */
     }
   }
 `
@@ -128,27 +121,11 @@ const BlogListing = () => (
                   </SubHeading>
                 </header>
                 <p>{node.excerpt}</p>
-                {/* <Link
-                className="read-more"
-                to={`/${node.frontmatter.category}/${node.frontmatter.slug}`}
-              >
-                Read More
-              </Link> */}
               </div>
             </Post>
           ))
     }}
   />
-  //   <div>
-  //     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-  //     <h1>Hi dudesters</h1>
-  //     <p>Welcome to your new Gatsby site.</p>
-  //     <p>Now go build something great.</p>
-  //     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-  //       <Image />
-  //     </div>
-  //     <Link to="/page-2/">Go to page 2</Link>
-  //   </div>
 )
 
 export default BlogListing

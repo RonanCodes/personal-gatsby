@@ -1,3 +1,5 @@
+// This component will serve as an example of how to create an image component, need to have this take in an image name.
+
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'

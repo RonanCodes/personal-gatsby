@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
+
 import { getAltImageNameFromPath } from '../helpers'
 
 const LISTING_QUERY = graphql`
@@ -33,11 +34,6 @@ const LISTING_QUERY = graphql`
 `
 
 const PortfolioItem = styled.article`
-  /* max-width: 920px;
-  margin: auto; */
-
-  /* box-shadow: 0.5px 2px 10px rgba(25, 17, 34, 0.3); */
-  /* padding: 1rem; */
   border-radius: 4px;
   margin-bottom: 2rem;
 
@@ -75,9 +71,6 @@ const PortfolioItem = styled.article`
 
   hr {
     margin: 75px 0 50px 0;
-    /* margin-top: 50px; */
-    /* margin-bottom: 50px; */
-    /* background: yellow; */
     background: #aeafe8;
     height: 1.5px;
   }
@@ -100,14 +93,6 @@ const PortfolioItem = styled.article`
     color: #2a2a57;
     font-weight: 100;
   }
-`
-
-const CoverImage = styled.img`
-  /* max-height: 400px; */
-  /* overflow: hidden; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-  /* max-width: 200px */
 `
 
 const Header = styled.header`
@@ -136,7 +121,7 @@ const PortfolioListing = () => (
         ? null
         : allMarkdownRemark.edges.map(edge => (
             <PortfolioItem key={edge.node.frontmatter.title}>
-              <CoverImage
+              <img
                 src={edge.node.frontmatter.coverImage}
                 alt={getAltImageNameFromPath(edge.node.frontmatter.coverImage)}
               />
@@ -177,16 +162,6 @@ const PortfolioListing = () => (
           ))
     }
   />
-  //   <div>
-  //     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-  //     <h1>Hi dudesters</h1>
-  //     <p>Welcome to your new Gatsby site.</p>
-  //     <p>Now go build something great.</p>
-  //     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-  //       <Image />
-  //     </div>
-  //     <Link to="/page-2/">Go to page 2</Link>
-  //   </div>
 )
 
 export default PortfolioListing

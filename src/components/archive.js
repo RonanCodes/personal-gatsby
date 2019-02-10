@@ -1,3 +1,5 @@
+// This is currently not in use, but may be in the future.
+
 import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
@@ -15,7 +17,6 @@ const ArchiveList = styled.ul`
   a {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    /* font-size: 0.8rem; */
     text-decoration: none;
     color: #4c2fc9;
   }
@@ -53,9 +54,6 @@ const Archive = () => (
 
             {allMarkdownRemark.edges.map(edge => (
               <li key={edge.node.frontmatter.slug}>
-                {/* <a a target="_blank" rel="noopener noreferrer" href={edge.node.frontmatter.slug}>
-                  {edge.node.frontmatter.title}
-                </a> */}
                 <Link
                   to={`/${edge.node.frontmatter.category}/${
                     edge.node.frontmatter.slug

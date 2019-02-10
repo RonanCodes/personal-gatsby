@@ -2,14 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-// import Img from 'gatsby-image'
-// import { useSpring, animated } from 'react-spring'
-// import { Spring } from 'react-spring'
+
+// Importing a css file auto applies it
+import './layout.css'
 
 import Header from './header'
-// import Archive from './archive'
-
-import './layout.css'
 
 const Site = styled.div`
   /* We're using flexbox! */
@@ -24,12 +21,9 @@ const Site = styled.div`
     /* grow to full in the size of the container it's in*/
     flex-grow: 1;
 
-    /* // TODO: Make responsive */
     margin-top: 10px;
     margin-bottom: 0;
 
-    /* margin-left: 30rem; */
-    /* margin-right: 30rem; */
     width: 1100px;
   }
 
@@ -65,22 +59,8 @@ const MainLayout = styled.main`
   margin: 0 auto;
   margin: 1rem auto;
 `
-
-// const props = useSpring({ height: 200, from: { height: 100 } })
-// const props = useSpring({ opacity: 1, from: { opacity: 0 } })
-
-/* css grid: 1st col takes 4 fractions, then side bar to the right takes 1 fraction */
-
-// const test = useSpring({
-//   to: async (next, cancel) => {
-//     await next({ opacity: 1, color: '#ffaaee' })
-//     await next({ opacity: 0, color: 'rgb(14,26,19)' })
-//   },
-//   from: { opacity: 0, color: 'red' },
-// })
-// // ...
-// // return <animated.div style={test}>I will fade in and out</animated.div>
-
+// This component is the wrapper for all the pages within the site.
+// We set the main styles of the website inside this component.
 const Layout = ({ children, location }) => (
   <StaticQuery
     query={graphql`
@@ -107,23 +87,8 @@ const Layout = ({ children, location }) => (
             location={location}
           />
 
-          {/* <Spring
-            from={{ height: location.pathname === '/' ? 100 : 200 }}
-            to={{ height: location.pathname === '/' ? 200 : 100 }}
-          >
-            {styles => (
-              <div style={{ ...styles, overflow: 'hidden' }}>
-                <Img fluid={data.file.childImageSharp.fluid} />
-              </div>
-            )}
-          </Spring> */}
-
-          {/* {location.pathname === '/' && (
-          <Img fluid={data.file.childImageSharp.fluid} />
-        )} */}
           <MainLayout className="site-content">
             <div>{children}</div>
-            {/* <Archive /> */}
           </MainLayout>
 
           <Footer>
