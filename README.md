@@ -218,3 +218,12 @@ This is the Global Site Tag (gtag.js) tracking code for this property. Copy and 
   gtag('config', 'UA-134235296-1')
 </script>
 ```
+
+# Mailchimp
+
+You can create your own database of users by using Mailchimp.
+The `gatsby-plugin-mailchimp` allows you to easily add in this sign up functionality.
+Great for letting your followers know about new blog posts!
+
+Follow the instructions here:
+https://www.gatsbyjs.org/packages/gatsby-plugin-mailchimp/?=mailc
