@@ -28,6 +28,9 @@
 - Site manifest (for SEO purposes)
 - Optimized image loading
 - Optimized pre-loading of pages (on link hover)
+- Google Analytics
+- Mailchimp signup form
+- Paypal donation functionality
 
 **Example:**
 https://personalgatsby.xyz
@@ -188,3 +191,30 @@ https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulner
 
 **Source:**
 https://github.com/asciidoctor/asciidoctor/issues/2071
+
+# Google Analytics
+
+I'm using the `gatsby-plugin-google-analytics` to take care of the config, but here's what google analytics generated for me below.
+The plugin will generate something similar:
+https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/#create-only-fields
+
+## Global Site Tag (gtag.js)
+
+This is the Global Site Tag (gtag.js) tracking code for this property. Copy and paste this code as the first item into the <HEAD> of every web page that you want to track. If you already have a Global Site Tag on your page, simply add the config line from the snippet below to your existing Global Site Tag.
+
+```html
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=UA-134235296-1"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+
+  gtag('config', 'UA-134235296-1')
+</script>
+```

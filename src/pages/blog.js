@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -52,21 +53,21 @@ const BlogPage = ({ location }) => (
         <ListingMain>
           <BlogSiteSection>
             For more articles check out:{` `}
-            <a
+            <OutboundLink
               target="_blank"
               rel="noopener noreferrer"
               href={`https://dev.to/${site.siteMetadata.devHandle}`}
             >
               Dev
-            </a>
+            </OutboundLink>
             {`    &    `}
-            <a
+            <OutboundLink
               target="_blank"
               rel="noopener noreferrer"
               href={`https://medium.com/@${site.siteMetadata.mediumHandle}`}
             >
               Medium
-            </a>
+            </OutboundLink>
           </BlogSiteSection>
           <div
             style={{

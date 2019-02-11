@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 // Importing a css file auto applies it
 import './layout.css'
@@ -99,13 +100,13 @@ const Layout = ({ children, location }) => (
           <Footer>
             © {new Date().getFullYear()}, Built with
             {` `}
-            <a
+            <OutboundLink
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/RonanC/personal-gatsby"
             >
               Personal Gatsby
-            </a>
+            </OutboundLink>
           </Footer>
         </Site>
       </>

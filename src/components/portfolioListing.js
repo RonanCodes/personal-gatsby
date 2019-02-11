@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import { extractLastStringInPath } from '../helpers'
 import { Hr } from '../styled-components'
@@ -126,24 +127,24 @@ const PortfolioListing = () => (
 
               {!edge.node.frontmatter.projectLink ? null : (
                 <h4>
-                  <a
+                  <OutboundLink
                     href={edge.node.frontmatter.projectLink}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Check the <strong>Project</strong> out here
-                  </a>
+                  </OutboundLink>
                 </h4>
               )}
               {!edge.node.frontmatter.gitLink ? null : (
                 <h4>
-                  <a
+                  <OutboundLink
                     href={edge.node.frontmatter.gitLink}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Check the <strong>Source Code</strong> out here
-                  </a>
+                  </OutboundLink>
                 </h4>
               )}
 

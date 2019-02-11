@@ -8,6 +8,7 @@ import {
   FaGlobeAmericas,
   FaEnvelope,
 } from 'react-icons/fa'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const SOCIAL_DATA_QUERY = graphql`
   query SocialDataQuery {
@@ -49,7 +50,7 @@ class SocialLinks extends React.Component {
         render={data => (
           <SocialLinksList>
             <li>
-              <a
+              <OutboundLink
                 target="_blank"
                 rel="noopener noreferrer"
                 href={`https://twitter.com/${
@@ -57,10 +58,10 @@ class SocialLinks extends React.Component {
                 }`}
               >
                 <FaTwitter />
-              </a>
+              </OutboundLink>
             </li>
             <li>
-              <a
+              <OutboundLink
                 target="_blank"
                 rel="noopener noreferrer"
                 href={`https://www.linkedin.com/in/${
@@ -68,10 +69,10 @@ class SocialLinks extends React.Component {
                 }/`}
               >
                 <FaLinkedinIn />
-              </a>
+              </OutboundLink>
             </li>
             <li>
-              <a
+              <OutboundLink
                 target="_blank"
                 rel="noopener noreferrer"
                 href={`https://github.com/${
@@ -79,21 +80,21 @@ class SocialLinks extends React.Component {
                 }`}
               >
                 <FaGithub />
-              </a>
+              </OutboundLink>
             </li>
             <li>
-              <a
+              <OutboundLink
                 target="_blank"
                 rel="noopener noreferrer"
                 href={data.site.siteMetadata.mapLink}
               >
                 <FaGlobeAmericas />
-              </a>
+              </OutboundLink>
             </li>
             <li>
-              <a href={`mailto:${data.site.siteMetadata.email}`}>
+              <OutboundLink href={`mailto:${data.site.siteMetadata.email}`}>
                 <FaEnvelope />
-              </a>
+              </OutboundLink>
             </li>
           </SocialLinksList>
         )}
