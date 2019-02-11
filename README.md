@@ -117,6 +117,8 @@ backend:
 
 This project is using this color palette/scheme: https://dribbble.com/shots/4797890--Chat-Property-dashboard
 
+<!-- TODO: Remove since we now have a constants file where these are referenced -->
+
 - primary (header): #4C2FC9
 - secondary (lighter shade): #AEAFE8
 - accent (text): #2A2A57
