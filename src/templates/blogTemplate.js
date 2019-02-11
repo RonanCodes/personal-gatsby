@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { extractLastStringInPath } from '../helpers'
 import { ListingMain } from '../styled-components'
-
+import { Color } from '../constants'
 /**
  * This gets ran on load, and the data object added to this pages props object.
  */
