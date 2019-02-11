@@ -44,7 +44,7 @@ const PortfolioItem = styled.article`
   }
 
   h2 {
-    color: ${Color.TEXT_DARK};
+    color: ${Color.ACCENT_DARK};
     font-weight: 100;
     margin-bottom: 0;
   }
