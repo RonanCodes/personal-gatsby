@@ -39,11 +39,11 @@ const AboutYearSection = styled.section`
       background: #aeafe8;
       height: 2px;
 
-      width: 40%;
-      float: right;
+      width: 20%;
+      float: left;
 
-      margin-top: 2%;
-      margin-right: 50%;
+      margin-top: 20px;
+      margin-left: 1%;
     }
   }
 `
