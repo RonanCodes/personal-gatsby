@@ -3,6 +3,7 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import { extractLastStringInPath } from '../helpers'
+import { Color } from '../constants'
 
 const BLOG_LISTING_QUERY = graphql`
   query BlogPostListing {
@@ -42,23 +43,16 @@ const Post = styled.article`
 
     h5,
     h6 {
-      color: grey;
+      color: ${Color.GREY_REGULAR};
     }
 
     a {
       text-decoration: none;
-      color: #000;
+      color: ${Color.TEXT_BLACK};
     }
 
     p {
       font-size: 18px;
-    }
-
-    .read-more {
-      font-family: 'Open Sans', 'Droid Sans', serif;
-      font-size: 0.8rem;
-      text-decoration: underline;
-      color: #9056d4;
     }
   }
 
@@ -71,7 +65,7 @@ const Post = styled.article`
 `
 
 const SubHeading = styled.h6`
-  color: grey;
+  color: ${Color.GREY_REGULAR};
 
   .left-side {
     margin-right: 10px;

@@ -5,10 +5,9 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-
 import BlogListing from '../components/blogListing'
-
 import { ListingMain } from '../styled-components'
+import { Color, FontFamily } from '../constants'
 
 const BLOG_PAGE_QUERY = graphql`
   query BlogPageQuery {
@@ -24,17 +23,17 @@ const BLOG_PAGE_QUERY = graphql`
 const BlogSiteSection = styled.section`
   width: 100%;
 
-  background: #eaeaea;
-  color: #9056d4;
+  background: ${Color.GREY_LIGHT};
+  color: ${Color.TERTIARY};
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: ${FontFamily.PRIMARY};
   padding: 20px;
   font-size: 18px;
 
   a,
   a :visited {
     text-decoration: none;
-    color: #4c2fc9;
+    color: ${Color.PRIMARY};
   }
 `
 

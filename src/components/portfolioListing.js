@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
+import { Color } from '../constants'
 import { extractLastStringInPath } from '../helpers'
 import { Hr } from '../styled-components'
 
@@ -43,7 +44,7 @@ const PortfolioItem = styled.article`
   }
 
   h2 {
-    color: #2a2a57;
+    color: ${Color.TEXT_DARK};
     font-weight: 100;
     margin-bottom: 0;
   }
@@ -59,19 +60,13 @@ const PortfolioItem = styled.article`
   a,
   a :visited {
     text-decoration: none;
-    color: #aeafe8;
+    color: ${Color.SECONDARY};
 
     strong {
-      color: #9056d4;
+      color: ${Color.TERTIARY};
+
       font-weight: bold;
     }
-  }
-
-  .read-more {
-    font-family: 'Open Sans', 'Droid Sans', serif;
-    font-size: 0.8rem;
-    text-decoration: underline;
-    color: #9056d4;
   }
 
   .start-date {

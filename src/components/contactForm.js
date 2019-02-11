@@ -2,6 +2,8 @@ import React from 'react'
 import { navigateTo } from 'gatsby-link'
 import styled from 'styled-components'
 
+import { Color, FontFamily } from '../constants'
+
 const Form = styled.form`
   margin: auto;
   max-width: 602px;
@@ -23,14 +25,14 @@ const Form = styled.form`
   }
 
   .userInput {
-    border: 2px inset #e2e2e2;
+    border: 2px inset ${Color.GREY_MEDIUM};
     background: #eaeaea;
     border-radius: 10px;
   }
 
   textarea {
     width: 100%;
-    background: #e2e2e2;
+    background: ${Color.GREY_MEDIUM};
     resize: none;
     margin-top: 5px;
   }
@@ -54,12 +56,12 @@ const Form = styled.form`
 
     button,
     input {
-      background: #aeafe8;
+      background: ${Color.SECONDARY};
       border-radius: 10px;
     }
   }
 
-  font-family: 'Open Sans', 'Droid Sans', serif;
+  font-family: ${FontFamily.PRIMARY};
 `
 
 // Create the data object with key/value pairs for the body of the submission

@@ -6,6 +6,7 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 // Importing a css file auto applies it
 import './layout.css'
+import { Color, FontFamily } from '../constants'
 
 import Header from './header'
 
@@ -46,7 +47,7 @@ const Site = styled.div`
   }
 
   /* color: pink; */
-  font-family: 'EB Garamond', 'Droid Serif', Georgia, serif;
+  font-family: ${FontFamily.SECONDARY};
   font-size: 18px;
 
   h1,
@@ -55,7 +56,7 @@ const Site = styled.div`
   h4,
   h5,
   h6 {
-    font-family: 'Open Sans', 'Droid Sans', serif;
+    font-family: ${FontFamily.PRIMARY};
   }
 
   /* The footer must show, so it shows at the bottom of the page since the site content grew to as much as it could */
@@ -63,12 +64,12 @@ const Site = styled.div`
 
 const Footer = styled.footer`
   text-align: center;
-  color: #b3b2c0;
+  color: ${Color.GREY_LIGHTER};
 
   a,
   a :visited {
     text-decoration: none;
-    color: #b3b2c0;
+    color: ${Color.GREY_LIGHTER};
   }
 `
 

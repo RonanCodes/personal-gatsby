@@ -3,7 +3,7 @@ import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
-import { Hr } from '../styled-components'
+import { Color } from '../constants'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
@@ -31,12 +31,12 @@ const AboutYearSection = styled.section`
     display: block;
 
     h1 {
-      color: #2a2a57;
+      color: ${Color.TEXT_DARK};
       float: left;
     }
 
     hr {
-      background: #aeafe8;
+      background: ${Color.SECONDARY};
       height: 2px;
 
       width: 20%;

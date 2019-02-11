@@ -10,6 +10,8 @@ import {
 } from 'react-icons/fa'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
+import { Color } from '../constants'
+
 const SOCIAL_DATA_QUERY = graphql`
   query SocialDataQuery {
     site {
@@ -34,7 +36,7 @@ const SocialLinksList = styled.ul`
   li {
     a {
       font-size: 25px;
-      color: #4c2fc9;
+      color: ${Color.PRIMARY};
     }
   }
 `

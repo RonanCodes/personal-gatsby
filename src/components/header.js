@@ -2,7 +2,9 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
+
 import cursive from '../images/personal-gatsby-cursive.svg'
+import { Color, FontFamily } from '../constants'
 
 const HeaderContainer = styled.div`
   background: #aeafe8;
@@ -40,19 +42,19 @@ const HeaderContainer = styled.div`
 
     li {
       padding: 0 15px 0 15px;
-      font-family: 'Open Sans', 'Droid Sans', serif;
+      font-family: ${FontFamily.PRIMARY};
 
       a {
-        color: #8a4cd3;
+        color: ${Color.ACCENT};
         text-decoration: none;
 
         :visited {
-          color: #8a4cd3;
+          color: ${Color.ACCENT};
           text-decoration: none;
         }
 
         &.active {
-          color: #2a2a57;
+          color: ${Color.TEXT_DARK};
           text-decoration: underline;
         }
       }
