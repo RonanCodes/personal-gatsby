@@ -26,7 +26,7 @@ export const BLOG_POST_QUERY = graphql`
 `
 
 const SubHeading = styled.h6`
-  color: grey;
+  color: ${Color.GREY_REGULAR};
   margin-bottom: 0px;
 
   .left-side {

@@ -50,7 +50,7 @@ const PortfolioItem = styled.article`
   }
 
   h5 {
-    color: grey;
+    color: ${Color.GREY_REGULAR};
   }
 
   p {
