@@ -6,10 +6,10 @@
 export const Color = Object.freeze({
   PRIMARY: '#4C2FC9', // Header
   SECONDARY: '#AEAFE8', // Lighter shade
-  TERTIARY: '#9056d4', // Darker shade
-  ACCENT: '#8a4cd3', // Text special
+  ACCENT: '#8a4cd3', // Special text
   TEXT_LIGHT: '#a875e5',
   TEXT_DARK: '#2A2A57',
+
   TEXT_BLACK: '#000',
   GREY_REGULAR: 'grey', // Text
   GREY_MEDIUM: '#e2e2e2', // Border

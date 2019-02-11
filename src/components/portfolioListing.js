@@ -63,7 +63,7 @@ const PortfolioItem = styled.article`
     color: ${Color.SECONDARY};
 
     strong {
-      color: ${Color.TERTIARY};
+      color: ${Color.ACCENT};
 
       font-weight: bold;
     }
