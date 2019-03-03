@@ -1,6 +1,6 @@
 ---
-title: ronanc.xyz
-coverImage: /images/ronanc-xyz.png
+title: RonanC Website
+coverImage: /images/ronanc-website.png
 startDate: '2019-02-01'
 endDate: '2019-03-03'
 technologies: |-
@@ -12,7 +12,7 @@ goals: |-
   In the process I wanted to learn React, Gatsby, and related technologies.
   And to have a personal website to showcase my skills, portfolio, and blog.
   Because I created a template it took under two hours to get this personal site setup, an extra hour to deploy (with SSL), and another hour to setup an email server.
-projectLink: 'http://ronanc.xyz'
+projectLink: 'https://ronanc.xyz'
 gitLink: 'https://github.com/RonanC/personal-gatsby/tree/ronanc'
 category: portfolio
 ---
