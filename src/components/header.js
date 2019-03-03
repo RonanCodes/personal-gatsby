@@ -47,6 +47,7 @@ const HeaderContainer = styled.div`
       a {
         color: ${Color.ACCENT};
         text-decoration: none;
+        transition: 0.3s;
 
         :visited {
           color: ${Color.ACCENT};
@@ -57,6 +58,11 @@ const HeaderContainer = styled.div`
           color: ${Color.TEXT_DARK};
           text-decoration: underline;
         }
+      }
+
+      a:hover {
+        color: ${Color.ACCENT_DARK};
+        transition: 0.3s;
       }
     }
   }

@@ -58,6 +58,7 @@ const IndexPage = ({ location }) => (
             <br />A Front-End Developer, UI Designer, Entrepreneur, and Outdoor
             Adventurer.
           </h2>
+
           <p>
             I love working with people who are passionate about technology and
             how it can be applied in meaningful ways.
