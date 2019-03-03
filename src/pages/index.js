@@ -41,16 +41,8 @@ const IndexPage = ({ location }) => (
     render={data => (
       <Layout location={location}>
         <SEO
-          title="Personal Gatsby - Homepage"
-          keywords={[
-            `personal gatsby`,
-            `personal`,
-            `gatsby`,
-            `homepage`,
-            `home`,
-            `react`,
-            `graphql`,
-          ]}
+          title="Ronan Connolly - Homepage"
+          keywords={[`ronan connolly`, `front-end`, `developer`, `designer`]}
         />
 
         <HomeSection>
@@ -62,24 +54,22 @@ const IndexPage = ({ location }) => (
             }}
           />
           <h1>
-            Hi, I'm Gatsby. A Developer, Designer, &amp; Outdoor Adventurer.
+            Hi, I'm Ronan Connolly. A Front-End Developer, UI Designer,
+            Entrepreneur, and Outdoor Adventurer.
           </h1>
           <p>
-            Lorem ipsum dolor amet minim plaid deep v adaptogen wayfarers.
-            Pickled ullamco hell of voluptate. Stumptown scenester woke austin
-            echo park church-key sed plaid do quinoa fanny pack tumeric celiac.
-            Sriracha vinyl butcher deserunt. In twee unicorn, chartreuse
-            chicharrones mollit elit aesthetic 8-bit irony gentrify. Culpa
-            kitsch direct trade forage irure squid VHS.
+            I love working with people who are passionate about technology and
+            how it can be applied in meaningful ways.
           </p>
 
           <p>
-            Nulla scenester kitsch whatever dolore cloud bread banh mi, air
-            plant sartorial migas XOXO green juice umami selvage. Keffiyeh
-            vexillologist gluten-free echo park nostrud meditation wayfarers.
-            Selvage labore four dollar toast non seitan offal. Selvage adaptogen
-            dreamcatcher neutra, distillery poutine humblebrag ut minim quinoa
-            vaporware keytar.
+            I'm a forever student, who will never stop learning. When I'm
+            working I can't help but resist on making things better along the
+            way.
+          </p>
+
+          <p>
+            Get in touch if you're interested in collaborating on a project 🚀
           </p>
         </HomeSection>
 
