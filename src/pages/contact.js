@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -17,6 +18,10 @@ const CONTACT_IMAGE_QUERY = graphql`
       }
     }
   }
+`
+
+const ContactSection = styled.section`
+  text-align: center;
 `
 
 /**
@@ -37,16 +42,11 @@ const ContactPage = ({ location }) => (
               margin: 'auto',
             }}
           />
-          <p>
-            Pickled cliche elit lyft jianbing messenger bag mixtape normcore.
-            8-bit typewriter velit, schlitz locavore occupy deep v you probably
-            haven't heard of them tattooed hot chicken meditation PBR&B
-            scenester. Affogato magna put a bird on it hot chicken. Semiotics
-            XOXO hashtag ut meggings scenester narwhal irony af. Salvia man bun
-            distillery brunch chicharrones esse vaporware direct trade fanny
-            pack pickled messenger bag flannel art party. Ugh laborum aliquip
-            enamel pin do tofu.
-          </p>
+          <ContactSection>
+            Reach out if you're interested in collaborating with me on a
+            project, hiring me for a contract role, or if you just have a
+            question.
+          </ContactSection>
 
           <ContactForm />
         </div>
