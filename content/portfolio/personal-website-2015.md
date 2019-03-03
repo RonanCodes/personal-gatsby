@@ -1,5 +1,5 @@
 ---
-title: Personal Website - AngularJS
+title: Ronan Connolly - Personal Website 2015
 coverImage: /images/ronanc-website-2015.png
 startDate: '2015-01-01'
 endDate: '2015-01-01'

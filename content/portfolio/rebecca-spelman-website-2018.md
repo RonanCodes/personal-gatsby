@@ -1,13 +1,13 @@
 ---
-title: Rebecca Spelman Website
+title: Rebecca Spelman - Personal Website
 coverImage: /images/rebecca-spelman-website-2018.png
 startDate: '2018-04-01'
 endDate: '2018-06-01'
 technologies: |-
-  Wordpress, Digital Ocean, PHP, Astrid Theme,
-  UI Design, Color Theory, Typography, custom styles
+  Wordpress, Digital Ocean, PHP,
+  UI Design, Color Theory, Typography,
   Custom widgets & PHP functions, Form to email Widget,
-  NameCheap domain, Blog section, Portfolio section
+  NameCheap domain
 goals: |-
   The goal of this site was to create a sleek, professional, and clean looking website to show case Rebecca's skills in writing, digital marketing / SEO, and voice work.
 journey: |-
