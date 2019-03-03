@@ -26,6 +26,7 @@ const PORTFOLIO_LISTING_QUERY = graphql`
             endDate(formatString: "MMM YYYY")
             technologies
             goals
+            journey
             projectLink
             gitLink
           }
@@ -114,11 +115,18 @@ const PortfolioListing = () => (
 
               {header(edge.node.frontmatter)}
 
-              <h2>Goals / Information</h2>
+              <h2>Goals</h2>
               <p>{edge.node.frontmatter.goals}</p>
 
               <h2>Technologies / Skills</h2>
               <p>{edge.node.frontmatter.technologies}</p>
+
+              {!edge.node.frontmatter.journey ? null : (
+                <div>
+                  <h2>Journey</h2>
+                  <p>{edge.node.frontmatter.journey}</p>
+                </div>
+              )}
 
               {!edge.node.frontmatter.projectLink ? null : (
                 <h4>

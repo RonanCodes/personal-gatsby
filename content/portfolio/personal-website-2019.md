@@ -11,6 +11,7 @@ goals: |-
   The goal of this project was to create a base template for future personal & company websites.
   In the process I wanted to learn React, Gatsby, and related technologies.
   And to have a personal website to showcase my skills, portfolio, and blog.
+journey: |-
   Because I created a template it took under two hours to get this personal site setup, an extra hour to deploy (with SSL), and another hour to setup an email server.
 projectLink: 'https://ronanc.xyz'
 gitLink: 'https://github.com/RonanC/personal-gatsby/tree/ronanc'
