@@ -53,23 +53,28 @@ const IndexPage = ({ location }) => (
               marginBottom: '50px',
             }}
           />
-          <h1>
-            Hi, I'm Ronan Connolly. A Front-End Developer, UI Designer,
-            Entrepreneur, and Outdoor Adventurer.
-          </h1>
+          <h2>
+            Hi, I'm Ronan Connolly.
+            <br />A Front-End Developer, UI Designer, Entrepreneur, and Outdoor
+            Adventurer.
+          </h2>
           <p>
             I love working with people who are passionate about technology and
             how it can be applied in meaningful ways.
           </p>
 
           <p>
-            I'm a forever student, who will never stop learning. When I'm
-            working I can't help but resist on making things better along the
-            way.
+            I'm a forever student, who will never stop learning.
+            <br />
+            When I'm working I can't help but resist on making things better
+            along the way.
           </p>
 
           <p>
-            Get in touch if you're interested in collaborating on a project 🚀
+            Get in touch if you're interested in collaborating on a project{' '}
+            <span role="img" aria-label="rocket">
+              🚀
+            </span>
           </p>
         </HomeSection>
 
