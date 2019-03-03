@@ -5,8 +5,8 @@ startDate: '2019-02-01'
 endDate: '2019-03-03'
 technologies: |-
   ES2015 Functions, HTML5 Semantic Tags,
-
-  React, GatsbyJS, Styled Components, GraphQL
+  React, GatsbyJS, Styled Components, GraphQL,
+  Netlify, Custom Mail Server (Zoho Mail), Lets Encrypt SSL Cert
 goals: |-
   The goal of this project was to create a base template for future personal & company websites.
   In the process I wanted to learn React, Gatsby, and related technologies.
