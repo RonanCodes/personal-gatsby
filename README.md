@@ -3,7 +3,7 @@
 <p align="center">
   <h1 align="center">
     <a target="_blank" rel="noopener noreferrer" href="https://ronanc.xyz">
-          <img alt="Personal Gatsby Cursive" src="https://github.com/RonanC/personal-gatsby/blob/master/src/images/name-cursive.svg" width="400" />
+          <img alt="Ronan Connolly Cursive" src="https://github.com/RonanC/personal-gatsby/blob/ronanc/src/images/name-cursive.svg" width="400" />
     </a>
   </h1>
 </p>
