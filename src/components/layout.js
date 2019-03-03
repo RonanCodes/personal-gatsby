@@ -99,14 +99,14 @@ const Layout = ({ children, location }) => (
           </MainLayout>
 
           <Footer>
-            © {new Date().getFullYear()}, Built with
+            © {new Date().getFullYear()}, Built with 💛by
             {` `}
             <OutboundLink
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/RonanC/personal-gatsby/"
+              href="https://github.com/RonanC/personal-gatsby/tree/ronanc"
             >
-              Personal Gatsby
+              Ronan Connolly
             </OutboundLink>
           </Footer>
         </Site>
