@@ -150,14 +150,24 @@ const AboutPage = ({ location }) => (
 
         {aboutYear(
           2015,
-          `I continued working on my first contract (which I received in 2014) for Enterprise Ireland which involved creating a mobile cross platform food ordering application,
-          which would allows customers to order food, drinks, and custom sandwiches from their phone.
-          This involved a top up system with top up codes so that you could pay via the app.
-          In 2015 I received a second contract, which involved created a cross platform mobile application
+          `I received a second contract with Enterprise Ireland, which involved created a cross platform mobile application
           that would allow realtors to view real-estate information in real time,
           and allow the company to utilize push notifications to let their clients know quickly about deals.
+
+          I finished up two contracts for Enterprise Ireland this year (food & realtor apps).
           I used the Ionic framework with Angular.js in order to create these applications, and published them to the iOS & Android stores.
-          I was in charge of the UI design, mobile development, and most of the customer interactions.`
+
+          I was in charge of the UI design, mobile development, and most of the customer interactions for both projects.`
+        )}
+
+        {aboutYear(
+          2014,
+          `My colleague reached out and asked if I was interested in a contract from Enterprise Ireland,
+          I agreed and took it on. It involved creating a mobile cross platform food ordering application,
+          which would allows customers to order food, drinks, and custom sandwiches from their phone.
+          This involved a top up system with top up codes so that you could pay via the app.
+
+          I used the Ionic framework with Angular.js in order to create this application.`
         )}
       </Layout>
     )}
