@@ -104,7 +104,7 @@ const Layout = ({ children, location }) => (
             <OutboundLink
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/RonanC/personal-gatsby"
+              href="https://github.com/RonanC/personal-gatsby/tree/ronanc"
             >
               Personal Gatsby
             </OutboundLink>
