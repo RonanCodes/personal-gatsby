@@ -31,7 +31,7 @@ const HeaderContainer = styled.div`
 
   .logo-link {
     img {
-      padding-top: 20px;
+      /* padding-top: 20px; */
     }
   }
 
