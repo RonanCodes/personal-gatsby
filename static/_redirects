@@ -1,5 +1,5 @@
 # Redirect default Netlify subdomain to primary domain
-# https://ronanc.netlify.com/* https://ronanc.xyz/:splat 301!
+https://ronanc.netlify.com/* https://ronanc.xyz/:splat 301!
 
 # REAL:
-# http://ronanc.netlify.com/* http://ronanc.xyz/:splat 301!
+http://ronanc.netlify.com/* https://ronanc.xyz/:splat 301!
