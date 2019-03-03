@@ -76,21 +76,34 @@ const AboutPage = ({ location }) => (
           }}
         />
 
+        <p>
+          From a very young age I've had a keen interest in technology, business
+          and finance. Indeed my whole family is interested in these things, so
+          I gained the interest through osmosis.
+          <br />
+          The West of Ireland is where I was born and raised. I now reside in
+          Galway City on the west coast.
+        </p>
+        <p>
+          I believe in doing whatever you want as long as it doesn't hurt anyone
+          else (a motto I learned from the amazing writer{' '}
+          <a href="http://rebeccaspelman.com">Rebecca Spelman</a>).
+          <br />
+          Some of my over arching goals in life are to become a leader in the
+          Front-End development community, become a digital nomad (work while
+          travelling), start my own business (leveraging modern technologies),
+          and to become financially intelligent.
+        </p>
+
         <p
           style={{
             marginBottom: '70px',
           }}
         >
-          Truffaut iceland 8-bit, ut chartreuse sriracha aliquip edison bulb
-          austin snackwave ullamco adaptogen. Everyday carry pok pok narwhal
-          aliqua reprehenderit iceland asymmetrical kale chips 90's portland
-          keffiyeh hot chicken. Celiac banh mi pariatur marfa. Aesthetic
-          pitchfork crucifix qui forage et do mixtape banh mi cardigan occupy
-          viral. Duis green juice typewriter jean shorts et you probably haven't
-          heard of them gastropub hot chicken in neutra sed fixie. Affogato
-          labore duis meh, single-origin coffee farm-to-table salvia lo-fi
-          tumblr veniam irure. Flexitarian velit pariatur cray 90's occaecat do
-          retro officia bicycle rights street art put a bird on it semiotics.
+          In my spare time I enjoy reading, playing board-games, trekking,
+          jogging, and learning (technology, business, and finance mostly). I'm
+          a coffee connoisseur and really enjoy unwinding in a relaxed
+          environment when I get some down time.
         </p>
 
         {aboutYear(
