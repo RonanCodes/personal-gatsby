@@ -3,7 +3,7 @@
   "private": true,
   "description": "Front-End Developer, UI Designer, Entrepreneur, and Outdoor Adventurer.",
   "version": "0.1.0",
-  "author": "Ronan Connolly <hi@ronanconnolly.ie>",
+  "author": "Ronan Connolly <hi@ronanc.xyz>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.0.111",
