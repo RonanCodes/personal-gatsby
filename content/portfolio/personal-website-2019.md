@@ -1,6 +1,6 @@
 ---
-title: RonanC Website
-coverImage: /images/ronanc-website.png
+title: Personal Website - React & GatsbyJS
+coverImage: /images/ronanc-website-2019.png
 startDate: '2019-02-01'
 endDate: '2019-03-03'
 technologies: |-
