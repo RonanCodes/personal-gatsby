@@ -43,7 +43,7 @@ const Site = styled.div`
     margin-top: 10px;
     margin-bottom: 60px;
 
-    width: 1100px;
+    width: 900px;
   }
 
   /* color: pink; */
