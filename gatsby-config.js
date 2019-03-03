@@ -42,8 +42,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Personal Gatsby`,
-        short_name: `PG`,
+        name: `Ronan Connolly`,
+        short_name: `RC`,
         start_url: `/`,
         background_color: `#AEAFE8`,
         theme_color: `#4C2FC9`,
