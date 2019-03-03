@@ -114,10 +114,10 @@ const PortfolioListing = () => (
 
               {header(edge.node.frontmatter)}
 
-              <h2>Goals</h2>
+              <h2>Goals / Information</h2>
               <p>{edge.node.frontmatter.goals}</p>
 
-              <h2>Technologies</h2>
+              <h2>Technologies / Skills</h2>
               <p>{edge.node.frontmatter.technologies}</p>
 
               {!edge.node.frontmatter.projectLink ? null : (
