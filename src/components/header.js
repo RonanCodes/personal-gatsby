@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 
-import cursive from '../images/personal-gatsby-cursive.svg'
+import cursive from '../images/name-cursive.svg'
 import { Color, FontFamily } from '../constants'
 
 const HeaderContainer = styled.div`
@@ -89,7 +89,7 @@ const navList = (pathname, navItems) =>
 const Header = ({ location }) => (
   <HeaderContainer>
     <Link to="/" className="logo-link">
-      <img src={cursive} alt="Personal Gatsby Cursive" />
+      <img src={cursive} alt="Header Name Cursive" />
     </Link>
 
     <ul className="nav">{navList(location.pathname, navItems)}</ul>

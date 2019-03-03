@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Personal Gatsby`,
-    description: `Get your personal website kick-started with this Personal Gatsby Starter Project`,
-    author: `Ronan Connolly <hi@ronanconnolly.ie>`,
-    siteUrl: `https://personalgatsby.xyz`,
+    title: `Ronan Connolly`,
+    description: `Designer, Developer, and Entrepreneur making the web a kick ass place.`,
+    author: `Ronan Connolly <hi@ronanc.xyz>`,
+    siteUrl: `https://ronanc.xyz`,
     twitterHandle: `_RonanC`,
     linkedInHandle: `RonanConnolly`,
     githubHandle: `RonanC`,
-    email: `hi@ronanconnolly.ie`,
+    email: `hi@ronanc.xyz`,
     mapLink: `https://www.google.ie/maps/place/Galway/@53.2839064,-9.0837657,13z/data=!3m1!4b1!4m5!3m4!1s0x485b93955a2d5bff:0x32b1b440a495281!8m2!3d53.270668!4d-9.0567905`,
     mediumHandle: `_RonanC`,
     devHandle: `ronanc`,
@@ -48,7 +48,7 @@ module.exports = {
         background_color: `#AEAFE8`,
         theme_color: `#4C2FC9`,
         display: `minimal-ui`,
-        icon: `src/images/personal-gatsby-logo-no-text.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
         include_favicon: true, // Include favicon
       },
     },
