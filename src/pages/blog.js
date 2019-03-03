@@ -45,10 +45,7 @@ const BlogPage = ({ location }) => (
     query={BLOG_PAGE_QUERY}
     render={({ site }) => (
       <Layout location={location}>
-        <SEO
-          title="Blog Posts"
-          keywords={[`blog posts`, `blog`, `posts`, `articles`, `article`]}
-        />
+        <SEO title="Blog Posts" keywords={[`blog`]} />
         <ListingMain>
           <BlogSiteSection>
             For more articles check out:{` `}

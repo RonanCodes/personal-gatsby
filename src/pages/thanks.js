@@ -25,7 +25,7 @@ const ThanksPage = ({ location }) => (
     query={SUCCESS_IMAGE_QUERY}
     render={data => (
       <Layout location={location}>
-        <SEO title="Contact Thanks" keywords={[`contact`, `thanks`]} />
+        <SEO title="Contact Thanks" keywords={[`contact`]} />
         <div>
           <Img
             fluid={data.file.childImageSharp.fluid}

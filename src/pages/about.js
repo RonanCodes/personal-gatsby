@@ -66,7 +66,7 @@ const AboutPage = ({ location }) => (
     query={ABOUT_IMAGE_QUERY}
     render={data => (
       <Layout location={location}>
-        <SEO title="About Us" keywords={[`about us`, `about`, `information`]} />
+        <SEO title="About Us" keywords={[`about`]} />
 
         <Img
           fluid={data.file.childImageSharp.fluid}

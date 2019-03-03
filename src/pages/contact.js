@@ -27,10 +27,7 @@ const ContactPage = ({ location }) => (
     query={CONTACT_IMAGE_QUERY}
     render={data => (
       <Layout location={location}>
-        <SEO
-          title="Contact Form"
-          keywords={[`contact form`, `contact`, `form`, `get in touch`]}
-        />
+        <SEO title="Contact Form" keywords={[`contact form`]} />
 
         <div>
           <Img

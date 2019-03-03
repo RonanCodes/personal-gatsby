@@ -25,10 +25,7 @@ const NotFoundPage = () => (
     query={NOT_FOUND_QUERY}
     render={data => (
       <Layout>
-        <SEO
-          title="404: Not found"
-          keywords={[`404`, `page not found`, `error`]}
-        />
+        <SEO title="404: Not found" keywords={[`404`]} />
 
         {/* <h1>NOT FOUND</h1> */}
         <Img
