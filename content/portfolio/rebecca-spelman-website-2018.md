@@ -10,7 +10,7 @@ technologies: |-
   NameCheap domain, Blog section, Portfolio section
 goals: |-
   The goal of this site was to create a sleek, professional, and clean looking website to show case Rebecca's skills in writing, digital marketing / SEO, and voice work.
-  I started with a basic theme and heavily customized it to her needs.
+  We started with a basic theme and heavily customized it to her needs.
   I came up with an elegant color scheme and set of fonts.
   Custom stylings and PHP functions were needed to get the website looking as we wanted, and for the blog & portfolio sections to look customized to our liking.
 projectLink: 'http://rebeccaspelman.com'
