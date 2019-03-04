@@ -120,12 +120,12 @@ const AboutPage = ({ location }) => (
           2018,
           `In September of 2018 I joined Fidelity Investments as a Senior Software Engineer (Contractor).
           This was a step up from my previous role. I had a few weeks off before starting;
-          I spent that time researching vanilla JS at a deep level, upgrading my software architecture skills, and learning the Angular framework.
+          During this time I researched vanilla JS at a deep level, upgraded my software architecture skills, and learned the Angular framework.
           This paid dividends and I quickly became comfortable in my new role.
 
-          I was taken aback by the high quality of the building, people, and technologies at Fidelity.
-
+          When I first arrived at Fidelity I was taken aback by the high quality of the building, people, and technologies at Fidelity.
           I was put to work on implementing features for an investment web application using the Angular framework.
+
           This role at Fidelity was exactly what I was looking for, and I was over the moon to get a role in the finance industry as this has always been a goal of mine.
           `
         )}
