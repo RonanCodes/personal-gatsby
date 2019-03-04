@@ -122,9 +122,11 @@ const AboutPage = ({ location }) => (
           This was a step up from my previous role. I had a few weeks off before starting;
           I spent that time researching vanilla JS at a deep level, upgrading my software architecture skills, and learning the Angular framework.
           This paid dividends and I quickly became comfortable in my new role.
+
+          I was taken aback by the high quality of the building, people, and technologies at Fidelity.
+
           I was put to work on implementing features for an investment web application using the Angular framework.
           This role at Fidelity was exactly what I was looking for, and I was over the moon to get a role in the finance industry as this has always been a goal of mine.
-          The building, people, and technologies at Fidelity are top quality.
           `
         )}
 
@@ -133,9 +135,13 @@ const AboutPage = ({ location }) => (
           `In November of 2017 I joined the IBM Resilient team.
         Resilient was a recent startup that IBM had acquired, most of the team were based in Boston, USA.
         This was a really interesting role as I got to see how IBM handled merging a high performing startup into the corporate structure of the main company body.
+
         In this role I trained up the QA on the Galway side on test automation (selenium & groovy) so that they could write up the tests (most of the QA had never done any programming).
         I got to take my hand to the back-end and write up some features with Java & BASH.
         One feature in particular that I spent a lot of time on was audit logging (utilising Splunk).
+
+        I joined the Sports & Social committee this year, which was incredibly fun and unwittingly a lot of hard work,
+        I really enjoyed this as I got to organise events for all the amazing people at the IBM Galway office.
         `
         )}
 
