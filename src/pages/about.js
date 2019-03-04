@@ -122,7 +122,7 @@ const AboutPage = ({ location }) => (
           This was a step up from my previous role. I had a few weeks off before starting;
           I spent that time researching vanilla JS at a deep level, upgrading my software architecture skills, and learning the Angular framework.
           This paid dividends and I quickly became comfortable in my new role.
-          I was put to work on implementing features for an Investment web application using the Angular framework.
+          I was put to work on implementing features for an investment web application using the Angular framework.
           This role at Fidelity was exactly what I was looking for, and I was over the moon to get a role in the finance industry as this has always been a goal of mine.
           The building, people, and technologies at Fidelity are top quality.
           `
@@ -145,7 +145,7 @@ const AboutPage = ({ location }) => (
           I was ecstatic, as I'd always wanted to work as a software engineer for a big multi-national,
           IBM in particular stood out to me as it's such an historic company.
 
-          Here I worked on creating features for a Security web application which helped monitor security attacks against endpoints.
+          Here I worked on creating features for a security web application which helped monitor security attacks against endpoints.
           I was mainly working with Angular.js & Node.js.
           IBM is where I really found my feet in terms of Agile ceremonies, working in remote global co-located teams, and seeing how a multi-national works (the pros and cons).
           I really enjoyed learning the security domain. I learned all about the ins and outs of malware and just how fragile the whole worlds infrastructure is due to this malware.`
