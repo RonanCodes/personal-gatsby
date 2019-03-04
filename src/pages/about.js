@@ -119,12 +119,12 @@ const AboutPage = ({ location }) => (
         {aboutYear(
           2018,
           `In September of 2018 I joined Fidelity Investments as a Senior Software Engineer (Contractor).
-          This was a huge jump from my previous role. I had a few weeks off before this role,
-          I spent that time researching vanilla JS at a deep level, upgrading my software architecture skills, and on the Angular framework.
-          This paid dividends and I quickly started knocking out features for my new role.
+          This was a step up from my previous role. I had a few weeks off before starting;
+          I spent that time researching vanilla JS at a deep level, upgrading my software architecture skills, and learning the Angular framework.
+          This paid dividends and I quickly became comfortable in my new role.
           I was put to work on implementing features for an Investment web application using the Angular framework.
           This role at Fidelity was exactly what I was looking for, and I was over the moon to get a role in the finance industry as this has always been a goal of mine.
-          The building, people, and technologies being used at Fidelity are top quality.
+          The building, people, and technologies at Fidelity are top quality.
           `
         )}
 
@@ -132,7 +132,7 @@ const AboutPage = ({ location }) => (
           2017,
           `In November of 2017 I joined the IBM Resilient team.
         Resilient was a recent startup that IBM had acquired, most of the team were based in Boston, USA.
-        This was a really interesting role as I got to see how IBM handled turning a high performing startup into the corporate structure of the main company.
+        This was a really interesting role as I got to see how IBM handled merging a high performing startup into the corporate structure of the main company body.
         In this role I trained up the QA on the Galway side on test automation (selenium & groovy) so that they could write up the tests (most of the QA had never done any programming).
         I got to take my hand to the back-end and write up some features with Java & BASH.
         One feature in particular that I spent a lot of time on was audit logging (utilising Splunk).
@@ -142,7 +142,10 @@ const AboutPage = ({ location }) => (
         {aboutYear(
           2016,
           `In May of 2016 I joined the IBM Security division as a Front-End software engineer.
-          Here I worked on creating features for a Security web application which helped monitor security attacks against endpoints in your company.
+          I was ecstatic, as I'd always wanted to work as a software engineer for a big multi-national,
+          IBM in particular stood out to me as it's such an historic company.
+
+          Here I worked on creating features for a Security web application which helped monitor security attacks against endpoints.
           I was mainly working with Angular.js & Node.js.
           IBM is where I really found my feet in terms of Agile ceremonies, working in remote global co-located teams, and seeing how a multi-national works (the pros and cons).
           I really enjoyed learning the security domain. I learned all about the ins and outs of malware and just how fragile the whole worlds infrastructure is due to this malware.`
@@ -150,7 +153,7 @@ const AboutPage = ({ location }) => (
 
         {aboutYear(
           2015,
-          `I received a second contract with Enterprise Ireland, which involved created a cross platform mobile application
+          `I received a second contract with Enterprise Ireland, which involved creating a cross platform mobile application
           that would allow realtors to view real-estate information in real time,
           and allow the company to utilize push notifications to let their clients know quickly about deals.
 
@@ -163,7 +166,7 @@ const AboutPage = ({ location }) => (
         {aboutYear(
           2014,
           `My colleague reached out and asked if I was interested in a contract from Enterprise Ireland,
-          I agreed and took it on. It involved creating a mobile cross platform food ordering application,
+          I agreed and took it on. It involved creating a cross platform mobile food ordering application,
           which would allows customers to order food, drinks, and custom sandwiches from their phone.
           This involved a top up system with top up codes so that you could pay via the app.
 
