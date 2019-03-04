@@ -4,7 +4,7 @@ coverImage: /images/ronanc-website-2015.png
 startDate: '2015-01-01'
 endDate: '2015-01-01'
 technologies: |-
-  Angular.JS, Node.JS, Express.JS, JavaScript, Grunt
+  AngularJS, Node.js, Express.js, JavaScript, Grunt
   UI Design,
   Heroku, Local domain setup (Blacknight)
 goals: |-

@@ -119,11 +119,11 @@ const AboutPage = ({ location }) => (
         {aboutYear(
           2018,
           `In September of 2018 I joined Fidelity Investments as a Senior Software Engineer (Contractor).
-          This was a step up from my previous role. I had a few weeks off before starting;
+          This was a step up from my previous role. I had a few weeks off before starting.
           During this time I researched vanilla JS at a deep level, upgraded my software architecture skills, and learned the Angular framework.
-          This paid dividends and I quickly became comfortable in my new role.
+          This paid dividends as I quickly became comfortable in my new role.
 
-          When I first arrived at Fidelity I was taken aback by the high quality of the building, people, and technologies at Fidelity.
+          When I first arrived at Fidelity I was taken aback by the high quality of the building, people, and technologies.
           I was put to work on implementing features for an investment web application using the Angular framework.
 
           This role at Fidelity was exactly what I was looking for, and I was over the moon to get a role in the finance industry as this has always been a goal of mine.
@@ -140,7 +140,7 @@ const AboutPage = ({ location }) => (
         I got to take my hand to the back-end and write up some features with Java & BASH.
         One feature in particular that I spent a lot of time on was audit logging (utilising Splunk).
 
-        I joined the Sports & Social committee this year, which was incredibly fun and unwittingly a lot of hard work,
+        I joined the Sports & Social committee this year, which was incredibly fun and unwittingly a lot of hard work.
         I really enjoyed this as I got to organise events for all the amazing people at the IBM Galway office.
         `
         )}
@@ -148,11 +148,11 @@ const AboutPage = ({ location }) => (
         {aboutYear(
           2016,
           `In May of 2016 I joined the IBM Security division as a Front-End software engineer.
-          I was ecstatic, as I'd always wanted to work as a software engineer for a big multi-national,
+          I was ecstatic, as I'd always wanted to work as a software engineer for a big multi-national;
           IBM in particular stood out to me as it's such an historic company.
 
-          Here I worked on creating features for a security web application which helped monitor security attacks against endpoints.
-          I was mainly working with Angular.js & Node.js.
+          Here I worked on creating features for a security web application which helped monitor malware attacks against endpoints.
+          I was mainly working with AngularJS & Node.js.
           IBM is where I really found my feet in terms of Agile ceremonies, working in remote global co-located teams, and seeing how a multi-national works (the pros and cons).
           I really enjoyed learning the security domain. I learned all about the ins and outs of malware and just how fragile the whole worlds infrastructure is due to this malware.`
         )}
@@ -164,7 +164,7 @@ const AboutPage = ({ location }) => (
           and allow the company to utilize push notifications to let their clients know quickly about deals.
 
           I finished up two contracts for Enterprise Ireland this year (food & realtor apps).
-          I used the Ionic framework with Angular.js in order to create these applications, and published them to the iOS & Android stores.
+          I used the Ionic framework with AngularJS in order to create these applications, and published them to the iOS & Android stores.
 
           I was in charge of the UI design, mobile development, and most of the customer interactions for both projects.`
         )}
@@ -176,7 +176,7 @@ const AboutPage = ({ location }) => (
           which would allows customers to order food, drinks, and custom sandwiches from their phone.
           This involved a top up system with top up codes so that you could pay via the app.
 
-          I used the Ionic framework with Angular.js in order to create this application.`
+          I used the Ionic framework with AngularJS in order to create this application.`
         )}
       </Layout>
     )}
