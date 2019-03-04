@@ -67,7 +67,7 @@ const IndexPage = ({ location }) => (
           <p>
             I'm a forever student, who will never stop learning.
             <br />
-            When I'm working I can't help but resist on making things better
+            When I'm working I can't resist the urge to make things better
             along the way.
           </p>
 
