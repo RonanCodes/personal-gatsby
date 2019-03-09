@@ -41,8 +41,8 @@ collections: # A list of collections the CMS should be able to edit
           name: discussionId,
           label: Discussion ID,
           widget: string,
-          default: { { { slug } } },
-          hint: 'Must be unique (used to track comments)',
+          default: 2019-12-30_why-xy-or-x,
+          hint: 'Must be unique (used to track comments).',
         }
       - { name: coverImage, label: Cover Image, widget: image, required: false }
       - { name: category, label: Category, widget: hidden, default: blog }
