@@ -65,6 +65,7 @@ const Site = styled.div`
 const Footer = styled.footer`
   text-align: center;
   color: ${Color.GREY_LIGHTER};
+  margin-bottom: 5px;
 
   a,
   a :visited {

@@ -43,7 +43,7 @@ const AboutYearSection = styled.section`
       width: 20%;
       float: left;
 
-      margin-top: 20px;
+      margin-top: 24px;
       margin-left: 1%;
     }
   }

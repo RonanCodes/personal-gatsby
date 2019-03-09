@@ -28,6 +28,7 @@ export const BLOG_POST_QUERY = graphql`
 const SubHeading = styled.h6`
   color: ${Color.GREY_REGULAR};
   margin-bottom: 0px;
+  margin-top: 4px;
 
   .left-side {
     margin-right: 10px;
@@ -60,7 +61,7 @@ export default class blogTemplate extends Component {
 
       .header {
         background: #e2e2e2;
-        padding: 10px 0 10px 0;
+        padding: 0px 0 10px 0;
         border-radius: 0 0px 30px 30px;
         border: 10px solid #e2e2e2;
         margin-bottom: 20px;

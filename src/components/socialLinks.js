@@ -36,7 +36,7 @@ const SocialLinksList = styled.ul`
   li {
     a {
       font-size: 25px;
-      color: ${Color.ACCENT_DARK};
+      color: ${Color.ACCENT_LIGHT};
       transition: 0.5s;
     }
 

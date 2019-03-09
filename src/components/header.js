@@ -45,17 +45,17 @@ const HeaderContainer = styled.div`
       font-family: ${FontFamily.PRIMARY};
 
       a {
-        color: ${Color.ACCENT};
+        color: ${Color.ACCENT_LARGE};
         text-decoration: none;
         transition: 0.3s;
 
         :visited {
-          color: ${Color.ACCENT};
+          color: ${Color.ACCENT_LARGE};
           text-decoration: none;
         }
 
         &.active {
-          color: ${Color.TEXT_DARK};
+          color: ${Color.ACCENT_DARK};
           text-decoration: underline;
         }
       }
