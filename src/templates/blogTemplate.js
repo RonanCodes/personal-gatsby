@@ -41,39 +41,45 @@ const SubHeading = styled.h6`
   }
 `
 
+const BlogPost = styled.article`
+  /* margin top of 10 is for all layout pages */
+  margin-top: -10px;
+
+  .cover-image {
+    overflow: hidden;
+    max-height: 400px;
+
+    text-align: center;
+    img {
+      margin-bottom: -10px;
+      max-width: 100%;
+    }
+  }
+
+  header {
+    background: #e2e2e2;
+    padding: 0px 0 10px 0;
+    border-radius: 0 0px 30px 30px;
+    border: 10px solid #e2e2e2;
+    margin-bottom: 20px;
+
+    .blog-title {
+      margin-bottom: 0px;
+    }
+  }
+`
+
+const CommentsSection = styled.div`
+  .talkyard-comments p {
+    display: none;
+  }
+`
+
 /**
  * The template for each individual blog post.
  */
 export default class blogTemplate extends Component {
   render() {
-    const BlogPost = styled.article`
-      /* margin top of 10 is for all layout pages */
-      margin-top: -10px;
-
-      .cover-image {
-        overflow: hidden;
-        max-height: 400px;
-
-        text-align: center;
-        img {
-          margin-bottom: -10px;
-          max-width: 100%;
-        }
-      }
-
-      header {
-        background: #e2e2e2;
-        padding: 0px 0 10px 0;
-        border-radius: 0 0px 30px 30px;
-        border: 10px solid #e2e2e2;
-        margin-bottom: 20px;
-
-        .blog-title {
-          margin-bottom: 0px;
-        }
-      }
-    `
-
     const { frontmatter, html, timeToRead } = this.props.data.markdownRemark
     const { location } = this.props
 
@@ -103,7 +109,9 @@ export default class blogTemplate extends Component {
             </section>
           </BlogPost>
 
-          <TalkyardCommentsIframe discussionId={frontmatter.discussionId} />
+          <CommentsSection>
+            <TalkyardCommentsIframe discussionId={frontmatter.discussionId} />
+          </CommentsSection>
         </ListingSection>
       </Layout>
     )
