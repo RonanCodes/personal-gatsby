@@ -35,34 +35,36 @@ const HeaderContainer = styled.header`
     }
   }
 
-  .nav {
-    display: flex;
-    list-style: none;
-    margin: 0;
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
 
-    li {
-      padding: 0 15px 0 15px;
-      font-family: ${FontFamily.PRIMARY};
+      li {
+        padding: 0 15px 0 15px;
+        font-family: ${FontFamily.PRIMARY};
 
-      a {
-        color: ${Color.ACCENT_LARGE};
-        text-decoration: none;
-        transition: 0.3s;
-
-        :visited {
+        a {
           color: ${Color.ACCENT_LARGE};
           text-decoration: none;
+          transition: 0.3s;
+
+          :visited {
+            color: ${Color.ACCENT_LARGE};
+            text-decoration: none;
+          }
+
+          &.active {
+            color: ${Color.ACCENT_DARK};
+            text-decoration: underline;
+          }
         }
 
-        &.active {
+        a:hover {
           color: ${Color.ACCENT_DARK};
-          text-decoration: underline;
+          transition: 0.3s;
         }
-      }
-
-      a:hover {
-        color: ${Color.ACCENT_DARK};
-        transition: 0.3s;
       }
     }
   }
@@ -97,8 +99,9 @@ const Header = ({ location }) => (
     <Link to="/" className="masthead-link">
       <img src={masthead} alt="Masthead - Ronan Connolly" />
     </Link>
-
-    <ul className="nav">{navList(location.pathname, navItems)}</ul>
+    <nav>
+      <ul>{navList(location.pathname, navItems)}</ul>
+    </nav>
   </HeaderContainer>
 )
 
