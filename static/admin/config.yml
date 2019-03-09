@@ -42,7 +42,7 @@ collections: # A list of collections the CMS should be able to edit
           label: Discussion ID,
           widget: string,
           default: 2019-12-30_why-xy-or-x,
-          hint: 'Must be unique (used to track comments).',
+          hint: 'Must be unique (used to track comments). The comment discussion is linked to this id, if you change the id you change the discussion, and hence the comments.',
         }
       - { name: coverImage, label: Cover Image, widget: image, required: false }
       - { name: category, label: Category, widget: hidden, default: blog }
