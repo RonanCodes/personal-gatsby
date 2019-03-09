@@ -2,6 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import { Color } from '../constants'
 import Layout from '../components/layout'
@@ -87,7 +88,14 @@ const AboutPage = ({ location }) => (
         <p>
           I believe in doing whatever you want as long as it doesn't hurt anyone
           else (a motto I learned from the amazing writer{' '}
-          <a href="http://rebeccaspelman.com">Rebecca Spelman</a>).
+          <OutboundLink
+            target="_blank"
+            rel="noopener noreferrer"
+            href="http://rebeccaspelman.com"
+          >
+            Rebecca Spelman
+          </OutboundLink>
+          ).
           <br />
           Some of my over arching goals in life are to become a leader in the
           Front-End development community, become a digital nomad (work while
