@@ -34,7 +34,7 @@ const Post = styled.article`
   margin-bottom: 2rem;
   border-radius: 5px;
 
-  .content {
+  .articleBody {
     padding: 1rem;
 
     h2 {
@@ -101,7 +101,7 @@ const BlogListing = () => (
                   </div>
                 </Link>
               )}
-              <div className="content">
+              <div className="articleBody">
                 <header>
                   <Link
                     to={`/${node.frontmatter.category}/${
@@ -111,7 +111,7 @@ const BlogListing = () => (
                     <h2>{node.frontmatter.title}</h2>
                   </Link>
                   <SubHeading>
-                    <span className="left-side">{node.frontmatter.date}</span>•
+                    <time className="left-side">{node.frontmatter.date}</time>•
                     <span className="right-side">{node.timeToRead}</span> min
                   </SubHeading>
                 </header>
