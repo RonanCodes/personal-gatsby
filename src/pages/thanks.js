@@ -26,23 +26,21 @@ const ThanksPage = ({ location }) => (
     render={data => (
       <Layout location={location}>
         <SEO title="Contact Thanks" keywords={[`contact`]} />
-        <div>
-          <Img
-            fluid={data.file.childImageSharp.fluid}
-            style={{
-              maxWidth: '500px',
-              margin: 'auto',
-            }}
-          />
+        <Img
+          fluid={data.file.childImageSharp.fluid}
+          style={{
+            maxWidth: '500px',
+            margin: 'auto',
+          }}
+        />
 
-          <p
-            style={{
-              textAlign: 'center',
-            }}
-          >
-            Thanks for getting in contact!
-          </p>
-        </div>
+        <p
+          style={{
+            textAlign: 'center',
+          }}
+        >
+          Thanks for getting in contact!
+        </p>
       </Layout>
     )}
   />

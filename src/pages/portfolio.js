@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { ListingMain } from '../styled-components'
+import { ListingSection } from '../styled-components'
 
 import PortfolioListing from '../components/portfolioListing'
 
@@ -12,7 +12,7 @@ import PortfolioListing from '../components/portfolioListing'
 const PortfolioPage = ({ location }) => (
   <Layout location={location}>
     <SEO title="Portfolio Items" keywords={[`portfolio`]} />
-    <ListingMain>
+    <ListingSection>
       <div
         style={{
           paddingTop: '30px',
@@ -20,7 +20,7 @@ const PortfolioPage = ({ location }) => (
       >
         <PortfolioListing />
       </div>
-    </ListingMain>
+    </ListingSection>
   </Layout>
 )
 

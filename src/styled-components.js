@@ -5,7 +5,7 @@ import { Color } from './constants'
  * Contains all the shared styled components.
  */
 
-export const ListingMain = styled.main`
+export const ListingSection = styled.section`
   max-width: 920px;
   margin: auto;
 `

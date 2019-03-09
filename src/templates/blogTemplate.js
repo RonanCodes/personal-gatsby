@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { extractLastStringInPath } from '../helpers'
-import { ListingMain } from '../styled-components'
+import { ListingSection } from '../styled-components'
 import { Color } from '../constants'
 /**
  * This gets ran on load, and the data object added to this pages props object.
@@ -78,7 +78,7 @@ export default class blogTemplate extends Component {
     return (
       <Layout location={location}>
         <SEO title={frontmatter.title} keywords={[`blog`, `post`, `article`]} />
-        <ListingMain>
+        <ListingSection>
           <BlogPost>
             {!frontmatter.coverImage ? null : (
               <div className="cover-image">
@@ -100,7 +100,7 @@ export default class blogTemplate extends Component {
               <div dangerouslySetInnerHTML={{ __html: html }} />
             </section>
           </BlogPost>
-        </ListingMain>
+        </ListingSection>
       </Layout>
     )
   }

@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import masthead from '../images/masthead-ronanconnolly.svg'
 import { Color, FontFamily } from '../constants'
 
-const HeaderContainer = styled.div`
+const HeaderContainer = styled.header`
   background: #aeafe8;
 
   padding: 20px 20px 0 20px;

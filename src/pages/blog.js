@@ -6,7 +6,7 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import BlogListing from '../components/blogListing'
-import { ListingMain } from '../styled-components'
+import { ListingSection } from '../styled-components'
 import { Color, FontFamily } from '../constants'
 
 const BLOG_PAGE_QUERY = graphql`
@@ -46,7 +46,7 @@ const BlogPage = ({ location }) => (
     render={({ site }) => (
       <Layout location={location}>
         <SEO title="Blog Posts" keywords={[`blog`]} />
-        <ListingMain>
+        <ListingSection>
           <BlogSiteSection>
             For more articles check out:{` `}
             <OutboundLink
@@ -72,7 +72,7 @@ const BlogPage = ({ location }) => (
           >
             <BlogListing />
           </div>
-        </ListingMain>
+        </ListingSection>
       </Layout>
     )}
   />

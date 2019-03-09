@@ -67,6 +67,8 @@ const Post = styled.article`
 const SubHeading = styled.h6`
   color: ${Color.GREY_REGULAR};
 
+  margin-top: 3px;
+
   .left-side {
     margin-right: 10px;
   }
