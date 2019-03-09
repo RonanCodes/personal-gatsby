@@ -4,7 +4,7 @@ backend:
 
 media_folder: 'static/images' # Media files will be stored in the repo under images/uploads
 public_folder: '/images'
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 
 slug:
   encoding: 'ascii'
@@ -36,6 +36,13 @@ collections: # A list of collections the CMS should be able to edit
           default: '',
           hint: 'Leave blank for auto slug',
           required: false,
+        }
+      - {
+          name: discussionId,
+          label: Discussion ID,
+          widget: string,
+          default: { { { slug } } },
+          hint: 'Must be unique (used to track comments)',
         }
       - { name: coverImage, label: Cover Image, widget: image, required: false }
       - { name: category, label: Category, widget: hidden, default: blog }

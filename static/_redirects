@@ -1,5 +1,6 @@
-# Redirect default Netlify subdomain to primary domain
-https://ronanc.netlify.com/* https://ronanc.xyz/:splat 301!
+# Redirect domain aliases to primary domain
+https://www.ronanconnolly.ie/* https://ronanc.xyz/:splat 301!
+https://ronanc.dev/* https://ronanc.xyz/:splat 301!
 
-# REAL:
-# http://ronanc.netlify.com/* https://ronanc.xyz/:splat 301!
+# Optional: Redirect default Netlify subdomain to primary domain
+https://ronanc.netlify.com/* https://ronanc.xyz/:splat 301!

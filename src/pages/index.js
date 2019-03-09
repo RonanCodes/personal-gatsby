@@ -41,7 +41,7 @@ const IndexPage = ({ location }) => (
     render={data => (
       <Layout location={location}>
         <SEO
-          title="Ronan Connolly - Homepage"
+          title="Homepage"
           keywords={[`ronan connolly`, `front-end`, `developer`, `designer`]}
         />
 
@@ -67,8 +67,8 @@ const IndexPage = ({ location }) => (
           <p>
             I'm a forever student, who will never stop learning.
             <br />
-            When I'm working I can't resist the urge to make things better
-            along the way.
+            When I'm working I can't resist the urge to make things better along
+            the way.
           </p>
 
           <p>

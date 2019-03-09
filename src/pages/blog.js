@@ -20,7 +20,7 @@ const BLOG_PAGE_QUERY = graphql`
   }
 `
 
-const BlogSiteSection = styled.section`
+const BlogContent = styled.div`
   width: 100%;
 
   background: ${Color.GREY_LIGHT};
@@ -47,7 +47,7 @@ const BlogPage = ({ location }) => (
       <Layout location={location}>
         <SEO title="Blog Posts" keywords={[`blog`]} />
         <ListingSection>
-          <BlogSiteSection>
+          <BlogContent>
             For more articles check out:{` `}
             <OutboundLink
               target="_blank"
@@ -64,7 +64,7 @@ const BlogPage = ({ location }) => (
             >
               Medium
             </OutboundLink>
-          </BlogSiteSection>
+          </BlogContent>
           <div
             style={{
               paddingTop: '30px',

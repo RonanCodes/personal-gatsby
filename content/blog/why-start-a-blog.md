@@ -2,9 +2,11 @@
 title: Why start a blog?
 date: '2019-03-03'
 slug: ''
+discussionId: why-start-a-blog
 coverImage: /images/why-start-a-blog.png
 category: blog
 ---
+
 ## Previous attempts
 
 I've tried this blogging thing here and there over the years.
@@ -28,14 +30,14 @@ As such there may be errors in my articles, and if there are and people point it
 I'll be covering the niche of Front-End software engineering.
 This will cover:
 
-* Vanilla JS
-* React
-* Angular
-* Productivity tips
-* Getting a job
-* Digital nomadism
-* Tools, techniques, and workflows
-* UI Design
+- Vanilla JS
+- React
+- Angular
+- Productivity tips
+- Getting a job
+- Digital nomadism
+- Tools, techniques, and workflows
+- UI Design
 
 ## Audience
 

@@ -113,6 +113,12 @@ module.exports = {
         // cookieDomain: 'example.com',
       },
     },
+    {
+      resolve: `@debiki/gatsby-plugin-talkyard`,
+      options: {
+        talkyardServerUrl: 'https://comments-for-ronanc-xyz.talkyard.net',
+      },
+    },
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`, // Make sure this is last
   ],

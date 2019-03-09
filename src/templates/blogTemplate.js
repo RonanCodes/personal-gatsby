@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
+import TalkyardCommentsIframe from '@debiki/gatsby-plugin-talkyard'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -20,6 +21,7 @@ export const BLOG_POST_QUERY = graphql`
         date(formatString: "MMM DD, YYYY")
         slug
         coverImage
+        discussionId
       }
     }
   }
@@ -100,6 +102,8 @@ export default class blogTemplate extends Component {
               <div dangerouslySetInnerHTML={{ __html: html }} />
             </section>
           </BlogPost>
+
+          <TalkyardCommentsIframe discussionId={frontmatter.discussionId} />
         </ListingSection>
       </Layout>
     )
