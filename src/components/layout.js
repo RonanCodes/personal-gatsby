@@ -72,6 +72,10 @@ const Footer = styled.footer`
     text-decoration: none;
     color: ${Color.GREY_LIGHTER};
   }
+
+  a :hover {
+    text-decoration: underline;
+  }
 `
 
 const MainLayout = styled.main`
@@ -105,7 +109,7 @@ const Layout = ({ children, location }) => (
             <OutboundLink
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/RonanC/personal-gatsby/tree/ronanc"
+              href="https://ronanc.xyz"
             >
               Ronan Connolly
             </OutboundLink>
