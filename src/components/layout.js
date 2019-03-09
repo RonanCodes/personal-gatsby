@@ -104,7 +104,7 @@ const Layout = ({ children, location }) => (
           </MainLayout>
 
           <Footer>
-            © {new Date().getFullYear()}, Built with 💛 by
+            © {new Date().getFullYear()}, Built with 💛by
             {` `}
             <OutboundLink
               target="_blank"

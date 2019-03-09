@@ -38,7 +38,7 @@ export const Color = Object.freeze({
  */
 export const Font = Object.freeze({
   SANS_SERIF: 'Open Sans',
-  SERIF: 'EB Garamond',
+  SERIF: 'EB Garamond', // Garton for masthead
 })
 
 /**
