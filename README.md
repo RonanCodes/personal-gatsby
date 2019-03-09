@@ -230,3 +230,30 @@ Great for letting your followers know about new blog posts!
 
 Follow the instructions here:
 https://www.gatsbyjs.org/packages/gatsby-plugin-mailchimp/?=mailc
+
+# Comments (TalkYard)
+
+Css Sheet:
+-/admin/customize/css-js
+
+```css
+#esWatchbarColumn {
+  background-color: #2a2a57;
+}
+
+h1 {
+  color: #551a8b;
+}
+
+.s_MP_Text {
+  color: #aeafe8;
+}
+
+.dw-cmts-tlbr-summary {
+  background: #aeafe8;
+}
+
+.dw-cmts-tlbr-open {
+  background: #aeafe8 !important;
+}
+```
