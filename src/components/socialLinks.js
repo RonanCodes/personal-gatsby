@@ -36,12 +36,12 @@ const SocialLinksList = styled.ul`
   li {
     a {
       font-size: 25px;
-      color: ${Color.ACCENT_LIGHT};
+      color: ${Color.ACCENT};
       transition: 0.5s;
     }
 
     a:hover {
-      color: ${Color.ACCENT};
+      color: ${Color.ACCENT_LIGHT};
       transition: 0.3s;
     }
   }
