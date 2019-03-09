@@ -2,6 +2,7 @@
 title: Why start a blog?
 date: '2019-03-03'
 slug: ''
+discussionId: why-start-a-blog
 coverImage: /images/why-start-a-blog.png
 category: blog
 ---
