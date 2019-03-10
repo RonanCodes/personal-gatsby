@@ -94,7 +94,7 @@ const navList = (pathname, navItems) =>
 /**
  * A header that the layout uses for all the pages.
  */
-const Header = ({ location }) => (
+const SiteHeader = ({ location }) => (
   <HeaderContainer role="banner" aria-label="Main website header.">
     <Link to="/" className="masthead-link">
       <img src={masthead} alt="Ronan Connolly masthead text" />
@@ -105,12 +105,12 @@ const Header = ({ location }) => (
   </HeaderContainer>
 )
 
-Header.propTypes = {
+SiteHeader.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+SiteHeader.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default SiteHeader
