@@ -9,17 +9,8 @@ import { extractLastStringInPath } from '../helpers'
 import { ListingSection } from '../styled-components'
 import { Color } from '../constants'
 
-import {
-  TwitterShareButton,
-  FacebookShareButton,
-  LinkedinShareButton,
-  WhatsappShareButton,
-  TwitterIcon,
-  FacebookIcon,
-  LinkedinIcon,
-  WhatsappIcon,
-} from 'react-share'
 import BlogShareNav from '../components/blogShareNav'
+
 /**
  * This gets ran on load, and the data object added to this pages props object.
  */
@@ -111,93 +102,6 @@ const BlogFooter = styled.footer`
     display: none;
   }
 `
-
-const blogShareNav = (
-  iconSize,
-  iconRound,
-  blogUrl,
-  title,
-  via,
-  hashtags,
-  hashtag,
-  excerpt
-) => (
-  <nav>
-    <ul>
-      <li>
-        <TwitterShareButton
-          className="button"
-          url={blogUrl}
-          title={title}
-          via={via}
-          hashtags={[hashtags]}
-        >
-          <TwitterIcon size={iconSize} round={iconRound} />
-        </TwitterShareButton>
-      </li>
-      <li>
-        <FacebookShareButton
-          className="button"
-          url={blogUrl}
-          quote={excerpt}
-          hashtag={hashtag}
-        >
-          <FacebookIcon size={iconSize} round={iconRound} />
-        </FacebookShareButton>
-      </li>
-      <li>
-        <LinkedinShareButton
-          className="button"
-          url={blogUrl}
-          title={title}
-          description={`${excerpt} (source: ${blogUrl})`}
-        >
-          <LinkedinIcon size={iconSize} round={iconRound} />
-        </LinkedinShareButton>
-      </li>
-      <li>
-        <WhatsappShareButton
-          className="button"
-          url={blogUrl}
-          title={title}
-          separator={' | '}
-        >
-          <WhatsappIcon size={iconSize} round={iconRound} />
-        </WhatsappShareButton>
-      </li>
-      {/* <li>
-                  <RedditShareButton
-                    className="button"
-                    url={blogUrl}
-                    title={frontmatter.title}
-                  >
-                    <RedditIcon size={iconSize} round={iconRound} />
-                  </RedditShareButton>
-                </li> */}
-      {/* <li>
-                  <TumblrShareButton
-                    className="button"
-                    url={blogUrl}
-                    title={frontmatter.title}
-                    tags={[frontmatter.tags]}
-                    caption={`${excerpt} (source: ${blogUrl})`}
-                  >
-                    <TumblrIcon size={iconSize} round={iconRound} />
-                  </TumblrShareButton>
-                </li> */}
-      {/* <li>
-                  <EmailShareButton
-                    className="button"
-                    url={blogUrl}
-                    subject={frontmatter.title}
-                    body={`${excerpt} (source: ${blogUrl})`}
-                  >
-                    <EmailIcon size={iconSize} round={iconRound} />
-                  </EmailShareButton>
-                </li> */}
-    </ul>
-  </nav>
-)
 
 /**
  * The template for each individual blog post.

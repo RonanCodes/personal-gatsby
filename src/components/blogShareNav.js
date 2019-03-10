@@ -13,6 +13,11 @@ import {
 
 const NavWrapper = styled.nav``
 
+/**
+ * A navigation bar with sharing icons for an article.
+ *
+ * @param props
+ */
 const BlogShareNav = props => (
   <NavWrapper>
     <ul>
