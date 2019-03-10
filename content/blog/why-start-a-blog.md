@@ -22,7 +22,7 @@ I'll leave my business and finance knowledge to separate blogs if I wish to writ
 ## Why create a blog?
 
 I want to use this blog as a learning tool. Everything I blog about will be something I've just learned.
-The great thinp g about this is that I'll be writing in a way that is beginner friendly. Once a concept has clicked for me, I'll summarize my learnings for you to digest.
+The great thing about this is that I'll be writing in a way that is beginner friendly. Once a concept has clicked for me, I'll summarize my learnings for you to digest.
 
 As such there may be errors in my articles, and if there are and people point it out, that's great. I can then learn from my audience!
 
