@@ -121,7 +121,7 @@ export default class blogTemplate extends Component {
     return (
       <Layout location={location}>
         <SEO title={frontmatter.title} keywords={[`blog`, `post`, `article`]} />
-        <ListingSection role="region">
+        <ListingSection role="region" aria-labelledby="blog-title">
           <BlogPost>
             {!frontmatter.coverImage ? null : (
               <div className="cover-image">

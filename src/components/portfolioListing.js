@@ -107,7 +107,11 @@ const PortfolioListing = () => (
       !allMarkdownRemark
         ? null
         : allMarkdownRemark.edges.map(edge => (
-            <PortfolioItem role="article" key={edge.node.frontmatter.title}>
+            <PortfolioItem
+              role="article"
+              key={edge.node.frontmatter.title}
+              aria-label={edge.node.frontmatter.title}
+            >
               <img
                 src={edge.node.frontmatter.coverImage}
                 alt={extractLastStringInPath(edge.node.frontmatter.coverImage)}

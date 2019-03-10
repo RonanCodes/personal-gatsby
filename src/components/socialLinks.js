@@ -58,10 +58,11 @@ class SocialLinks extends React.Component {
       <StaticQuery
         query={SOCIAL_DATA_QUERY}
         render={data => (
-          <SocialLinksNav>
+          <SocialLinksNav aria-label="Contact Me Links">
             <ul>
               <li>
                 <OutboundLink
+                  aria-label="Twitter"
                   target="_blank"
                   rel="noopener noreferrer"
                   href={`https://twitter.com/${
@@ -73,6 +74,7 @@ class SocialLinks extends React.Component {
               </li>
               <li>
                 <OutboundLink
+                  aria-label="LinkedIn"
                   target="_blank"
                   rel="noopener noreferrer"
                   href={`https://www.linkedin.com/in/${
@@ -84,6 +86,7 @@ class SocialLinks extends React.Component {
               </li>
               <li>
                 <OutboundLink
+                  aria-label="GitHub"
                   target="_blank"
                   rel="noopener noreferrer"
                   href={`https://github.com/${
@@ -95,6 +98,7 @@ class SocialLinks extends React.Component {
               </li>
               <li>
                 <OutboundLink
+                  aria-label="Google Maps"
                   target="_blank"
                   rel="noopener noreferrer"
                   href={data.site.siteMetadata.mapLink}
@@ -103,7 +107,10 @@ class SocialLinks extends React.Component {
                 </OutboundLink>
               </li>
               <li>
-                <OutboundLink href={`mailto:${data.site.siteMetadata.email}`}>
+                <OutboundLink
+                  aria-label="Email"
+                  href={`mailto:${data.site.siteMetadata.email}`}
+                >
                   <FaEnvelope />
                 </OutboundLink>
               </li>

@@ -62,6 +62,11 @@ const Post = styled.article`
     max-height: 200px;
     text-align: center;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `
 
 const SubHeading = styled.h6`
@@ -88,35 +93,33 @@ const BlogListing = () => (
       return !allMarkdownRemark
         ? null
         : allMarkdownRemark.edges.map(({ node }) => (
-            <Post role="article" key={node.frontmatter.slug}>
-              {!node.frontmatter.coverImage ? null : (
-                <Link
-                  to={`/${node.frontmatter.category}/${node.frontmatter.slug}`}
-                >
+            <Post
+              role="article"
+              key={node.frontmatter.slug}
+              aria-label={node.frontmatter.title}
+            >
+              <Link
+                to={`/${node.frontmatter.category}/${node.frontmatter.slug}`}
+              >
+                {!node.frontmatter.coverImage ? null : (
                   <div className="cover-image">
                     <img
                       src={node.frontmatter.coverImage}
                       alt={extractLastStringInPath(node.frontmatter.coverImage)}
                     />
                   </div>
-                </Link>
-              )}
-              <div className="articleBody">
-                <header aria-label="Blog header">
-                  <Link
-                    to={`/${node.frontmatter.category}/${
-                      node.frontmatter.slug
-                    }`}
-                  >
+                )}
+                <div className="articleBody">
+                  <header>
                     <h2>{node.frontmatter.title}</h2>
-                  </Link>
-                  <SubHeading>
-                    <time className="left-side">{node.frontmatter.date}</time>•
-                    <span className="right-side">{node.timeToRead}</span> min
-                  </SubHeading>
-                </header>
-                <p>{node.excerpt}</p>
-              </div>
+                    <SubHeading>
+                      <time className="left-side">{node.frontmatter.date}</time>
+                      •<span className="right-side">{node.timeToRead}</span> min
+                    </SubHeading>
+                  </header>
+                  <p>{node.excerpt}</p>
+                </div>
+              </Link>
             </Post>
           ))
     }}

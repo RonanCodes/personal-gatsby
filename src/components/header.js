@@ -97,9 +97,9 @@ const navList = (pathname, navItems) =>
 const Header = ({ location }) => (
   <HeaderContainer role="banner">
     <Link to="/" className="masthead-link">
-      <img src={masthead} alt="Masthead - Ronan Connolly" />
+      <img src={masthead} alt="Ronan Connolly masthead text" />
     </Link>
-    <nav>
+    <nav aria-label="Site wide links" role="navigation">
       <ul>{navList(location.pathname, navItems)}</ul>
     </nav>
   </HeaderContainer>

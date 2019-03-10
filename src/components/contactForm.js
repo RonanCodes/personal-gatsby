@@ -104,60 +104,62 @@ export default class ContactForm extends React.Component {
 
   render() {
     return (
-      <div>
-        <Form
-          name="contact"
-          method="post"
-          action="/thanks/"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={this.handleSubmit}
-        >
-          <p className="hidden">
-            <label>
-              Don’t fill this out if you're human: <input name="bot-field" />
-            </label>
-          </p>
-          <p>
-            <label>Name:</label>
-            <input
-              className="userInput"
-              type="text"
-              name="name"
-              onChange={this.handleChange}
-              required
-            />
-          </p>
-          <p>
-            <label>Email:</label>
-            <input
-              className="userInput"
-              type="email"
-              name="email"
-              onChange={this.handleChange}
-              required
-            />
-          </p>
-          <p className="message-container">
-            <label>Message:</label>
-            <textarea
-              className="userInput"
-              name="message"
-              rows="6"
-              onChange={this.handleChange}
-              required
-            />
-          </p>
-          <ul className="actions">
-            <li>
-              <button type="submit">Send</button>
-            </li>
-            <li>
-              <input type="reset" value="Clear" />
-            </li>
-          </ul>
-        </Form>
-      </div>
+      <Form
+        name="contact"
+        method="post"
+        action="/thanks/"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onSubmit={this.handleSubmit}
+        aria-label="Contact me"
+      >
+        <p className="hidden">
+          <label>
+            Don’t fill this out if you're human: <input name="bot-field" />
+          </label>
+        </p>
+        <p>
+          <label for="name">Name:</label>
+          <input
+            id="name"
+            className="userInput"
+            type="text"
+            name="name"
+            onChange={this.handleChange}
+            required
+          />
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input
+            id="email"
+            className="userInput"
+            type="email"
+            name="email"
+            onChange={this.handleChange}
+            required
+          />
+        </p>
+        <p className="message-container">
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            className="userInput"
+            name="message"
+            rows="6"
+            onChange={this.handleChange}
+            required
+          />
+        </p>
+        <ul className="actions">
+          <li>
+            <button type="submit">Send</button>
+          </li>
+          <li>
+            <input type="reset" value="Clear" />
+          </li>
+        </ul>
+      </Form>
     )
   }
 }

@@ -19,7 +19,7 @@ const NavWrapper = styled.nav``
  * @param props
  */
 const BlogShareNav = props => (
-  <NavWrapper>
+  <NavWrapper aria-label="Share article icons">
     <ul>
       <li>
         <TwitterShareButton
