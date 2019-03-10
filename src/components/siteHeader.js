@@ -77,7 +77,7 @@ const navItems = ['about', 'contact', 'portfolio', 'blog']
  */
 const navList = (pathname, navItems) =>
   navItems.map(navItem => (
-    <li>
+    <li key={navItem}>
       <Link
         className={
           pathname === `/${navItem}` || pathname === `/${navItem}/`
