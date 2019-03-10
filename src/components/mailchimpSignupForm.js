@@ -7,7 +7,7 @@ const FormWrapper = styled.section`
 `
 
 const MailchimpSignupForm = props => (
-  <FormWrapper role="region">
+  <FormWrapper role="region" aria-label="MailChimp sign up form">
     <form action="post" />
   </FormWrapper>
 )

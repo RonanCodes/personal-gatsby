@@ -95,7 +95,7 @@ const navList = (pathname, navItems) =>
  * A header that the layout uses for all the pages.
  */
 const Header = ({ location }) => (
-  <HeaderContainer role="banner">
+  <HeaderContainer role="banner" aria-label="Main website header.">
     <Link to="/" className="masthead-link">
       <img src={masthead} alt="Ronan Connolly masthead text" />
     </Link>

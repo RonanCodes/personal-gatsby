@@ -113,7 +113,7 @@ export default class ContactForm extends React.Component {
         onSubmit={this.handleSubmit}
         aria-label="Contact me"
       >
-        <p className="hidden">
+        <p className="hidden" aria-hidden="true">
           <label>
             Don’t fill this out if you're human: <input name="bot-field" />
           </label>
@@ -153,10 +153,16 @@ export default class ContactForm extends React.Component {
         </p>
         <ul className="actions">
           <li>
-            <button type="submit">Send</button>
+            <button type="submit" aria-label="Submit contact form.">
+              Send
+            </button>
           </li>
           <li>
-            <input type="reset" value="Clear" />
+            <input
+              type="reset"
+              value="Clear"
+              aria-label="Clear contact form."
+            />
           </li>
         </ul>
       </Form>

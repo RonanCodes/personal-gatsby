@@ -45,7 +45,7 @@ const IndexPage = ({ location }) => (
           keywords={[`ronan connolly`, `front-end`, `developer`, `designer`]}
         />
 
-        <HomeSection role="region">
+        <HomeSection role="region" aria-label="Summary of myself.">
           <Img
             fluid={data.file.childImageSharp.fluid}
             style={{

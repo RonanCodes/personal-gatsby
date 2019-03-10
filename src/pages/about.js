@@ -50,7 +50,7 @@ const AboutYearSection = styled.section`
 `
 
 const aboutYear = (year, content) => (
-  <AboutYearSection role="region">
+  <AboutYearSection role="region" aria-label={year}>
     <div className="year-heading">
       <h1>{year}</h1>
       <hr />

@@ -43,7 +43,7 @@ const ContactPage = ({ location }) => (
             }}
             alt={'A typewriter surrounded by curious people.'}
           />
-          <ContactSection role="region">
+          <ContactSection role="region" aria-label="Contact me reasons.">
             Reach out if you're interested in collaborating with me on a
             project, hiring me for a contract role, or if you just have a
             question.

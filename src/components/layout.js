@@ -8,7 +8,7 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import './layout.css'
 import { Color, FontFamily } from '../constants'
 
-import Header from './header'
+import header from './header'
 
 const LAYOUT_PAGE_QUERY = graphql`
   query LayoutPageQuery {
@@ -94,12 +94,13 @@ const Layout = ({ children, location }) => (
     render={data => (
       <>
         <Site className="site">
-          <Header
+          <header
             siteTitle={data.site.siteMetadata.title}
             location={location}
+            aria-label=""
           />
 
-          <MainLayout className="site-content">
+          <MainLayout className="site-content" role="main">
             <div>{children}</div>
           </MainLayout>
 
