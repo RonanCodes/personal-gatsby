@@ -119,32 +119,32 @@ export default class ContactForm extends React.Component {
           </label>
         </p>
         <p>
-          <label for="name">Name:</label>
+          <label htmlFor="name">Name:</label>
           <input
-            id="name"
-            className="userInput"
             type="text"
+            className="userInput"
+            id="name"
             name="name"
             onChange={this.handleChange}
             required
           />
         </p>
         <p>
-          <label for="email">Email:</label>
+          <label htmlFor="email">Email:</label>
           <input
-            id="email"
-            className="userInput"
             type="email"
+            className="userInput"
+            id="email"
             name="email"
             onChange={this.handleChange}
             required
           />
         </p>
         <p className="message-container">
-          <label for="message">Message:</label>
+          <label htmlFor="message">Message:</label>
           <textarea
-            id="message"
             className="userInput"
+            id="message"
             name="message"
             rows="6"
             onChange={this.handleChange}
