@@ -53,7 +53,7 @@ const SubHeading = styled.h6`
   }
 `
 
-const BlogPost = styled.article`
+const BlogPost = styled.div`
   /* margin top of 10 is for all layout pages */
   margin-top: -10px;
 
@@ -121,7 +121,7 @@ export default class blogTemplate extends Component {
     return (
       <Layout location={location}>
         <SEO title={frontmatter.title} keywords={[`blog`, `post`, `article`]} />
-        <ListingSection>
+        <ListingSection role="region">
           <BlogPost>
             {!frontmatter.coverImage ? null : (
               <div className="cover-image">
@@ -144,7 +144,7 @@ export default class blogTemplate extends Component {
             </section>
           </BlogPost>
 
-          <BlogFooter>
+          <BlogFooter role="contentinfo">
             <BlogShareNav
               iconSize={32}
               iconRound={true}

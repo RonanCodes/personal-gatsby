@@ -15,6 +15,7 @@ const BLOG_PAGE_QUERY = graphql`
       siteMetadata {
         mediumHandle
         devHandle
+        linkedInHandle
       }
     }
   }
@@ -46,7 +47,7 @@ const BlogPage = ({ location }) => (
     render={({ site }) => (
       <Layout location={location}>
         <SEO title="Blog Posts" keywords={[`blog`]} />
-        <ListingSection>
+        <ListingSection role="region">
           <BlogContent>
             For more articles check out:{` `}
             <OutboundLink
@@ -56,13 +57,23 @@ const BlogPage = ({ location }) => (
             >
               Dev
             </OutboundLink>
-            {`    &    `}
+            {`    ||    `}
             <OutboundLink
               target="_blank"
               rel="noopener noreferrer"
               href={`https://medium.com/@${site.siteMetadata.mediumHandle}`}
             >
               Medium
+            </OutboundLink>
+            {`    ||    `}
+            <OutboundLink
+              target="_blank"
+              rel="noopener noreferrer"
+              href={`https://www.linkedin.com/in/${
+                site.siteMetadata.linkedInHandle
+              }/detail/recent-activity/posts/`}
+            >
+              LinkedIn
             </OutboundLink>
           </BlogContent>
           <div

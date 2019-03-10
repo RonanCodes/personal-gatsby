@@ -12,7 +12,7 @@ import PortfolioListing from '../components/portfolioListing'
 const PortfolioPage = ({ location }) => (
   <Layout location={location}>
     <SEO title="Portfolio Items" keywords={[`portfolio`]} />
-    <ListingSection>
+    <ListingSection role="region">
       <div
         style={{
           paddingTop: '30px',

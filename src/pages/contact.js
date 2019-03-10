@@ -42,7 +42,7 @@ const ContactPage = ({ location }) => (
               margin: 'auto',
             }}
           />
-          <ContactSection>
+          <ContactSection role="region">
             Reach out if you're interested in collaborating with me on a
             project, hiring me for a contract role, or if you just have a
             question.

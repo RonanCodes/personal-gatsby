@@ -103,7 +103,7 @@ const Layout = ({ children, location }) => (
             <div>{children}</div>
           </MainLayout>
 
-          <Footer>
+          <Footer role="contentinfo">
             © {new Date().getFullYear()}, Built with 💛by
             {` `}
             <OutboundLink

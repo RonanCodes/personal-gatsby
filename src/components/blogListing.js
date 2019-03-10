@@ -88,7 +88,7 @@ const BlogListing = () => (
       return !allMarkdownRemark
         ? null
         : allMarkdownRemark.edges.map(({ node }) => (
-            <Post key={node.frontmatter.slug}>
+            <Post role="article" key={node.frontmatter.slug}>
               {!node.frontmatter.coverImage ? null : (
                 <Link
                   to={`/${node.frontmatter.category}/${node.frontmatter.slug}`}
