@@ -47,6 +47,13 @@ collections: # A list of collections the CMS should be able to edit
       - { name: coverImage, label: Cover Image, widget: image, required: false }
       - { name: category, label: Category, widget: hidden, default: blog }
       - {
+          name: tags,
+          label: Social Hash Tags,
+          widget: string,
+          required: false,
+          hint: These must be comma seperated,
+        }
+      - {
           name: body,
           label: Body,
           widget: markdown,

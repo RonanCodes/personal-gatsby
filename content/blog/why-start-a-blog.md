@@ -5,6 +5,7 @@ slug: ''
 discussionId: 2019-03-03_why-start-a-blog
 coverImage: /images/why-start-a-blog.png
 category: blog
+tags: blog, first
 ---
 
 ## Previous attempts

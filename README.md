@@ -257,3 +257,14 @@ h1 {
   background: #aeafe8 !important;
 }
 ```
+
+# Blog share
+
+react-share icons:
+https://github.com/nygardk/react-share
+
+Tutorial:
+https://swas.io/blog/social-share-button-for-gatsby-blog-pages/
+
+Nice social cards:
+https://www.gatsbyjs.org/packages/gatsby-remark-social-cards/?=share

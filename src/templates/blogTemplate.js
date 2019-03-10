@@ -8,6 +8,23 @@ import SEO from '../components/seo'
 import { extractLastStringInPath } from '../helpers'
 import { ListingSection } from '../styled-components'
 import { Color } from '../constants'
+
+import {
+  TwitterShareButton,
+  FacebookShareButton,
+  LinkedinShareButton,
+  WhatsappShareButton,
+  RedditShareButton,
+  EmailShareButton,
+  TumblrShareButton,
+  TwitterIcon,
+  FacebookIcon,
+  LinkedinIcon,
+  WhatsappIcon,
+  RedditIcon,
+  EmailIcon,
+  TumblrIcon,
+} from 'react-share'
 /**
  * This gets ran on load, and the data object added to this pages props object.
  */
@@ -16,12 +33,21 @@ export const BLOG_POST_QUERY = graphql`
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       timeToRead
+      excerpt
       frontmatter {
         title
         date(formatString: "MMM DD, YYYY")
         slug
         coverImage
         discussionId
+        tags
+      }
+    }
+    site {
+      siteMetadata {
+        title
+        twitterHandle
+        siteUrl
       }
     }
   }
@@ -69,7 +95,23 @@ const BlogPost = styled.article`
   }
 `
 
-const CommentsSection = styled.div`
+const BlogFooter = styled.footer`
+  nav {
+    ul {
+      list-style: none;
+      margin: 60px 0px 0px 0px;
+      display: flex;
+
+      li {
+        padding-right: 20px;
+        margin-bottom: 0;
+
+        div {
+          cursor: pointer;
+        }
+      }
+    }
+  }
   .talkyard-comments p {
     display: none;
   }
@@ -80,8 +122,15 @@ const CommentsSection = styled.div`
  */
 export default class blogTemplate extends Component {
   render() {
-    const { frontmatter, html, timeToRead } = this.props.data.markdownRemark
+    const {
+      frontmatter,
+      html,
+      timeToRead,
+      excerpt,
+    } = this.props.data.markdownRemark
+    const { siteMetadata } = this.props.data.site
     const { location } = this.props
+    const blogUrl = `${siteMetadata.siteUrl}/blog/${frontmatter.slug}`
 
     return (
       <Layout location={location}>
@@ -109,9 +158,85 @@ export default class blogTemplate extends Component {
             </section>
           </BlogPost>
 
-          <CommentsSection>
+          <BlogFooter>
+            <nav class="social-icons">
+              <ul>
+                <li>
+                  <TwitterShareButton
+                    className="button"
+                    url={blogUrl}
+                    title={frontmatter.title}
+                    via={siteMetadata.twitterHandle}
+                    hashtags={[frontmatter.tags]}
+                  >
+                    <TwitterIcon size={32} round={true} />
+                  </TwitterShareButton>
+                </li>
+                <li>
+                  <FacebookShareButton
+                    className="button"
+                    url={blogUrl}
+                    quote={excerpt}
+                    hashtag={`#${frontmatter.tags.split(',')[0]}`}
+                  >
+                    <FacebookIcon size={32} round={true} />
+                  </FacebookShareButton>
+                </li>
+                <li>
+                  <LinkedinShareButton
+                    className="button"
+                    url={blogUrl}
+                    title={frontmatter.title}
+                    description={`${excerpt} (source: ${blogUrl})`}
+                  >
+                    <LinkedinIcon size={32} round={true} />
+                  </LinkedinShareButton>
+                </li>
+                <li>
+                  <WhatsappShareButton
+                    className="button"
+                    url={blogUrl}
+                    title={frontmatter.title}
+                    separator={' | '}
+                  >
+                    <WhatsappIcon size={32} round={true} />
+                  </WhatsappShareButton>
+                </li>
+                <li>
+                  <RedditShareButton
+                    className="button"
+                    url={blogUrl}
+                    title={frontmatter.title}
+                  >
+                    <RedditIcon size={32} round={true} />
+                  </RedditShareButton>
+                </li>
+
+                <li>
+                  <TumblrShareButton
+                    className="button"
+                    url={blogUrl}
+                    title={frontmatter.title}
+                    tags={[frontmatter.tags]}
+                    caption={`${excerpt} (source: ${blogUrl})`}
+                  >
+                    <TumblrIcon size={32} round={true} />
+                  </TumblrShareButton>
+                </li>
+                <li>
+                  <EmailShareButton
+                    className="button"
+                    url={blogUrl}
+                    subject={frontmatter.title}
+                    body={`${excerpt} (source: ${blogUrl})`}
+                  >
+                    <EmailIcon size={32} round={true} />
+                  </EmailShareButton>
+                </li>
+              </ul>
+            </nav>
             <TalkyardCommentsIframe discussionId={frontmatter.discussionId} />
-          </CommentsSection>
+          </BlogFooter>
         </ListingSection>
       </Layout>
     )
