@@ -202,7 +202,7 @@ export default class blogTemplate extends Component {
                     <WhatsappIcon size={32} round={true} />
                   </WhatsappShareButton>
                 </li>
-                <li>
+                {/* <li>
                   <RedditShareButton
                     className="button"
                     url={blogUrl}
@@ -210,9 +210,8 @@ export default class blogTemplate extends Component {
                   >
                     <RedditIcon size={32} round={true} />
                   </RedditShareButton>
-                </li>
-
-                <li>
+                </li> */}
+                {/* <li>
                   <TumblrShareButton
                     className="button"
                     url={blogUrl}
@@ -222,8 +221,8 @@ export default class blogTemplate extends Component {
                   >
                     <TumblrIcon size={32} round={true} />
                   </TumblrShareButton>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <EmailShareButton
                     className="button"
                     url={blogUrl}
@@ -232,7 +231,7 @@ export default class blogTemplate extends Component {
                   >
                     <EmailIcon size={32} round={true} />
                   </EmailShareButton>
-                </li>
+                </li> */}
               </ul>
             </nav>
             <TalkyardCommentsIframe discussionId={frontmatter.discussionId} />
