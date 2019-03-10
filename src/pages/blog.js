@@ -47,26 +47,32 @@ const BlogPage = ({ location }) => (
     render={({ site }) => (
       <Layout location={location}>
         <SEO title="Blog Posts" keywords={[`blog`]} />
-        <ListingSection role="region">
+        <ListingSection
+          role="region"
+          aria-label="Places where these articles are syndicated to."
+        >
           <BlogContent>
             For more articles check out:{` `}
             <OutboundLink
+              aria-label="Dev.to"
               target="_blank"
               rel="noopener noreferrer"
               href={`https://dev.to/${site.siteMetadata.devHandle}`}
             >
               Dev
             </OutboundLink>
-            {`    ||    `}
+            <span aria-label="or">{`    ||    `}</span>
             <OutboundLink
+              aria-label="Medium"
               target="_blank"
               rel="noopener noreferrer"
               href={`https://medium.com/@${site.siteMetadata.mediumHandle}`}
             >
               Medium
             </OutboundLink>
-            {`    ||    `}
+            <span aria-label="or">{`    ||    `}</span>
             <OutboundLink
+              aria-label="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
               href={`https://www.linkedin.com/in/${

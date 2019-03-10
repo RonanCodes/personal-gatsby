@@ -21,7 +21,7 @@ const NavWrapper = styled.nav``
 const BlogShareNav = props => (
   <NavWrapper aria-label="Share article icons">
     <ul>
-      <li>
+      <li aria-label="Twitter">
         <TwitterShareButton
           className="button"
           url={props.blogUrl}
@@ -32,7 +32,7 @@ const BlogShareNav = props => (
           <TwitterIcon size={props.iconSize} round={props.iconRound} />
         </TwitterShareButton>
       </li>
-      <li>
+      <li aria-label="Facebook">
         <FacebookShareButton
           className="button"
           url={props.blogUrl}
@@ -42,7 +42,7 @@ const BlogShareNav = props => (
           <FacebookIcon size={props.iconSize} round={props.iconRound} />
         </FacebookShareButton>
       </li>
-      <li>
+      <li aria-label="LinkedIn">
         <LinkedinShareButton
           className="button"
           url={props.blogUrl}
@@ -52,7 +52,7 @@ const BlogShareNav = props => (
           <LinkedinIcon size={props.iconSize} round={props.iconRound} />
         </LinkedinShareButton>
       </li>
-      <li>
+      <li aria-label="WhatsApp">
         <WhatsappShareButton
           className="button"
           url={props.blogUrl}

@@ -135,16 +135,27 @@ export default class blogTemplate extends Component {
               <header aria-labelledby="blog-title">
                 <h1 id="blog-title">{frontmatter.title}</h1>
                 <SubHeading className="sub-heading">
-                  <time className="left-side">{frontmatter.date}</time>•
-                  <span className="right-side">{timeToRead}</span> min
+                  <time className="left-side" aria-label="Article publish date">
+                    {frontmatter.date}
+                  </time>
+                  <span aria-label="divider">•</span>
+                  <span
+                    className="right-side"
+                    aria-label="Time to read article"
+                  >
+                    {timeToRead} min
+                  </span>
                 </SubHeading>
               </header>
 
-              <div dangerouslySetInnerHTML={{ __html: html }} />
+              <div
+                dangerouslySetInnerHTML={{ __html: html }}
+                aria-label="Article content body"
+              />
             </section>
           </BlogPost>
 
-          <BlogFooter aria-label="Blog footer">
+          <BlogFooter aria-label="Blog article footer.">
             <BlogShareNav
               iconSize={32}
               iconRound={true}
@@ -155,7 +166,10 @@ export default class blogTemplate extends Component {
               hashtags={frontmatter.tags}
               hashtag={`#${frontmatter.tags.split(',')[0]}`}
             />
-            <TalkyardCommentsIframe discussionId={frontmatter.discussionId} />
+            <TalkyardCommentsIframe
+              aria-label="Comments section."
+              discussionId={frontmatter.discussionId}
+            />
           </BlogFooter>
         </ListingSection>
       </Layout>

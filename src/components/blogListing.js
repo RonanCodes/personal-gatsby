@@ -110,14 +110,25 @@ const BlogListing = () => (
                   </div>
                 )}
                 <div className="articleBody">
-                  <header>
+                  <header aria-label={node.frontmatter.title}>
                     <h2>{node.frontmatter.title}</h2>
                     <SubHeading>
-                      <time className="left-side">{node.frontmatter.date}</time>
-                      •<span className="right-side">{node.timeToRead}</span> min
+                      <time
+                        className="left-side"
+                        aria-label="Article publish date"
+                      >
+                        {node.frontmatter.date}
+                      </time>
+                      •
+                      <span
+                        className="right-side"
+                        aria-label="Time to read article"
+                      >
+                        {node.timeToRead} min
+                      </span>
                     </SubHeading>
                   </header>
-                  <p>{node.excerpt}</p>
+                  <p aria-label="Article excerpt">{node.excerpt}</p>
                 </div>
               </Link>
             </Post>

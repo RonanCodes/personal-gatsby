@@ -103,7 +103,7 @@ const Layout = ({ children, location }) => (
             <div>{children}</div>
           </MainLayout>
 
-          <Footer role="contentinfo">
+          <Footer role="contentinfo" aria-label="Creator signature">
             © {new Date().getFullYear()}, Built with 💛by
             {` `}
             <OutboundLink
