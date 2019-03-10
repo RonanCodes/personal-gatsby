@@ -104,7 +104,7 @@ const BlogFooter = styled.footer`
 
       li {
         padding-right: 20px;
-        margin-bottom: 0;
+        margin-bottom: 20px;
 
         div {
           cursor: pointer;
