@@ -32,6 +32,7 @@ const ThanksPage = ({ location }) => (
             maxWidth: '500px',
             margin: 'auto',
           }}
+          alt={'thanks for getting in contact'}
         />
 
         <p

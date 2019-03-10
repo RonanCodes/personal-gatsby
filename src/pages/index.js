@@ -52,6 +52,7 @@ const IndexPage = ({ location }) => (
               maxWidth: '600px',
               marginBottom: '50px',
             }}
+            alt={'A designer / developer at work.'}
           />
           <h2>
             Hi, I'm Ronan Connolly.

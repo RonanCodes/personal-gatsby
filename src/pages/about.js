@@ -75,6 +75,7 @@ const AboutPage = ({ location }) => (
             maxWidth: '500px',
             margin: 'auto',
           }}
+          alt={'A man strolling through a city listening to music.'}
         />
 
         <p>

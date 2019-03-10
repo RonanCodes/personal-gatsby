@@ -41,6 +41,7 @@ const ContactPage = ({ location }) => (
               maxWidth: '500px',
               margin: 'auto',
             }}
+            alt={'A typewriter surrounded by curious people.'}
           />
           <ContactSection role="region">
             Reach out if you're interested in collaborating with me on a

@@ -34,6 +34,7 @@ const NotFoundPage = () => (
             maxWidth: '500px',
             margin: 'auto',
           }}
+          alt={'404 page not found error.'}
         />
 
         <p>You just hit a route that doesn&#39;t exist... the sadness.</p>

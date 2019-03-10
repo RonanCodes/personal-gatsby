@@ -87,7 +87,7 @@ const header = frontmatter => {
   `
 
   return (
-    <Header>
+    <Header aria-label="Portfolio Header">
       <h1>{frontmatter.title}</h1>
       <h5>
         <span className="start-date">{frontmatter.startDate}</span>-

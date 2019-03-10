@@ -75,7 +75,7 @@ const BlogPost = styled.div`
     border: 10px solid #e2e2e2;
     margin-bottom: 20px;
 
-    .blog-title {
+    #blog-title {
       margin-bottom: 0px;
     }
   }
@@ -132,8 +132,8 @@ export default class blogTemplate extends Component {
               </div>
             )}
             <section className="content">
-              <header>
-                <h1 className="blog-title">{frontmatter.title}</h1>
+              <header aria-labelledby="blog-title">
+                <h1 id="blog-title">{frontmatter.title}</h1>
                 <SubHeading className="sub-heading">
                   <time className="left-side">{frontmatter.date}</time>•
                   <span className="right-side">{timeToRead}</span> min
@@ -144,7 +144,7 @@ export default class blogTemplate extends Component {
             </section>
           </BlogPost>
 
-          <BlogFooter role="contentinfo">
+          <BlogFooter aria-label="Blog Footer">
             <BlogShareNav
               iconSize={32}
               iconRound={true}
