@@ -144,7 +144,7 @@ export default class blogTemplate extends Component {
             </section>
           </BlogPost>
 
-          <BlogFooter aria-label="Blog Footer">
+          <BlogFooter aria-label="Blog footer">
             <BlogShareNav
               iconSize={32}
               iconRound={true}

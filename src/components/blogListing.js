@@ -102,7 +102,7 @@ const BlogListing = () => (
                 </Link>
               )}
               <div className="articleBody">
-                <header aria-label="Blog Header">
+                <header aria-label="Blog header">
                   <Link
                     to={`/${node.frontmatter.category}/${
                       node.frontmatter.slug
