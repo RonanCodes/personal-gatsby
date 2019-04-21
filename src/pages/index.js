@@ -56,8 +56,8 @@ const IndexPage = ({ location }) => (
           />
           <h2>
             Hi, I'm Ronan Connolly.
-            <br />A Front-End Developer, UI Designer, Entrepreneur, and Outdoor
-            Adventurer.
+            <br />A Front-End Software Engineer, UI Designer, Entrepreneur, and
+            Outdoor Adventurer.
           </h2>
 
           <p>
@@ -66,10 +66,8 @@ const IndexPage = ({ location }) => (
           </p>
 
           <p>
-            I'm a forever student, who will never stop learning.
-            <br />
-            When I'm working I can't resist the urge to make things better along
-            the way.
+            I take pride in my work, and take every opportunity as a chance to
+            learn something new and grow.
           </p>
 
           <p>

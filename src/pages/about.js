@@ -77,18 +77,18 @@ const AboutPage = ({ location }) => (
           }}
           alt={'A man strolling through a city listening to music.'}
         />
+        <p>My life's work is software engineering &amp; outdoor pursuits.</p>
 
         <p>
-          From a very young age I've had a keen interest in technology, business
-          and finance. Indeed my whole family is interested in these things, so
-          I gained the interest through osmosis.
+          From a very young age I've had a keen interest in technology,
+          business, finance/investing, and the outdoors.
           <br />
-          The West of Ireland is where I was born and raised. I now reside in
-          Galway City on the west coast.
+          The West of Ireland is where I was born and raised. I currently reside
+          in Galway City on the west coast.
         </p>
         <p>
           I believe in doing whatever you want as long as it doesn't hurt anyone
-          else (a motto I learned from the amazing writer{' '}
+          else <br /> (a motto I learned from the amazing writer{' '}
           <OutboundLink
             target="_blank"
             rel="noopener noreferrer"
@@ -98,10 +98,56 @@ const AboutPage = ({ location }) => (
           </OutboundLink>
           ).
           <br />
-          Some of my over arching goals in life are to become a leader in the
-          Front-End development community, become a digital nomad (work while
-          travelling), start my own business (leveraging modern technologies),
-          and to become financially intelligent.
+        </p>
+
+        <p
+          style={{
+            marginTop: '35px',
+            marginBottom: '35px',
+          }}
+        >
+          <h3>Some major life goals of mine are:</h3>
+          <ul>
+            <li>
+              <span role="img" aria-label="money-bag">
+                👨‍💻
+              </span>{' '}
+              Become a leader in the front-end software engineering community
+              (creating software &amp; blogging primarily).
+            </li>
+            <li>
+              <span role="img" aria-label="money-bag">
+                🌍{' '}
+              </span>
+              Become a digital nomad (work while slow travelling).
+            </li>
+            <li>
+              <span role="img" aria-label="money-bag">
+                💼{' '}
+              </span>
+              Start my own business (leveraging modern technologies).
+            </li>
+            <li>
+              <span role="img" aria-label="money-bag">
+                💰{' '}
+              </span>
+              Achieve the FIRE life (financially independent &amp; retired
+              early).
+            </li>
+            <li>
+              <span role="img" aria-label="money-bag">
+                🧗‍{' '}
+              </span>
+              Pursue outdoor pursuits such as trekking, kayaking, &amp;
+              bouldering.
+            </li>
+            <li>
+              <span role="img" aria-label="money-bag">
+                🐶{' '}
+              </span>
+              Get a dog
+            </li>
+          </ul>
         </p>
 
         <p
@@ -109,10 +155,10 @@ const AboutPage = ({ location }) => (
             marginBottom: '70px',
           }}
         >
-          In my spare time I enjoy reading, playing board-games, trekking,
-          jogging, and learning (technology, business, and finance mostly). I'm
-          a coffee connoisseur and really enjoy unwinding in a relaxed
-          environment when I get some down time.
+          In my spare time I enjoy reading, board-games, trekking, jogging,
+          learning (technology, business, &amp; finance mostly), and spending
+          time with my partner Rebecca. <br /> I'm a coffee connoisseur and
+          really enjoy unwinding in a relaxed environment.
         </p>
 
         {aboutYear(
@@ -132,8 +178,8 @@ const AboutPage = ({ location }) => (
           During this time I researched vanilla JS at a deep level, upgraded my software architecture skills, and learned the Angular framework.
           This paid dividends as I quickly became comfortable in my new role.
 
-          When I first arrived at Fidelity I was taken aback by the high quality of the building, people, and technologies.
-          I was put to work on implementing features for an investment web application using the Angular framework.
+          Upon joining Fidelity I noticed how well they invest in their people, buildings, and technology.
+          I was put to work on implementing features for an investment (Asset Management Equity Trading) web application using the Angular framework.
 
           This role at Fidelity was exactly what I was looking for, and I was over the moon to get a role in the finance industry as this has always been a goal of mine.
           `
@@ -157,10 +203,10 @@ const AboutPage = ({ location }) => (
         {aboutYear(
           2016,
           `In May of 2016 I joined the IBM Security division as a Front-End software engineer.
-          I was ecstatic, as I'd always wanted to work as a software engineer for a big multi-national;
+          I was ecstatic, as I'd always wanted to work as a software engineer for a big multi-national.
           IBM in particular stood out to me as it's such an historic company.
 
-          Here I worked on creating features for a security web application which helped monitor malware attacks against endpoints.
+          Here I worked on creating features for a security web application (EDR) which helped monitor malware attacks against endpoints.
           I was mainly working with AngularJS & Node.js.
           IBM is where I really found my feet in terms of Agile ceremonies, working in remote global co-located teams, and seeing how a multi-national works (the pros and cons).
           I really enjoyed learning the security domain. I learned all about the ins and outs of malware and just how fragile the whole worlds infrastructure is due to this malware.`
@@ -180,7 +226,7 @@ const AboutPage = ({ location }) => (
 
         {aboutYear(
           2014,
-          `My colleague reached out and asked if I was interested in a contract from Enterprise Ireland,
+          `A colleague reached out and asked if I was interested in a contract from Enterprise Ireland,
           I agreed and took it on. It involved creating a cross platform mobile food ordering application,
           which would allows customers to order food, drinks, and custom sandwiches from their phone.
           This involved a top up system with top up codes so that you could pay via the app.
