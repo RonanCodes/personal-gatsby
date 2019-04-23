@@ -113,33 +113,33 @@ const AboutPage = ({ location }) => (
                 👨‍💻
               </span>{' '}
               Become a leader in the front-end software engineering community
-              (creating software &amp; blogging primarily).
+              (creating software &amp; blogging primarily)
             </li>
             <li>
               <span role="img" aria-label="money-bag">
                 🌍{' '}
               </span>
-              Become a digital nomad (work while slow travelling).
+              Become a digital nomad (work while slow travelling)
             </li>
             <li>
               <span role="img" aria-label="money-bag">
                 💼{' '}
               </span>
-              Start my own business (leveraging modern technologies).
+              Start my own business (leveraging modern technologies)
             </li>
             <li>
               <span role="img" aria-label="money-bag">
                 💰{' '}
               </span>
               Achieve the FIRE life (financially independent &amp; retired
-              early).
+              early)
             </li>
             <li>
               <span role="img" aria-label="money-bag">
                 🧗‍{' '}
               </span>
               Pursue outdoor pursuits such as trekking, kayaking, &amp;
-              bouldering.
+              bouldering
             </li>
             <li>
               <span role="img" aria-label="money-bag">
