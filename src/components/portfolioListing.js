@@ -10,7 +10,7 @@ import { Hr } from '../styled-components'
 const PORTFOLIO_LISTING_QUERY = graphql`
   query PortfolioItemListing {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___startDate] }
+      sort: { order: DESC, fields: [frontmatter___endDate] }
       filter: { frontmatter: { category: { eq: "portfolio" } } }
     ) {
       edges {
@@ -24,9 +24,9 @@ const PORTFOLIO_LISTING_QUERY = graphql`
             coverImage
             startDate(formatString: "MMM YYYY")
             endDate(formatString: "MMM YYYY")
-            technologies
-            goals
-            journey
+            technologiesandskills
+            goal
+            whatidid
             projectLink
             gitLink
             moreLink
@@ -36,7 +36,10 @@ const PORTFOLIO_LISTING_QUERY = graphql`
     }
   }
 `
-
+// # skills
+// # problem
+// # client
+// # result
 const PortfolioItem = styled.article`
   border-radius: 4px;
   margin-bottom: 2rem;
@@ -92,7 +95,15 @@ const header = frontmatter => {
       <h1>{frontmatter.title}</h1>
       <h5>
         <span className="start-date">{frontmatter.startDate}</span>-
-        <span className="end-date">{frontmatter.endDate}</span>
+        <span className="end-date">
+          {frontmatter.endDate !== 'Invalid date'
+            ? frontmatter.endDate
+            : 'Current'}
+
+          {/* // {frontmatter.endDate == 'Invalid Daste'
+          //   ? frontmatter.endDate
+          //   : 'Current'} */}
+        </span>
       </h5>
     </Header>
   )
@@ -121,16 +132,28 @@ const PortfolioListing = () => (
 
               {header(edge.node.frontmatter)}
 
-              <h2>Goals</h2>
-              <p>{edge.node.frontmatter.goals}</p>
-
               <h2>Technologies / Skills</h2>
-              <p>{edge.node.frontmatter.technologies}</p>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: edge.node.frontmatter.technologiesandskills,
+                }}
+              />
 
-              {!edge.node.frontmatter.journey ? null : (
+              <h2>Goals</h2>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: edge.node.frontmatter.goal,
+                }}
+              />
+
+              {!edge.node.frontmatter.whatidid ? null : (
                 <div>
-                  <h2>Journey</h2>
-                  <p>{edge.node.frontmatter.journey}</p>
+                  <h2>What I did</h2>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: edge.node.frontmatter.whatidid,
+                    }}
+                  />
                 </div>
               )}
 

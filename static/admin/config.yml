@@ -97,13 +97,13 @@ collections: # A list of collections the CMS should be able to edit
           tagname: date,
         }
       - {
-          name: technologies,
+          name: technologiesandskills,
           label: 'Technologies Used',
           widget: markdown,
           tagname: article,
         }
       - {
-          name: goals,
+          name: goal,
           label: 'Project Goals',
           widget: markdown,
           tagname: article,
