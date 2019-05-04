@@ -125,13 +125,11 @@ const PortfolioListing = () => (
               aria-label={edge.node.frontmatter.title}
               id={slugify(edge.node.frontmatter.title)}
             >
+              {header(edge.node.frontmatter)}
               <img
                 src={edge.node.frontmatter.coverImage}
                 alt={extractLastStringInPath(edge.node.frontmatter.coverImage)}
               />
-
-              {header(edge.node.frontmatter)}
-
               <h2>Technologies / Skills</h2>
               <p
                 dangerouslySetInnerHTML={{
@@ -148,7 +146,12 @@ const PortfolioListing = () => (
 
               {!edge.node.frontmatter.whatidid ? null : (
                 <div>
-                  <h2>What I did</h2>
+                  <h2>
+                    What I
+                    {edge.node.frontmatter.endDate !== 'Invalid date'
+                      ? ' Did'
+                      : ' Do'}
+                  </h2>
                   <p
                     dangerouslySetInnerHTML={{
                       __html: edge.node.frontmatter.whatidid,

@@ -13,8 +13,8 @@ goal: |-
   • The positive effects of Google's V8 engine and the Node platform.<br>
   • And some criticism when compared to compiled languages.
 whatidid: |-
-  I read many literature reviews, spent a tonne of time researching, and created this literature review.<br>
-  It was an amazing experience, and very humbling, I respect those who have completed PHDs much more now.
+  • I read many literature reviews, spent a tonne of time researching, and created this literature review.<br>
+  • It was an amazing experience, and very humbling, I respect those who have completed PHDs much more now.
 projectLink: https://github.com/RonanC/js-lit-review/blob/master/js-lit-review.pdf
 category: portfolio
 ---

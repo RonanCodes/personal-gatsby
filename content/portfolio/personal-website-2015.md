@@ -7,7 +7,6 @@ technologiesandskills: |-
   • AngularJS, Node.js, Express.js, JavaScript, Grunt<br>
   • UI Design, Heroku, Local domain setup (Blacknight)
 goal: |-
-  The goal of this project was to:<br>
   • Get a foundation in JavaScript<br>
   • Learn AngularJS<br>
   • Figure out how to deploy a website<br>
@@ -15,8 +14,8 @@ goal: |-
   • Setup the domain (local domain .ie was trickier)<br>
   • Hook up continuous integration/delivery.
 whatidid: |-
-  I was only a year or so into the world of front-end and wanted a project to push me to learn quickly.<br>
-  This was the project. During the course of this project I learned a lot about JS, HTML, CSS, Hosting, Domains, UI Design, and AngularJS.
+  • I was only a year or so into the world of front-end and wanted a project to push me to learn quickly.<br>
+  • Learned a lot about JS, HTML, CSS, Hosting, Domains, UI Design, and AngularJS.
 projectLink: 'https://ronanconnolly.herokuapp.com/#!/'
 gitLink: 'https://github.com/RonanC/personal-website'
 category: portfolio

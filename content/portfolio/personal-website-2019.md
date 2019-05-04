@@ -8,11 +8,19 @@ technologiesandskills: |-
   • React, GatsbyJS, Styled Components, GraphQL<br>
   • Netlify, Custom Mail Server (Zoho Mail), Lets Encrypt SSL Cert
 goal: |-
-  The goal of this project was to create a base template for future personal & company websites.<br>
-  In the process I wanted to learn React, Gatsby, and related technologies.<br>
-  And to have a personal website to showcase my skills, portfolio, and blog.
+  • Create a base template for future personal & company websites.<br>
+  • Learn React, Gatsby, and related technologies.<br>
+  • Have a personal website to showcase my skills, portfolio, and blog.
 whatidid: |-
-  Because I created a template it took under two hours to get this personal site setup, an extra hour to deploy (with SSL), and another hour to setup an email server.
+  • Created a template website so that I could create similar websites for others in the future.<br>
+  • Came up with a colour pallette that was pleasing to the eye and also accessible to those with vision issues.<br>
+  • Set up SSL to secure the website.<br>
+  • Set up a blog to engage with users and post interesting content.<br>
+  • Set up a portfolio section to highlight current and past work.<br>
+  • Set up a backend CMS so that you don't have to touch the code to add content.<br>
+  • Set up an email server with "Zoho Mail" to allow for custom email (hi@ronanc.xyz).<br>
+  • Add image optimizations to allow for quick loading of images.<br>
+  • Make the website accessible via ARIA tags, and semantic HTML.
 projectLink: 'https://ronanc.xyz'
 gitLink: 'https://github.com/RonanC/personal-gatsby/tree/ronanc'
 category: portfolio
