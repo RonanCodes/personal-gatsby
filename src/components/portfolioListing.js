@@ -29,6 +29,7 @@ const PORTFOLIO_LISTING_QUERY = graphql`
             journey
             projectLink
             gitLink
+            moreLink
           }
         }
       }
