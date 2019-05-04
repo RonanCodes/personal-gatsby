@@ -17,11 +17,7 @@ journey: |-
   We tested out a couple of options (JQuery Mobile, Native, and Ionic to name a few), but in the end found Ionic to be the the quickest to develop with and which gave the best looking design.
   This was a part time project and took around 15 months to complete.
   The customer was extremely happy with the process and the end result.
-  I worked on this project as part of my final year project while in college.
-
-  Android: https://play.google.com/store/apps/details?id=ie.gmit.gmitcatering2015&hl=en
-  IOS: https://itunes.apple.com/ie/app/gmit-catering/id1054850061?mt=8
-  Project Report: https://github.com/GMIT-Catering/final-year-project-template/blob/master/project.pdf
-projectLink: 'https://www.youtube.com/watch?v=VaNE_oZKrVc'
+projectLink: https://www.youtube.com/watch?v=VaNE_oZKrVc
+moreLink: https://github.com/GMIT-Catering/final-year-project-template/blob/master/project.pdf
 category: portfolio
 ---

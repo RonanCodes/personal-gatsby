@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import { Color } from '../constants'
-import { extractLastStringInPath } from '../helpers'
+import { extractLastStringInPath, slugify } from '../helpers'
 import { Hr } from '../styled-components'
 
 const PORTFOLIO_LISTING_QUERY = graphql`
@@ -111,6 +111,7 @@ const PortfolioListing = () => (
               role="article"
               key={edge.node.frontmatter.title}
               aria-label={edge.node.frontmatter.title}
+              id={slugify(edge.node.frontmatter.title)}
             >
               <img
                 src={edge.node.frontmatter.coverImage}
@@ -151,6 +152,17 @@ const PortfolioListing = () => (
                     rel="noopener noreferrer"
                   >
                     Check the <strong>Source Code</strong> out here
+                  </OutboundLink>
+                </h4>
+              )}
+              {!edge.node.frontmatter.moreLink ? null : (
+                <h4>
+                  <OutboundLink
+                    href={edge.node.frontmatter.moreLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Check <strong>More</strong> out here
                   </OutboundLink>
                 </h4>
               )}
