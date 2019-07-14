@@ -59,7 +59,7 @@ const Post = styled.article`
   .cover-image {
     width: 100%;
     overflow-y: hidden;
-    max-height: 200px;
+    max-height: 230px;
     text-align: center;
   }
 
