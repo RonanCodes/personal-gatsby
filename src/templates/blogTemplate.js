@@ -79,6 +79,26 @@ const BlogPost = styled.div`
       margin-bottom: 0px;
     }
   }
+
+  blockquote {
+    color: gray;
+    border-left: 5px gray solid;
+    padding-left: 10px;
+    font-size: medium;
+  }
+
+  li p strong {
+    color: #ff2974;
+    /* color: #6c1945; */
+    font-weight: 900;
+    font-size: larger;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #8c1eff;
+  }
 `
 
 const BlogFooter = styled.footer`
