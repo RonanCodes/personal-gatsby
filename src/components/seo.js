@@ -20,7 +20,15 @@ const SEO_DETAILS_QUERY = graphql`
 /**
  * Creates the SEO header meta tags for the page.
  */
-function SEO({ description, lang, meta, keywords, title, linkImage }) {
+function SEO({
+  description,
+  lang,
+  meta,
+  keywords,
+  title,
+  linkImage,
+  twitterDescription,
+}) {
   return (
     <StaticQuery
       query={SEO_DETAILS_QUERY}
@@ -70,7 +78,7 @@ function SEO({ description, lang, meta, keywords, title, linkImage }) {
               },
               {
                 name: `twitter:description`,
-                content: metaDescription,
+                content: twitterDescription,
               },
             ]
               .concat(

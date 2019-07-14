@@ -133,6 +133,7 @@ export default class blogTemplate extends Component {
       html,
       timeToRead,
       excerpt,
+      description,
     } = this.props.data.markdownRemark
     const { siteMetadata } = this.props.data.site
     const { location } = this.props
@@ -144,6 +145,7 @@ export default class blogTemplate extends Component {
           title={frontmatter.title}
           linkImage={frontmatter.coverImage}
           keywords={[`blog`, `post`, `article`]}
+          twitterDescription={frontmatter.description}
         />
         <ListingSection role="region" aria-labelledby="blog-title">
           <BlogPost>
