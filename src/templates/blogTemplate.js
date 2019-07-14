@@ -27,6 +27,7 @@ export const BLOG_POST_QUERY = graphql`
         coverImage
         discussionId
         tags
+        description
       }
     }
     site {
@@ -133,7 +134,6 @@ export default class blogTemplate extends Component {
       html,
       timeToRead,
       excerpt,
-      description,
     } = this.props.data.markdownRemark
     const { siteMetadata } = this.props.data.site
     const { location } = this.props
@@ -144,8 +144,8 @@ export default class blogTemplate extends Component {
         <SEO
           title={frontmatter.title}
           linkImage={frontmatter.coverImage}
+          postDescription={frontmatter.description}
           keywords={[`blog`, `post`, `article`]}
-          twitterDescription={frontmatter.description}
         />
         <ListingSection role="region" aria-labelledby="blog-title">
           <BlogPost>

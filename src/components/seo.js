@@ -27,14 +27,14 @@ function SEO({
   keywords,
   title,
   linkImage,
-  twitterDescription,
+  postDescription,
 }) {
   return (
     <StaticQuery
       query={SEO_DETAILS_QUERY}
       render={data => {
         const metaDescription =
-          description || data.site.siteMetadata.description
+          postDescription || description || data.site.siteMetadata.description
 
         return (
           <Helmet
@@ -78,7 +78,7 @@ function SEO({
               },
               {
                 name: `twitter:description`,
-                content: twitterDescription,
+                content: metaDescription,
               },
             ]
               .concat(
