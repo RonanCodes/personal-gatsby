@@ -1,12 +1,12 @@
 ---
 title: Code Review Checklist ✅
 published: false
-description: Clarify your intuition around code quality & best practices by using a CR checklist.
+description: Clarify your intuition around code quality & best practices.
 tags: codereview, codequality, cleancode, bestpractices
 date: '2019-07-14'
 slug: ''
 discussionId: 2019-07-14_code-review-checklist
-coverImage: /images/code-review-checklist-wide.png
+coverImage: /images/code-review-checklist-v2.png
 category: blog
 ---
 

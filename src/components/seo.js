@@ -11,6 +11,7 @@ const SEO_DETAILS_QUERY = graphql`
         description
         author
         twitterHandle
+        siteUrl
       }
     }
   }
@@ -19,7 +20,7 @@ const SEO_DETAILS_QUERY = graphql`
 /**
  * Creates the SEO header meta tags for the page.
  */
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, lang, meta, keywords, title, linkImage }) {
   return (
     <StaticQuery
       query={SEO_DETAILS_QUERY}
@@ -53,7 +54,11 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `twitter:card`,
-                content: `summary`,
+                content: `summary_large_image`,
+              },
+              {
+                name: `twitter:image`,
+                content: `${data.site.siteMetadata.siteUrl}${linkImage}`,
               },
               {
                 name: `twitter:creator`,
