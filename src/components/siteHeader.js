@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled from 'styled-components'
 
-import masthead from '../images/masthead-ronanconnolly.svg'
+import masthead from '../images/masthead-ronandconnolly.svg'
 import { Color, FontFamily } from '../constants'
 
 const HeaderContainer = styled.header`
@@ -97,7 +97,7 @@ const navList = (pathname, navItems) =>
 const SiteHeader = ({ location }) => (
   <HeaderContainer role="banner" aria-label="Main website header.">
     <Link to="/" className="masthead-link">
-      <img src={masthead} alt="Ronan Connolly masthead text" />
+      <img src={masthead} alt="Ronan D. Connolly masthead text" />
     </Link>
     <nav aria-label="Site wide links" role="navigation">
       <ul>{navList(location.pathname, navItems)}</ul>

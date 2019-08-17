@@ -111,7 +111,7 @@ const Layout = ({ children, location }) => (
               rel="noopener noreferrer"
               href="https://RonanDConnolly.com"
             >
-              Ronan Connolly
+              Ronan D. Connolly
             </OutboundLink>
           </Footer>
         </Site>

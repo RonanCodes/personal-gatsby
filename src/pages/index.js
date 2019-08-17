@@ -55,9 +55,8 @@ const IndexPage = ({ location }) => (
             alt={'A designer / developer at work.'}
           />
           <h2>
-            Hi, I'm Ronan Connolly.
-            <br />A Front-End Software Engineer, UI Designer, Entrepreneur, and
-            Outdoor Adventurer.
+            Hi, I'm Ronan D. Connolly.
+            <br />A Front-End Software Engineer, Web Developer, Angular Specialist who works in the finance domain.
           </h2>
 
           <p>
@@ -73,7 +72,7 @@ const IndexPage = ({ location }) => (
           <p>
             Get in touch if you're interested in collaborating on a project{' '}
             <span role="img" aria-label="rocket">
-              🚀
+              🛠
             </span>
           </p>
         </HomeSection>

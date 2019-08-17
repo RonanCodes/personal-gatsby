@@ -1,5 +1,5 @@
 ---
-title: Ronan Connolly - Personal Website 2019
+title: Ronan D. Connolly - Personal Website 2019
 coverImage: /images/ronanc-website-2019.png
 startDate: '2019-02-01'
 endDate: '2019-03-03'
