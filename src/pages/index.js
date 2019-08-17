@@ -7,8 +7,6 @@ import { Color } from '../constants'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import SocialLinks from '../components/socialLinks'
-
 const HOMEPAGE_IMAGE_QUERY = graphql`
   query HomePageImageQuery {
     file(relativePath: { regex: "/ronandconnolly-headshot/" }) {
@@ -40,22 +38,30 @@ const AboutMeSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 400px;
-    margin-top: 120px;
+    flex: 1;
+
+    @media (min-width: 790px) {
+      margin-top: 120px;
+    }
   }
 
   .head-shot {
-    width: 300px;
+    display: flex;
+    flex: 1;
+    flex-direction: column-reverse;
 
-    justify-content: center;
-    align-items: center;
     img {
-      display: flex;
-      flex-direction: column-reverse;
     }
     .gatsby-image-wrapper {
-      width: 300px;
+      margin-right: 10px;
       margin-bottom: 0px !important;
+    }
+
+    @media (min-width: 790px) {
+      flex: 0.75;
+      .gatsby-image-wrapper {
+        width: 300px;
+      }
     }
   }
 `
@@ -101,7 +107,7 @@ const IndexPage = ({ location }) => (
                   maxWidth: '400px',
                   marginBottom: '50px',
                 }}
-                alt={'A designer / developer at work.'}
+                alt={'Ronan D. Connolly - Head Shot'}
               />
             </div>
           </AboutMeSection>

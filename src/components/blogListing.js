@@ -124,7 +124,7 @@ const BlogListing = () => (
                         className="right-side"
                         aria-label="Time to read article"
                       >
-                        {node.timeToRead} min
+                        <span role="img">☕️</span> {node.timeToRead} min read
                       </span>
                     </SubHeading>
                   </header>

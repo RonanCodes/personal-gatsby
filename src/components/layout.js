@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import SocialLinks from '../components/socialLinks'
 
 // Importing a css file auto applies it
@@ -63,17 +62,26 @@ const Site = styled.div`
 `
 
 const Footer = styled.footer`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
   border-bottom: 5px solid ${Color.SECONDARY};
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 790px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .made-with-love {
+      padding-top: 0px;
+    }
+  }
 
   .made-with-love {
     color: ${Color.GREY_LIGHTER};
     font-family: ${FontFamily.PRIMARY};
-    align-items: flex-start;
-    width: 500px;
+    padding-top: 3px;
 
     a,
     a :visited {
@@ -87,9 +95,6 @@ const Footer = styled.footer`
   }
 
   .social-links {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 500px;
   }
 `
 
@@ -120,7 +125,7 @@ const Layout = ({ children, location }) => (
 
           <Footer role="contentinfo" aria-label="Creator signature">
             <section className="made-with-love">
-              Made with 💜in Galway, Ireland
+              Made with <span role="img">💜</span> in Galway, Ireland
             </section>
             <section className="social-links">
               <SocialLinks />

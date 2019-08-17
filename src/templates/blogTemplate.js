@@ -168,7 +168,7 @@ export default class blogTemplate extends Component {
                     className="right-side"
                     aria-label="Time to read article"
                   >
-                    ☕️ {timeToRead} min read
+                    <span role="img">☕️</span> {timeToRead} min read
                   </span>
                 </SubHeading>
               </header>

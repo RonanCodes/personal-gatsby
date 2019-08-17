@@ -4,7 +4,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import masthead from '../images/masthead-ronandconnolly.svg'
-import { Color, FontFamily } from '../constants'
+import { FontFamily } from '../constants'
 
 const HeaderContainer = styled.header`
   background: radial-gradient(
@@ -25,6 +25,7 @@ const HeaderContainer = styled.header`
   overflow: hidden;
   margin-bottom: 0;
 
+  /* Laptops */
   @media (min-width: 790px) {
     flex-direction: row;
   }
@@ -70,6 +71,13 @@ const HeaderContainer = styled.header`
           transition: 0.3s;
         }
       }
+    }
+  }
+
+  /* iPhone 5/SE (must be at the end as it's a cascading style */
+  @media (max-width: 330px) {
+    nav ul li {
+      padding: 0 8px 0 8px;
     }
   }
 `
