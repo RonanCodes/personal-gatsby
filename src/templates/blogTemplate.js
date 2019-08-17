@@ -55,6 +55,8 @@ const SubHeading = styled.h6`
 `
 
 const BlogPost = styled.div`
+  /* Line up blog post image with nav */
+  margin-top: -18px;
   .cover-image {
     overflow: hidden;
     max-height: 400px;
