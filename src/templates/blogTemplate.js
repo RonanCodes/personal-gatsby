@@ -166,7 +166,7 @@ export default class blogTemplate extends Component {
                     className="right-side"
                     aria-label="Time to read article"
                   >
-                    {timeToRead} min
+                    ☕️ {timeToRead} min read
                   </span>
                 </SubHeading>
               </header>
