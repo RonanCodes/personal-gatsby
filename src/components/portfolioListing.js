@@ -22,8 +22,8 @@ const PORTFOLIO_LISTING_QUERY = graphql`
           frontmatter {
             title
             coverImage
-            startDate(formatString: "MMM YYYY")
-            endDate(formatString: "MMM YYYY")
+            startDate(formatString: "MMM DD, YYYY")
+            endDate(formatString: "MMM DD, YYYY")
             technologiesandskills
             goal
             whatidid
