@@ -48,7 +48,7 @@ module.exports = {
         background_color: `#AEAFE8`,
         theme_color: `#4C2FC9`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon-rdc.png`, // This path is relative to the root of the site.
         include_favicon: true, // Include favicon
       },
     },
