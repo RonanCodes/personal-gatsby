@@ -56,7 +56,7 @@ const IndexPage = ({ location }) => (
           />
           <h2>
             Hi, I'm Ronan D. Connolly.
-            <br />A Front-End Software Engineer, Web Developer, Angular Specialist who works in the finance domain.
+            <br />A Front-End Software Engineer, Web Developer, and Angular Specialist who works in the finance domain.
           </h2>
 
           <p>
