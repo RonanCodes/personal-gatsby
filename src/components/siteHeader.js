@@ -7,7 +7,11 @@ import masthead from '../images/masthead-ronandconnolly.svg'
 import { Color, FontFamily } from '../constants'
 
 const HeaderContainer = styled.header`
-  background: #aeafe8;
+  background: radial-gradient(
+    circle,
+    rgba(174, 175, 232, 1) 0%,
+    rgba(168, 117, 229, 1) 100%
+  );
 
   padding: 20px 20px 0 20px;
   display: flex;
@@ -46,23 +50,23 @@ const HeaderContainer = styled.header`
         font-family: ${FontFamily.PRIMARY};
 
         a {
-          color: ${Color.ACCENT_LARGE};
+          color: white;
           text-decoration: none;
           transition: 0.3s;
 
           :visited {
-            color: ${Color.ACCENT_LARGE};
+            color: white;
             text-decoration: none;
           }
 
           &.active {
-            color: ${Color.ACCENT_DARK};
+            color: white;
             text-decoration: underline;
           }
         }
 
         a:hover {
-          color: ${Color.ACCENT_DARK};
+          color: white;
           transition: 0.3s;
         }
       }

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import SocialLinks from '../components/socialLinks'
 
 // Importing a css file auto applies it
 import './layout.css'
@@ -40,7 +41,6 @@ const Site = styled.div`
     /* grow to full in the size of the container it's in*/
     flex-grow: 1;
 
-    margin-top: 10px;
     margin-bottom: 60px;
 
     width: 900px;
@@ -48,7 +48,7 @@ const Site = styled.div`
 
   /* color: pink; */
   font-family: ${FontFamily.SECONDARY};
-  font-size: 18px;
+  font-size: 20px;
 
   h1,
   h2,
@@ -63,18 +63,33 @@ const Site = styled.div`
 `
 
 const Footer = styled.footer`
-  text-align: center;
-  color: ${Color.GREY_LIGHTER};
-  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  border-bottom: 5px solid ${Color.SECONDARY};
 
-  a,
-  a :visited {
-    text-decoration: none;
+  .made-with-love {
     color: ${Color.GREY_LIGHTER};
+    font-family: ${FontFamily.PRIMARY};
+    align-items: flex-start;
+    width: 500px;
+
+    a,
+    a :visited {
+      text-decoration: none;
+      color: ${Color.GREY_LIGHTER};
+    }
+
+    a :hover {
+      text-decoration: underline;
+    }
   }
 
-  a :hover {
-    text-decoration: underline;
+  .social-links {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 500px;
   }
 `
 
@@ -104,15 +119,12 @@ const Layout = ({ children, location }) => (
           </MainLayout>
 
           <Footer role="contentinfo" aria-label="Creator signature">
-            © {new Date().getFullYear()}, Built with 💛by
-            {` `}
-            <OutboundLink
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://RonanDConnolly.com"
-            >
-              Ronan D. Connolly
-            </OutboundLink>
+            <section className="made-with-love">
+              Made with 💜in Galway, Ireland
+            </section>
+            <section className="social-links">
+              <SocialLinks />
+            </section>
           </Footer>
         </Site>
       </>

@@ -29,9 +29,12 @@ const SOCIAL_DATA_QUERY = graphql`
 const SocialLinksNav = styled.nav`
   ul {
     list-style: none;
-    margin: 60px 10px 0px 0px;
     display: flex;
+    flex-direction: row;
+    width: 250px;
     justify-content: space-between;
+    margin: 0px;
+    height: 30px;
 
     max-width: 300px;
     li {

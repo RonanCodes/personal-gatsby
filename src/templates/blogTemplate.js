@@ -55,9 +55,6 @@ const SubHeading = styled.h6`
 `
 
 const BlogPost = styled.div`
-  /* margin top of 10 is for all layout pages */
-  margin-top: -10px;
-
   .cover-image {
     overflow: hidden;
     max-height: 400px;
