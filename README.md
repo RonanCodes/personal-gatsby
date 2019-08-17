@@ -156,6 +156,7 @@ This project is using this color palette/scheme: https://dribbble.com/shots/4797
 - Figma fordoing up the cursive font and exporting to SVG: https://www.figma.com/login
 - React Icons (+ font awesome) for adding the ability to effortlessly introduce font awesome icons: https://github.com/react-icons/react-icons
 - Google Fonts: https://fonts.google.com/
+- Background gradients: https://cssgradient.io/
 
 # Font Family
 
