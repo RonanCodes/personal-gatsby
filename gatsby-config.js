@@ -1,16 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Ronan Connolly`,
+    title: `Ronan D. Connolly`,
     description: `Front-End Developer, UI Designer, Entrepreneur, and Outdoor Adventurer.`,
-    author: `Ronan Connolly <hi@ronanc.xyz>`,
-    siteUrl: `https://ronanc.xyz`,
-    twitterHandle: `_RonanC`,
-    linkedInHandle: `RonanConnolly`,
-    githubHandle: `RonanC`,
+    author: `Ronan D. Connolly <hi@ronanc.xyz>`,
+    siteUrl: `https://RonanDConnolly.com`,
+    twitterHandle: `RonanDConnolly`,
+    linkedInHandle: `RonanDConnolly`,
+    githubHandle: `RonanDConnolly`,
     email: `hi@ronanc.xyz`,
     mapLink: `https://www.google.ie/maps/place/Galway/@53.2839064,-9.0837657,13z/data=!3m1!4b1!4m5!3m4!1s0x485b93955a2d5bff:0x32b1b440a495281!8m2!3d53.270668!4d-9.0567905`,
-    mediumHandle: `_RonanC`,
-    devHandle: `ronanc`,
+    mediumHandle: `RonanDConnolly`,
+    devHandle: `RonanDConnolly`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,
@@ -42,8 +42,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Ronan Connolly`,
-        short_name: `RC`,
+        name: `Ronan D. Connolly`,
+        short_name: `RDC`,
         start_url: `/`,
         background_color: `#AEAFE8`,
         theme_color: `#4C2FC9`,
@@ -86,7 +86,21 @@ module.exports = {
         // GitHub Flavored Markdown mode (default: true)
         gfm: true,
         // Plugins configs
-        plugins: [],
+        plugins: [
+          {
+            resolve: `@raae/gatsby-remark-oembed`,
+            options: {
+              // defaults to false
+              usePrefix: true,
+              providers: {
+                // Important to exclude providers
+                // that adds js to the page.
+                // If you do not need them.
+                exclude: ['Reddit'],
+              },
+            },
+          },
+        ],
       },
     },
     {

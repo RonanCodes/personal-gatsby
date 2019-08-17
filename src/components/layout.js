@@ -109,7 +109,7 @@ const Layout = ({ children, location }) => (
             <OutboundLink
               target="_blank"
               rel="noopener noreferrer"
-              href="https://ronanc.xyz"
+              href="https://RonanDConnolly.com"
             >
               Ronan Connolly
             </OutboundLink>

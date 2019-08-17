@@ -2,15 +2,15 @@
 
 <p align="center">
   <h1 align="center">
-    <a target="_blank" rel="noopener noreferrer" href="https://ronanc.xyz">
-          <img alt="Ronan Connolly Cursive" src="https://github.com/RonanC/personal-gatsby/blob/ronanc/src/images/masthead-ronanconnolly.svg" width="400" />
+    <a target="_blank" rel="noopener noreferrer" href="https://RonanDConnolly.com">
+          <img alt="Ronan Connolly Cursive" src="https://github.com/RonanC/personal-gatsby/blob/RonanDConnolly/src/images/masthead-ronanconnolly.svg" width="400" />
     </a>
   </h1>
 </p>
 
 <p align="center">
-  <a target="_blank" rel="noopener noreferrer" href="https://ronanc.xyz">
-    <img alt="Personal Gatsby Logo" src="https://github.com/RonanC/personal-gatsby/blob/master/src/images/personal-gatsby-logo.png" width="150" />
+  <a target="_blank" rel="noopener noreferrer" href="https://RonanDConnolly.com">
+    <img alt="Personal Gatsby Logo" src="https://github.com/RonanDConnolly/personal-gatsby/blob/master/src/images/personal-gatsby-logo.png" width="150" />
   </a>
 </p>
 
