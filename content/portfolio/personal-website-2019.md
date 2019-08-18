@@ -21,12 +21,12 @@ whatidid: |-
   • Set up an email server with "Zoho Mail" to allow for custom email (hello@RonanDConnolly.com).<br>
   • Add image optimizations to allow for quick loading of images.<br>
   • Make the website accessible via ARIA tags, and semantic HTML.
-projectLink: 'https://ronanc.xyz'
-gitLink: 'https://github.com/RonanC/personal-gatsby/tree/ronanc'
+projectLink: 'https://RonanDConnolly.com'
+gitLink: 'https://github.com/RonanDConnolly/personal-gatsby/tree/ronanc'
 category: portfolio
 ---
 
-# ronanc.xyz
+# RonanDConnolly.com
 
 The goal of this project was to learn React, GatsbyJS, and GraphQL.
 

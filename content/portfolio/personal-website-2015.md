@@ -17,6 +17,6 @@ whatidid: |-
   • I was only a year or so into the world of front-end and wanted a project to push me to learn quickly.<br>
   • Learned a lot about JS, HTML, CSS, Hosting, Domains, UI Design, and AngularJS.
 projectLink: 'https://ronanconnolly.herokuapp.com/#!/'
-gitLink: 'https://github.com/RonanC/personal-website'
+gitLink: 'https://github.com/RonanDConnolly/personal-website'
 category: portfolio
 ---

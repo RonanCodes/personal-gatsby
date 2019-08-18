@@ -130,7 +130,7 @@ module.exports = {
     {
       resolve: `@debiki/gatsby-plugin-talkyard`,
       options: {
-        talkyardServerUrl: 'https://comments-for-ronanc-xyz.talkyard.net',
+        talkyardServerUrl: 'https://forum.ronandconnolly.com,
       },
     },
     `gatsby-plugin-netlify-cms`,

@@ -3,7 +3,7 @@
 <p align="center">
   <h1 align="center">
     <a target="_blank" rel="noopener noreferrer" href="https://RonanDConnolly.com">
-          <img alt="Ronan D. Connolly Cursive" src="https://github.com/RonanC/personal-gatsby/blob/RonanDConnolly/src/images/masthead-ronandconnolly.svg" width="400" />
+          <img alt="Ronan D. Connolly Cursive" src="https://github.com/RonanDConnolly/personal-gatsby/blob/RonanDConnolly/src/images/masthead-ronandconnolly.svg" width="400" />
     </a>
   </h1>
 </p>
@@ -35,7 +35,6 @@
 **Example:**
 https://personalgatsby.xyz
 https://RonanDConnolly.com
-https://ronanc.xyz
 
 ## 💻 How to run dev
 

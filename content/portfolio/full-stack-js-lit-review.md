@@ -15,6 +15,6 @@ goal: |-
 whatidid: |-
   • I read many literature reviews, spent a tonne of time researching, and created this literature review.<br>
   • It was an amazing experience, and very humbling, I respect those who have completed PHDs much more now.
-projectLink: https://github.com/RonanC/js-lit-review/blob/master/js-lit-review.pdf
+projectLink: https://github.com/RonanDConnolly/js-lit-review/blob/master/js-lit-review.pdf
 category: portfolio
 ---
