@@ -3,7 +3,7 @@ title: Fidelity - Equity Management
 client: Fidelity
 coverImage: /images/fidelity-logo.svg
 startDate: '2018-09-14'
-endDate: 'current'
+endDate: '2019-09-14'
 technologiesandskills: |-
   • JavaScript (Latest), ES2015, TypeScript, Angular (Latest)<br>
   • RxJS, WebSockets, Angular Material, PrimeFaces, ag-Grid, Sass<br>
