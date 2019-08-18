@@ -92,7 +92,7 @@ const AboutPage = ({ location }) => (
           <OutboundLink
             target="_blank"
             rel="noopener noreferrer"
-            href="http://rebeccaspelman.com"
+            href="https://rebeccaspelman.com"
           >
             Rebecca Spelman
           </OutboundLink>
