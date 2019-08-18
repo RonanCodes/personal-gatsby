@@ -3,7 +3,7 @@
   "private": true,
   "description": "Front-End Developer, UI Designer, Entrepreneur, and Outdoor Adventurer.",
   "version": "0.1.0",
-  "author": "Ronan D. Connolly <hi@ronanc.xyz>",
+  "author": "Ronan D. Connolly <hello@RonanDConnolly.com>",
   "dependencies": {
     "@debiki/gatsby-plugin-talkyard": "0.5.8",
     "@raae/gatsby-remark-oembed": "0.0.7",

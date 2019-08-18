@@ -18,7 +18,7 @@ whatidid: |-
   • Set up a blog to engage with users and post interesting content.<br>
   • Set up a portfolio section to highlight current and past work.<br>
   • Set up a backend CMS so that you don't have to touch the code to add content.<br>
-  • Set up an email server with "Zoho Mail" to allow for custom email (hi@ronanc.xyz).<br>
+  • Set up an email server with "Zoho Mail" to allow for custom email (hello@RonanDConnolly.com).<br>
   • Add image optimizations to allow for quick loading of images.<br>
   • Make the website accessible via ARIA tags, and semantic HTML.
 projectLink: 'https://ronanc.xyz'

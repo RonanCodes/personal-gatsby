@@ -34,7 +34,7 @@
 
 **Example:**
 https://personalgatsby.xyz
-https://ronandconnolly.com
+https://RonanDConnolly.com
 https://ronanc.xyz
 
 ## 💻 How to run dev
