@@ -4,6 +4,7 @@
 https://www.ronanconnolly.ie/* https://ronandconnolly.com/:splat 301!
 https://ronanc.dev/* https://ronandconnolly.com/:splat 301!
 https://ronanc.xyz/* https://ronandconnolly.com/:splat 301!
+https://roco.dev/* https://ronandconnolly.com/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://ronandconnolly.netlify.com/* https://ronandconnolly.com/:splat 301!
