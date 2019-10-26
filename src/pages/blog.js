@@ -13,7 +13,6 @@ const BLOG_PAGE_QUERY = graphql`
   query BlogPageQuery {
     site {
       siteMetadata {
-        mediumHandle
         devHandle
         linkedInHandle
       }
