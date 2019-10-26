@@ -42,6 +42,6 @@ This will cover:
 
 ## Audience
 
-I'm aiming this at the Front-End community and will be sharing on Dev, Twitter, LinkedIn, and my personal site (https://ronandconnolly.com/blog).
+I'm aiming this at the Front-End community and will be sharing on Dev, Twitter, LinkedIn, and my personal site (https://ronanconnolly.dev/blog).
 
 To be honest, I'm writing this for myself, and if others learn from it that's great!

@@ -1,9 +1,9 @@
 {
-  "name": "RonanDConnolly",
+  "name": "Ronan Connolly",
   "private": true,
   "description": "Front-End Developer, UI Designer, Entrepreneur, and Outdoor Adventurer.",
   "version": "0.1.0",
-  "author": "Ronan D. Connolly <hello@RonanDConnolly.com>",
+  "author": "Ronan Connolly <hello@ronanconnolly.dev>",
   "dependencies": {
     "@debiki/gatsby-plugin-talkyard": "0.5.8",
     "@raae/gatsby-remark-oembed": "0.0.7",
@@ -53,9 +53,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RonanDConnolly/personal-gatsby"
+    "url": "https://github.com/ronancodes/personal-gatsby"
   },
   "bugs": {
-    "url": "https://github.com/RonanDConnolly/personal-gatsby/issues"
+    "url": "https://github.com/ronancodes/personal-gatsby/issues"
   }
 }

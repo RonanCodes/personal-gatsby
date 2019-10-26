@@ -1,5 +1,5 @@
 ---
-title: Ronan D. Connolly - Personal Website 2019
+title: Ronan Connolly - Personal Website 2019
 coverImage: /images/ronanc-website-2019.png
 startDate: '2019-02-01'
 endDate: '2019-03-03'
@@ -18,15 +18,15 @@ whatidid: |-
   • Set up a blog to engage with users and post interesting content.<br>
   • Set up a portfolio section to highlight current and past work.<br>
   • Set up a backend CMS so that you don't have to touch the code to add content.<br>
-  • Set up an email server with "Zoho Mail" to allow for custom email (hello@RonanDConnolly.com).<br>
+  • Set up an email server with "Zoho Mail" to allow for custom email (hello@ronanconnolly.dev).<br>
   • Add image optimizations to allow for quick loading of images.<br>
   • Make the website accessible via ARIA tags, and semantic HTML.
-projectLink: 'https://RonanDConnolly.com'
-gitLink: 'https://github.com/RonanDConnolly/personal-gatsby/tree/ronanc'
+projectLink: 'https://ronanconnolly.dev'
+gitLink: 'https://github.com/ronancodes/personal-gatsby/tree/ronanc'
 category: portfolio
 ---
 
-# RonanDConnolly.com
+# ronanconnolly.dev
 
 The goal of this project was to learn React, GatsbyJS, and GraphQL.
 

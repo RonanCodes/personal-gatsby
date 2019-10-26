@@ -61,7 +61,7 @@ const BlogPage = ({ location }) => (
             >
               Dev
             </OutboundLink>
-            <span aria-label="or">{`    ||    `}</span>
+            {/* <span aria-label="or">{`    ||    `}</span>
             <OutboundLink
               aria-label="Medium"
               target="_blank"
@@ -69,15 +69,13 @@ const BlogPage = ({ location }) => (
               href={`https://medium.com/@${site.siteMetadata.mediumHandle}`}
             >
               Medium
-            </OutboundLink>
+            </OutboundLink> */}
             <span aria-label="or">{`    ||    `}</span>
             <OutboundLink
               aria-label="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
-              href={`https://www.linkedin.com/in/${
-                site.siteMetadata.linkedInHandle
-              }/detail/recent-activity/posts/`}
+              href={`https://www.linkedin.com/in/${site.siteMetadata.linkedInHandle}/detail/recent-activity/posts/`}
             >
               LinkedIn
             </OutboundLink>

@@ -1,16 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Ronan D. Connolly`,
+    title: `Ronan Connolly`,
     description: `Front-End Developer, UI Designer, Entrepreneur, and Outdoor Adventurer.`,
-    author: `Ronan D. Connolly <hello@RonanDConnolly.com>`,
-    siteUrl: `https://RonanDConnolly.com`,
-    twitterHandle: `RonanDConnolly`,
-    linkedInHandle: `RonanDConnolly`,
-    githubHandle: `RonanDConnolly`,
-    email: `hello@RonanDConnolly.com`,
-    mapLink: `https://www.google.ie/maps/place/Galway/@53.2839064,-9.0837657,13z/data=!3m1!4b1!4m5!3m4!1s0x485b93955a2d5bff:0x32b1b440a495281!8m2!3d53.270668!4d-9.0567905`,
-    mediumHandle: `RonanDConnolly`,
-    devHandle: `RonanDConnolly`,
+    author: `Ronan Connolly <hello@ronanconnolly.dev>`,
+    siteUrl: `https://ronanconnolly.dev`,
+    twitterHandle: `RonanCodes`,
+    linkedInHandle: `RonanConnolly`,
+    githubHandle: `RonanCodes`,
+    email: `hello@ronanconnolly.dev`,
+    devHandle: `RonanCodes`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,
@@ -42,7 +40,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Ronan D. Connolly`,
+        name: `Ronan Connolly`,
         short_name: `RDC`,
         start_url: `/`,
         background_color: `#AEAFE8`,
@@ -130,7 +128,7 @@ module.exports = {
     {
       resolve: `@debiki/gatsby-plugin-talkyard`,
       options: {
-        talkyardServerUrl: 'https://forum.ronandconnolly.com',
+        talkyardServerUrl: 'https://forum.ronanconnolly.dev',
       },
     },
     `gatsby-plugin-netlify-cms`,

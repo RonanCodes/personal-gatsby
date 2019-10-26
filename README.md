@@ -2,15 +2,15 @@
 
 <p align="center">
   <h1 align="center">
-    <a target="_blank" rel="noopener noreferrer" href="https://RonanDConnolly.com">
-          <img alt="Ronan D. Connolly Cursive" src="https://github.com/RonanDConnolly/personal-gatsby/blob/RonanDConnolly/src/images/masthead-ronandconnolly.svg" width="400" />
+    <a target="_blank" rel="noopener noreferrer" href="https://ronanconnolly.dev">
+          <img alt="Ronan Connolly Cursive" src="https://github.com/ronancodes/personal-gatsby/blob/ronanconnolly/src/images/masthead-ronanconnolly.svg" width="400" />
     </a>
   </h1>
 </p>
 
 <p align="center">
-  <a target="_blank" rel="noopener noreferrer" href="https://RonanDConnolly.com">
-    <img alt="Personal Gatsby Logo" src="https://github.com/RonanDConnolly/personal-gatsby/blob/master/src/images/personal-gatsby-logo.png" width="150" />
+  <a target="_blank" rel="noopener noreferrer" href="https://ronanconnolly.dev">
+    <img alt="Personal Gatsby Logo" src="https://github.com/ronancodes/personal-gatsby/blob/master/src/images/personal-gatsby-logo.png" width="150" />
   </a>
 </p>
 
@@ -34,7 +34,7 @@
 
 **Example:**
 https://personalgatsby.xyz
-https://RonanDConnolly.com
+https://ronanconnolly.dev
 
 ## 💻 How to run dev
 

@@ -20,7 +20,6 @@ const SOCIAL_DATA_QUERY = graphql`
         linkedInHandle
         githubHandle
         email
-        mapLink
       }
     }
   }
@@ -68,9 +67,7 @@ class SocialLinks extends React.Component {
                   aria-label="Twitter"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={`https://twitter.com/${
-                    data.site.siteMetadata.twitterHandle
-                  }`}
+                  href={`https://twitter.com/${data.site.siteMetadata.twitterHandle}`}
                 >
                   <FaTwitter />
                 </OutboundLink>
@@ -80,9 +77,7 @@ class SocialLinks extends React.Component {
                   aria-label="LinkedIn"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={`https://www.linkedin.com/in/${
-                    data.site.siteMetadata.linkedInHandle
-                  }/`}
+                  href={`https://www.linkedin.com/in/${data.site.siteMetadata.linkedInHandle}/`}
                 >
                   <FaLinkedinIn />
                 </OutboundLink>
@@ -92,14 +87,12 @@ class SocialLinks extends React.Component {
                   aria-label="GitHub"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={`https://github.com/${
-                    data.site.siteMetadata.githubHandle
-                  }`}
+                  href={`https://github.com/${data.site.siteMetadata.githubHandle}`}
                 >
                   <FaGithub />
                 </OutboundLink>
               </li>
-              <li>
+              {/* <li>
                 <OutboundLink
                   aria-label="Google Maps"
                   target="_blank"
@@ -108,7 +101,7 @@ class SocialLinks extends React.Component {
                 >
                   <FaGlobeAmericas />
                 </OutboundLink>
-              </li>
+              </li> */}
               <li>
                 <OutboundLink
                   aria-label="Email"

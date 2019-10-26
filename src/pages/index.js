@@ -9,7 +9,7 @@ import SEO from '../components/seo'
 
 const HOMEPAGE_IMAGE_QUERY = graphql`
   query HomePageImageQuery {
-    file(relativePath: { regex: "/ronandconnolly-headshot/" }) {
+    file(relativePath: { regex: "/ronanconnolly-headshot/" }) {
       childImageSharp {
         fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -83,7 +83,7 @@ const IndexPage = ({ location }) => (
         <SEO
           title="Homepage"
           keywords={[
-            `Ronan D. Connolly`,
+            `Ronan Connolly`,
             `Front-End Software Engineer`,
             `Web Developer`,
             `Angular Specialist`,
@@ -94,7 +94,7 @@ const IndexPage = ({ location }) => (
         <HomeSection role="region" aria-label="Summary of myself.">
           <AboutMeSection>
             <div className="summary">
-              <h2>Hi, I'm Ronan D. Connolly</h2>
+              <h2>Hi, I'm Ronan Connolly</h2>
               <h4>
                 A Front-End Software Engineer, Web Developer, and Angular
                 Specialist who works in the finance domain.
@@ -107,7 +107,7 @@ const IndexPage = ({ location }) => (
                   maxWidth: '400px',
                   marginBottom: '50px',
                 }}
-                alt={'Ronan D. Connolly - Head Shot'}
+                alt={'Ronan Connolly - Head Shot'}
               />
             </div>
           </AboutMeSection>
