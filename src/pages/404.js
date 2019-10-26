@@ -27,7 +27,6 @@ const NotFoundPage = () => (
       <Layout>
         <SEO title="404: Not found" keywords={[`404`]} />
 
-        {/* <h1>NOT FOUND</h1> */}
         <Img
           fluid={data.file.childImageSharp.fluid}
           style={{

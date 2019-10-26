@@ -62,36 +62,6 @@ const BlogShareNav = props => (
           <WhatsappIcon size={props.iconSize} round={props.iconRound} />
         </WhatsappShareButton>
       </li>
-      {/* <li>
-                  <RedditShareButton
-                    className="button"
-                    url={blogUrl}
-                    title={frontmatter.title}
-                  >
-                    <RedditIcon size={iconSize} round={iconRound} />
-                  </RedditShareButton>
-                </li> */}
-      {/* <li>
-                  <TumblrShareButton
-                    className="button"
-                    url={blogUrl}
-                    title={frontmatter.title}
-                    tags={[frontmatter.tags]}
-                    caption={`${excerpt} (source: ${blogUrl})`}
-                  >
-                    <TumblrIcon size={iconSize} round={iconRound} />
-                  </TumblrShareButton>
-                </li> */}
-      {/* <li>
-                  <EmailShareButton
-                    className="button"
-                    url={blogUrl}
-                    subject={frontmatter.title}
-                    body={`${excerpt} (source: ${blogUrl})`}
-                  >
-                    <EmailIcon size={iconSize} round={iconRound} />
-                  </EmailShareButton>
-                </li> */}
     </ul>
   </NavWrapper>
 )

@@ -92,16 +92,7 @@ class SocialLinks extends React.Component {
                   <FaGithub />
                 </OutboundLink>
               </li>
-              {/* <li>
-                <OutboundLink
-                  aria-label="Google Maps"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={data.site.siteMetadata.mapLink}
-                >
-                  <FaGlobeAmericas />
-                </OutboundLink>
-              </li> */}
+
               <li>
                 <OutboundLink
                   aria-label="Email"

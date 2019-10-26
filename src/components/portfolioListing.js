@@ -99,10 +99,6 @@ const header = frontmatter => {
           {frontmatter.endDate !== 'Invalid date'
             ? frontmatter.endDate
             : 'Current'}
-
-          {/* // {frontmatter.endDate == 'Invalid Daste'
-          //   ? frontmatter.endDate
-          //   : 'Current'} */}
         </span>
       </h5>
     </Header>
