@@ -77,14 +77,14 @@ const AboutPage = ({ location }) => (
           }}
           alt={'A man strolling through a city listening to music.'}
         />
-        <p>My life's work is software engineering &amp; outdoor pursuits.</p>
+        {/* <p>My life's work is software engineering &amp; outdoor pursuits.</p> */}
 
         <p>
           From a very young age I've had a keen interest in technology,
           business, finance/investing, and the outdoors.
           <br />
-          The West of Ireland is where I was born and raised. I currently reside
-          in Galway City on the west coast.
+          {/* The West of Ireland is where I was born and raised.  */}I
+          currently reside in Galway City on the west coast of Ireland.
         </p>
         <p>
           I believe in doing whatever you want as long as it doesn't hurt anyone
@@ -100,7 +100,7 @@ const AboutPage = ({ location }) => (
           <br />
         </p>
 
-        <p
+        {/* <p
           style={{
             marginTop: '35px',
             marginBottom: '35px',
@@ -148,20 +148,19 @@ const AboutPage = ({ location }) => (
               Get a dog
             </li>
           </ul>
-        </p>
+        </p> */}
 
         <p
           style={{
             marginBottom: '70px',
           }}
         >
-          In my spare time I enjoy reading, board-games, trekking, jogging,
-          learning (technology, business, &amp; finance mostly), and spending
-          time with my partner Rebecca. <br /> I'm a coffee connoisseur and
-          really enjoy unwinding in a relaxed environment.
+          In my spare time I enjoy reading, gaming, board-games, trekking,
+          learning, and spending time with my partner. <br /> I'm a coffee
+          connoisseur, and really enjoy unwinding in a relaxed environment.
         </p>
 
-        {aboutYear(
+        {/* {aboutYear(
           2019,
           `The goals I outlined for 2019 are as follows:
 📚 Learn UI Design, CSS, React, GatsbyJS;
@@ -232,7 +231,7 @@ const AboutPage = ({ location }) => (
           This involved a top up system with top up codes so that you could pay via the app.
 
           I used the Ionic framework with AngularJS in order to create this application.`
-        )}
+        )} */}
       </Layout>
     )}
   />
