@@ -79,14 +79,19 @@ const AboutPage = ({ location }) => (
         />
 
         <p>
-          From a very young age I've had a keen interest in technology,
-          business, finance/investing, and the outdoors.
+          I'm a software engineer specializing in front-end development with
+          Angular in the finance domain.
           <br />
-          currently reside in Galway City on the west coast of Ireland.
+          I believe that software engineers are forever students that are on an
+          everlasting journey of learning.
+          <br />
+          From a young age I've had a keen interest in technology, business,
+          finance/investing, and the outdoors.
+          <br />I currently reside in Galway City on the west coast of Ireland.
         </p>
         <p>
           I believe in doing whatever you want as long as it doesn't hurt anyone
-          else <br /> (a motto I learned from the amazing writer{' '}
+          else, <br /> a motto I learned from the amazing writer{' '}
           <OutboundLink
             target="_blank"
             rel="noopener noreferrer"
@@ -94,18 +99,12 @@ const AboutPage = ({ location }) => (
           >
             Rebecca Spelman
           </OutboundLink>
-          ).
+          .
           <br />
         </p>
-
-        <p
-          style={{
-            marginBottom: '70px',
-          }}
-        >
-          In my spare time I enjoy reading, gaming, board-games, trekking,
-          learning, and spending time with my partner. <br /> I'm a coffee
-          connoisseur, and really enjoy unwinding in a relaxed environment.
+        <p>
+          In my spare time I enjoy reading, learning new things, board-gaming,
+          yoga, cycling, coffee and good food.
         </p>
       </Layout>
     )}
