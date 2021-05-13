@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: `Ronan Connolly`,
-    description: `Front-End Developer, UI Designer, Entrepreneur, and Outdoor Adventurer.`,
-    author: `Ronan Connolly <hello@ronanconnolly.dev>`,
-    siteUrl: `https://ronanconnolly.dev`,
+    description: `Front-End Senior Software Engineer | Web Developer | Angular Specialist | Fintech | Contractor | Cork, Ireland`,
+    author: `Ronan Connolly <Ronan@RonanConnolly.dev>`,
+    siteUrl: `https://RonanConnolly.dev`,
     twitterHandle: `RonanCodes`,
     linkedInHandle: `RonanConnolly`,
     githubHandle: `RonanCodes`,
-    email: `hello@ronanconnolly.dev`,
+    email: `Ronan@RonanConnolly.dev`,
     devHandle: `RonanCodes`,
   },
   plugins: [
