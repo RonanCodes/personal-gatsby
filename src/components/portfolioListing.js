@@ -219,7 +219,9 @@ const PortfolioListing = () => (
                   >
                     {edge.node.frontmatter.category === 'certificate'
                       ? 'Certifier Website'
-                      : `Check <strong>More</strong> out here`}
+                      : (<div>
+                          Check <strong>More</strong> out here
+                      </div>)}
 
                     
                   </OutboundLink>
