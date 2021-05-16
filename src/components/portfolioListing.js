@@ -96,7 +96,7 @@ const header = frontmatter => {
       <h5>
         <span className="start-date">{frontmatter.startDate}</span>-
         <span className="end-date">
-          {frontmatter.endDate !== 'Invalid date'
+          {frontmatter.endDate !== 'Jan 9000'
             ? frontmatter.endDate
             : 'Current'}
         </span>
