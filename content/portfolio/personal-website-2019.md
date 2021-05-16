@@ -13,7 +13,7 @@ goal: |-
   • Have a personal website to showcase my skills, portfolio, and blog.
 whatidid: |-
   • Created a template website so that I could create similar websites for others in the future.<br>
-  • Came up with a colour pallette that was pleasing to the eye and also accessible to those with vision issues.<br>
+  • Came up with a colour palette that was pleasing to the eye and also accessible to those with vision issues.<br>
   • Set up SSL to secure the website.<br>
   • Set up a blog to engage with users and post interesting content.<br>
   • Set up a portfolio section to highlight current and past work.<br>
