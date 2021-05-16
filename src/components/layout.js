@@ -125,7 +125,7 @@ const Layout = ({ children, location }) => (
 
           <Footer role="contentinfo" aria-label="Creator signature">
             <section className="made-with-love">
-              Made with <span role="img">💜</span> in Galway, Ireland
+              Made with <span role="img">💜</span> Ireland
             </section>
             <section className="social-links">
               <SocialLinks />

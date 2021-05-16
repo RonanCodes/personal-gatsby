@@ -87,7 +87,7 @@ const AboutPage = ({ location }) => (
           <br />
           From a young age I've had a keen interest in technology, business,
           finance/investing, and the outdoors.
-          <br />I currently reside in Galway City on the west coast of Ireland.
+          <br />I currently reside in Cork City on the south coast of Ireland.
         </p>
         <p>
           I believe in doing whatever you want as long as it doesn't hurt anyone
@@ -101,10 +101,6 @@ const AboutPage = ({ location }) => (
           </OutboundLink>
           .
           <br />
-        </p>
-        <p>
-          In my spare time I enjoy reading, learning new things, board-gaming,
-          yoga, cycling, coffee and good food.
         </p>
       </Layout>
     )}

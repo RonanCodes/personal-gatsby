@@ -11,7 +11,7 @@ const PORTFOLIO_LISTING_QUERY = graphql`
   query PortfolioItemListing {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___endDate] }
-      filter: { frontmatter: { category: { eq: "portfolio" } } }
+      filter: { frontmatter: { category: { in: ["portfolio", "certificate"] } } }
     ) {
       edges {
         next {
@@ -30,6 +30,8 @@ const PORTFOLIO_LISTING_QUERY = graphql`
             projectLink
             gitLink
             moreLink
+            certLink
+            category
           }
         }
       }
@@ -92,13 +94,13 @@ const header = frontmatter => {
 
   return (
     <Header aria-label="Portfolio header">
-      <h1>{frontmatter.title}</h1>
+      <h1>{frontmatter.category === 'certificate' ? 'Certificate: ' : ''}{frontmatter.title}</h1>
       <h5>
         <span className="start-date">{frontmatter.startDate}</span>-
         <span className="end-date">
-          {frontmatter.endDate !== 'Jan 9000'
-            ? frontmatter.endDate
-            : 'Current'}
+          {frontmatter.endDate === 'Jan 9000'
+            ? 'Current' :  frontmatter.startDate === frontmatter.endDate 
+            ? 'No End Date' : frontmatter.endDate}
         </span>
       </h5>
     </Header>
@@ -133,20 +135,25 @@ const PortfolioListing = () => (
                 }}
               />
 
-              <h2>Goals</h2>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: edge.node.frontmatter.goal,
-                }}
-              />
+            {!edge.node.frontmatter.goal ? null : (
+              <div>
+                <h2>Goals</h2>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: edge.node.frontmatter.goal,
+                  }}
+                />
+            </div>
+            )}
 
               {!edge.node.frontmatter.whatidid ? null : (
                 <div>
                   <h2>
-                    What I
-                    {edge.node.frontmatter.endDate !== 'Invalid date'
-                      ? ' Did'
-                      : ' Do'}
+                    What
+                    {edge.node.frontmatter.endDate === 'Jan 9000'
+                      ? "'s "
+                      : ' was '}
+                      Involved
                   </h2>
                   <p
                     dangerouslySetInnerHTML={{
@@ -155,6 +162,19 @@ const PortfolioListing = () => (
                   />
                 </div>
               )}
+
+              {!edge.node.frontmatter.certifier ? null : (
+                <div>
+                  <h2>
+                    Certifier
+                  </h2>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: edge.node.frontmatter.certifier,
+                    }}
+                  />
+                </div>
+              )}    
 
               {!edge.node.frontmatter.projectLink ? null : (
                 <h4>
@@ -178,6 +198,17 @@ const PortfolioListing = () => (
                   </OutboundLink>
                 </h4>
               )}
+              {!edge.node.frontmatter.certLink ? null : (
+                <h4>
+                  <OutboundLink
+                    href={edge.node.frontmatter.certLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                  Certificate Link
+                  </OutboundLink>
+                </h4>
+              )}
               {!edge.node.frontmatter.moreLink ? null : (
                 <h4>
                   <OutboundLink
@@ -185,7 +216,11 @@ const PortfolioListing = () => (
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Check <strong>More</strong> out here
+                    {edge.node.frontmatter.category === 'certificate'
+                      ? 'Certifier Website'
+                      : `Check <strong>More</strong> out here`}
+
+                    
                   </OutboundLink>
                 </h4>
               )}
