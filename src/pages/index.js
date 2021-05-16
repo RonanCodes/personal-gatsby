@@ -88,17 +88,28 @@ const IndexPage = ({ location }) => (
             `Web Developer`,
             `Angular Specialist`,
             `Finance Domain`,
-            `West of Ireland`,
+            `FinTech`,
+            `Contractor`,
+            `Cork, Ireland`,
           ]}
         />
         <HomeSection role="region" aria-label="Summary of myself.">
           <AboutMeSection>
             <div className="summary">
               <h2>Hi, I'm Ronan Connolly</h2>
-              <h4>
-                A Front-End Software Engineer, Web Developer, and Angular
-                Specialist who works in the finance domain.
-              </h4>
+              <p>
+                <strong>I'm a:</strong><br/>
+                🧑‍💻 Front-End Software Engineer | 🕸 Web Developer | 📐 Angular Specialist
+                <br/><br/>
+                <strong>In the domain:</strong><br/>
+                💰 FinTech
+                <br/><br/>
+                <strong>Working as a:</strong><br/>
+                📜 Contractor | 🏝 Remote Worker
+                <br/><br/>
+                <strong>While living in:</strong><br/>
+                🇮🇪 Cork, Ireland
+              </p>
             </div>
             <div class="head-shot">
               <Img
@@ -114,7 +125,7 @@ const IndexPage = ({ location }) => (
           <MoreInfoSection>
             <p>
               I love working with people who are passionate about technology and
-              how it can be applied in meaningful ways.
+              how it can be applied in fun and interesting ways.
             </p>
 
             <p>
