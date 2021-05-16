@@ -32,6 +32,7 @@ const PORTFOLIO_LISTING_QUERY = graphql`
             moreLink
             certLink
             category
+            certifier
           }
         }
       }
