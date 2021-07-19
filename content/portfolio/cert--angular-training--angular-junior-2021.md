@@ -1,5 +1,5 @@
 ---
-title: Angular Training - Angular
+title: Angular Training - Angular Level 1 - Junior
 coverImage: /images/certificates/Angular-Training--Angular-Junior-Developer-Certificate.png
 startDate: '2021-05-16'
 endDate: '2021-05-16'

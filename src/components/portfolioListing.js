@@ -11,7 +11,7 @@ const PORTFOLIO_LISTING_QUERY = graphql`
   query PortfolioItemListing {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___endDate] }
-      filter: { frontmatter: { category: { in: ["portfolio", "certificate"] } } }
+      filter: { frontmatter: { category: { in: ["portfolio", "certificate", "resource"] } } }
     ) {
       edges {
         next {
@@ -95,13 +95,13 @@ const header = frontmatter => {
 
   return (
     <Header aria-label="Portfolio header">
-      <h1>{frontmatter.category === 'certificate' ? 'Certificate: ' : ''}{frontmatter.title}</h1>
+      <h1>{frontmatter.category === 'certificate' ? 'Certificate: ' ? frontmatter.category === 'resource' : 'Resource: ' : ''}{frontmatter.title}</h1>
       <h5>
-        <span className="start-date">{frontmatter.startDate}</span>-
+        <span className="start-date">{frontmatter.startDate}</span>
         <span className="end-date">
           {frontmatter.endDate === 'Jan 9000'
-            ? 'Current' :  frontmatter.startDate === frontmatter.endDate 
-            ? 'No End Date' : frontmatter.endDate}
+            ? '- Current' :  frontmatter.startDate === frontmatter.endDate 
+            ? '' : frontmatter.endDate}
         </span>
       </h5>
     </Header>
